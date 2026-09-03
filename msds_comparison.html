@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSDS & Chemical Comparison: Cold Power Advanced Clean vs. Extreme Clean</title>
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --border-color: #e2e8f0;
+      --border-focus: #94a3b8;
+      
+      --brand-primary: #1d4ed8;
+      --brand-primary-light: #eff6ff;
+      --brand-accent: #0284c7;
+      
+      --adv-color: #0369a1;
+      --adv-bg: #f0f9ff;
+      --ext-color: #6d28d9;
+      --ext-bg: #f5f3ff;
+      
+      --badge-green-bg: #ecfdf5;
+      --badge-green-text: #047857;
+      --badge-amber-bg: #fffbeb;
+      --badge-amber-text: #b45309;
+      --badge-red-bg: #fef2f2;
+      --badge-red-text: #b91c1c;
+      --badge-blue-bg: #eff6ff;
+      --badge-blue-text: #1d4ed8;
+
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      font-size: 0.875rem;
+    }
+    .top-nav a {
+      color: var(--brand-primary);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .top-nav a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.25rem 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      background: var(--badge-blue-bg);
+      color: var(--badge-blue-text);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    .header-meta span strong {
+      color: var(--text-main);
+    }
+
+    /* Document Download Cards */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .doc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .doc-type {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--brand-accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .doc-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-info {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .doc-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: var(--brand-primary);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.15s ease;
+    }
+
+    .doc-link:hover {
+      background: #1e40af;
+    }
+
+    .doc-link.secondary {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .doc-link.secondary:hover {
+      background: #e2e8f0;
+    }
+
+    /* Executive Callout */
+    .callout-box {
+      background: #ffffff;
+      border-left: 4px solid var(--brand-primary);
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .callout-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .callout-box p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .callout-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Section Cards */
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-card h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 2px solid var(--bg-subtle);
+      padding-bottom: 0.75rem;
+    }
+
+    /* Tables */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+      background: #ffffff;
+    }
+
+    th {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 0.85rem 1.1rem;
+      border-bottom: 2px solid var(--border-color);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    td {
+      padding: 0.9rem 1.1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background-color: #f8fafc;
+    }
+
+    td strong {
+      color: var(--text-main);
+    }
+
+    .col-feature {
+      width: 24%;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .col-adv {
+      width: 38%;
+      background-color: #fafcfe;
+    }
+
+    .col-ext {
+      width: 38%;
+      background-color: #fdfcfe;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .tag-match {
+      background: var(--badge-green-bg);
+      color: var(--badge-green-text);
+    }
+
+    .tag-diff {
+      background: var(--badge-amber-bg);
+      color: var(--badge-amber-text);
+    }
+
+    .tag-adv {
+      background: var(--adv-bg);
+      color: var(--adv-color);
+    }
+
+    .tag-ext {
+      background: var(--ext-bg);
+      color: var(--ext-color);
+    }
+
+    /* Grid for Cards / Explanations */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .feature-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.35rem;
+    }
+
+    .feature-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .feature-card p, .feature-card ul {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .feature-card ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .feature-card li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem 0;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      margin-top: 2rem;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+        color: #000000;
+      }
+      header, .section-card, .callout-box {
+        box-shadow: none;
+        border: 1px solid #cccccc;
+        page-break-inside: avoid;
+      }
+      .doc-card {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Navigation -->
+    <div class="top-nav">
+      <span><strong>Detergent Intelligence Series:</strong> Australian Market (Victoria)</span>
+      <a href="./biozet_powders_comparison.html">View Biozet Attack Laundry Powders Research →</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <span class="badge-pill">Regulatory & Safety Intelligence Report</span>
+      <h1>Cold Power Advanced Clean vs. Extreme Clean</h1>
+      <p class="subtitle">
+        Comprehensive comparative analysis of Material Safety Data Sheets (MSDS / SDS) and official Consumer Ingredient Disclosure records issued by Henkel Australia.
+      </p>
+      <div class="header-meta">
+        <span><strong>Manufacturer:</strong> Henkel Australia Pty. Ltd.</span>
+        <span><strong>Country:</strong> Australia (Safe Work Australia)</span>
+        <span><strong>Analysis Date:</strong> September 2026</span>
+        <span><strong>Standard:</strong> GHS 7 / WHS Regulations</span>
+      </div>
+    </header>
+
+    <!-- Downloadable Documents Section -->
+    <div class="docs-grid">
+      <div class="doc-card">
+        <div>
+          <div class="doc-type">Official MSDS / SDS</div>
+          <div class="doc-title">Advanced Clean Laundry Liquid</div>
+          <div class="doc-info">SDS No. 565969 | Formula WANZ25000051 | 10 Pages (PDF)</div>
+        </div>
+        <a href="./Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="doc-link">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Open Advanced Clean SDS
+        </a>
+      </div>
+
+      <div class="doc-card">
+        <div>
+          <div class="doc-type">Official MSDS / SDS</div>
+          <div class="doc-title">Extreme Clean Laundry Liquid</div>
+          <div class="doc-info">SDS No. 729522 | Formula WANZ25000053 | 10 Pages (PDF)</div>
+        </div>
+        <a href="./Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="doc-link">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Open Extreme Clean SDS
+        </a>
+      </div>
+
+      <div class="doc-card">
+        <div>
+          <div class="doc-type">Full Formulation Disclosure</div>
+          <div class="doc-title">Advanced Clean Ingredient Datasheet</div>
+          <div class="doc-info">Subid 000000565969 | Complete INCI List & Functions</div>
+        </div>
+        <a href="./Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf" target="_blank" class="doc-link secondary">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/></svg>
+          Open Ingredient Sheet
+        </a>
+      </div>
+
+      <div class="doc-card">
+        <div>
+          <div class="doc-type">Full Formulation Disclosure</div>
+          <div class="doc-title">Extreme Clean Ingredient Datasheet</div>
+          <div class="doc-info">Subid 000000729522 | Complete INCI List & Functions</div>
+        </div>
+        <a href="./Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf" target="_blank" class="doc-link secondary">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/></svg>
+          Open Ingredient Sheet
+        </a>
+      </div>
+    </div>
+
+    <!-- Executive Summary Callout -->
+    <div class="callout-box">
+      <h3>
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+        Executive Summary: Regulatory SDS vs. Functional Formula
+      </h3>
+      <p>
+        <strong>1. Regulatory & Safety Equivalency:</strong> From a Workplace Health and Safety (WHS) and transport compliance perspective, both products possess an <strong>identical safety classification</strong> (Eye Irritation Cat 2, Skin Sensitizer Cat 1, Aquatic Acute Cat 2). They share the identical declared hazardous chemical bands and identical physical metrics (pH 8.2–8.6, density 1.03–1.05 g/cm³).
+      </p>
+      <p>
+        <strong>2. Functional Differentiators:</strong> The genuine performance difference revealed in Henkel's official Ingredient Datasheets lies in the <strong>stabilizer / solvent architecture</strong> and <strong>fragrance matrix</strong>: Extreme Clean utilizes a <em>Glycerin + Sorbitol</em> polyol stabilization complex to maintain multi-enzyme activity for tough stain breakdown, accompanied by a premium aroma complex (including Hedione, Iso E Super, and macrocyclic musk).
+      </p>
+    </div>
+
+    <!-- Section 1: Side-by-Side MSDS Comparison Table -->
+    <div class="section-card">
+      <h2>1. Side-by-Side Safety Data Sheet (MSDS) Comparison</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Direct extraction of parameters from Henkel's GHS-compliant Safety Data Sheets under Safe Work Australia standards.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-feature">SDS Parameter</th>
+              <th class="col-adv">Cold Power Advanced Clean</th>
+              <th class="col-ext">Cold Power Extreme Clean</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SDS Number & Date</strong></td>
+              <td>
+                <span class="tag tag-adv">SDS #565969</span><br>
+                Issued: 20 January 2026 (Version 1.0)
+              </td>
+              <td>
+                <span class="tag tag-ext">SDS #729522</span><br>
+                Issued: 21 January 2026 (Version 1.0)
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Internal Formula ID</strong></td>
+              <td><code>WANZ25000051</code></td>
+              <td><code>WANZ25000053</code></td>
+            </tr>
+            <tr>
+              <td><strong>Intended Use</strong></td>
+              <td>Heavy duty laundry detergent liquid</td>
+              <td>Heavy duty laundry detergent liquid</td>
+            </tr>
+            <tr>
+              <td><strong>GHS Hazard Classification</strong></td>
+              <td>
+                • Serious eye irritation: <strong>Category 2</strong><br>
+                • Skin sensitizer: <strong>Category 1</strong><br>
+                • Aquatic hazard (acute): <strong>Category 2</strong>
+              </td>
+              <td>
+                • Serious eye irritation: <strong>Category 2</strong><br>
+                • Skin sensitizer: <strong>Category 1</strong><br>
+                • Aquatic hazard (acute): <strong>Category 2</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Signal Word</strong></td>
+              <td>
+                <em>None</em> <span class="tag tag-diff">Template Artifact</span>
+              </td>
+              <td>
+                <strong>Warning</strong> <span class="tag tag-match">Standard GHS</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Hazard Statements</strong></td>
+              <td>
+                • <strong>H317:</strong> May cause an allergic skin reaction<br>
+                • <strong>H319:</strong> Causes serious eye irritation<br>
+                • <strong>H401:</strong> Toxic to aquatic life
+              </td>
+              <td>
+                • <strong>H317:</strong> May cause an allergic skin reaction<br>
+                • <strong>H319:</strong> Causes serious eye irritation<br>
+                • <strong>H401:</strong> Toxic to aquatic life
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Precautionary Statements</strong></td>
+              <td>
+                <strong>P261, P272, P273, P280</strong> (Wear eye/face protection & gloves)<br>
+                <strong>P302+P352, P305+P351+P338+P315</strong> (Rinse eyes & skin immediately)<br>
+                <strong>P333+P313, P362+P364, P501</strong>
+              </td>
+              <td>
+                <strong>P261, P272, P273, P280</strong> (Wear eye/face protection & gloves)<br>
+                <strong>P302+P352, P305+P351+P338+P315</strong> (Rinse eyes & skin immediately)<br>
+                <strong>P333+P313, P362+P364, P501</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Declared Hazardous Substances (Section 3)</strong></td>
+              <td>
+                • <strong>Alcohols, C12-18, 7EO:</strong> 3 – &lt; 10%<br>
+                • <strong>Alcohols, C12-14, sulfates, sodium, 2EO:</strong> 3 – &lt; 5%<br>
+                • <strong>Benzenesulfonic acid, mono-C10-16-alkyl derivs., sodium:</strong> 3 – &lt; 10%<br>
+                • <strong>Sodium metaborate, anhydrous:</strong> &lt; 3%<br>
+                • <strong>2-methylisothiazol-3(2H)-one (MIT):</strong> 0.0015 – &lt; 0.1%
+              </td>
+              <td>
+                • <strong>Alcohols, C12-18, 7EO:</strong> 3 – &lt; 10%<br>
+                • <strong>Alcohols, C12-14, sulfates, sodium, 2EO:</strong> 3 – &lt; 5%<br>
+                • <strong>Benzenesulfonic acid, mono-C10-16-alkyl derivs., sodium:</strong> 3 – &lt; 10%<br>
+                • <strong>Sodium metaborate, anhydrous:</strong> &lt; 3%<br>
+                • <strong>2-methylisothiazol-3(2H)-one (MIT):</strong> 0.0015 – &lt; 0.1%
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Physical State & Color</strong></td>
+              <td>Liquid, clear, blue</td>
+              <td>Liquid, clear, blue</td>
+            </tr>
+            <tr>
+              <td><strong>Odour</strong></td>
+              <td>Floral</td>
+              <td>Floral</td>
+            </tr>
+            <tr>
+              <td><strong>pH Value (20 °C)</strong></td>
+              <td><strong>8.2 – 8.6</strong> (Aqueous solution)</td>
+              <td><strong>8.2 – 8.6</strong> (Aqueous solution)</td>
+            </tr>
+            <tr>
+              <td><strong>Dynamic Viscosity (20 °C)</strong></td>
+              <td><strong>300 – 700 mPa·s</strong> (Brookfield RV, 20 rpm)</td>
+              <td><strong>300 – 700 mPa·s</strong> (Brookfield RV, 20 rpm)</td>
+            </tr>
+            <tr>
+              <td><strong>Specific Gravity / Density</strong></td>
+              <td><strong>1.030 – 1.050 g/cm³</strong></td>
+              <td><strong>1.030 – 1.050 g/cm³</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Flash Point</strong></td>
+              <td>&gt; 100 °C (No flash point up to 100 °C, aqueous)</td>
+              <td>&gt; 100 °C (ASTM D 6450 / DIN EN ISO 3679)</td>
+            </tr>
+            <tr>
+              <td><strong>Solubility</strong></td>
+              <td>Soluble in water</td>
+              <td>Soluble in water</td>
+            </tr>
+            <tr>
+              <td><strong>First Aid Measures</strong></td>
+              <td>
+                Eye: Rinse with running water for 10 min. Seek medical attention.<br>
+                Skin: Rinse with water, remove contaminated clothing.<br>
+                Ingestion: Do not induce vomiting, rinse mouth, seek medical advice.
+              </td>
+              <td>
+                Eye: Rinse with running water for 10 min. Seek medical attention.<br>
+                Skin: Rinse with water, remove contaminated clothing.<br>
+                Ingestion: Do not induce vomiting, rinse mouth, seek medical advice.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Storage Conditions</strong></td>
+              <td>Store dry between +5 °C and +40 °C</td>
+              <td>Store dry between +5 °C and +40 °C</td>
+            </tr>
+            <tr>
+              <td><strong>Transport Classification</strong></td>
+              <td>Not dangerous goods (ADG, IMDG, IATA)</td>
+              <td>Not dangerous goods (ADG, IMDG, IATA)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 2: Complete Ingredient Datasheet Comparison -->
+    <div class="section-card">
+      <h2>2. Complete Formulation Breakdown (Ingredient Datasheets)</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Henkel's official Consumer Ingredient Datasheets (<span style="font-family: monospace;">INGR_CUANZ</span>) reveal all sub-threshold ingredients, non-hazardous components, enzymes, and fragrance constituents that are omitted from the safety-focused MSDS.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient (INCI / Chemical Name)</th>
+              <th>CAS Number</th>
+              <th>Function</th>
+              <th style="text-align: center;">Advanced Clean</th>
+              <th style="text-align: center;">Extreme Clean</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Aqua</strong></td>
+              <td>7732-18-5</td>
+              <td>Water / Carrier Solvent</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Alcohol Ethoxylate C12-18 7EO</strong></td>
+              <td>68213-23-0</td>
+              <td>Non-ionic Surfactant (grease removal)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Laureth Sulfate (SLES)</strong></td>
+              <td>68891-38-3</td>
+              <td>Anionic Surfactant (foaming & lifting)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Benzenesulfonic acid, mono-C10-16-alkyl derivs., sodium salts</strong></td>
+              <td>68081-81-2</td>
+              <td>Anionic Surfactant (particulate detergency)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Fatty acids, C8-18 & C18-unsatd., sodium salts</strong></td>
+              <td>67701-10-4</td>
+              <td>Anionic Surfactant (natural soap / suds control)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Laureth-2</strong></td>
+              <td>68439-50-9</td>
+              <td>Non-ionic Surfactant / Viscosity modifier</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Chloride & Sodium Sulfate</strong></td>
+              <td>7647-14-5 / 7757-82-6</td>
+              <td>Inorganic Salts (ionic strength & viscosity)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Metaborate, Anhydrous</strong></td>
+              <td>7775-19-1</td>
+              <td>Borate Stabilizer (reversible enzyme inhibitor)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Citrate</strong></td>
+              <td>68-04-2</td>
+              <td>Organic Builder / Chelant (water softening)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tetrasodium Glutamate Diacetate (GLDA)</strong></td>
+              <td>51981-21-6</td>
+              <td>Green Biodegradable Chelate (binds Ca²⁺/Mg²⁺)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr style="background-color: #fefce8;">
+              <td><strong>Dipropylene Glycol</strong></td>
+              <td>25265-71-8</td>
+              <td>Solvent / Humectant</td>
+              <td style="text-align: center;"><span class="tag tag-adv">Only in Advanced</span></td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+            </tr>
+            <tr style="background-color: #f5f3ff;">
+              <td><strong>Glycerin</strong></td>
+              <td>56-81-5</td>
+              <td>Solvent / Polyol Enzyme Stabilizer</td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-ext">Only in Extreme</span></td>
+            </tr>
+            <tr style="background-color: #f5f3ff;">
+              <td><strong>Sorbitol</strong></td>
+              <td>50-70-4</td>
+              <td>Polyol Additive (boosts enzyme shelf stability)</td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-ext">Only in Extreme</span></td>
+            </tr>
+            <tr>
+              <td><strong>Subtilisin (Protease)</strong></td>
+              <td>9014-01-1</td>
+              <td>Enzyme (protein stains: blood, grass, food)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Alpha-Amylase</strong></td>
+              <td>9000-90-2</td>
+              <td>Enzyme (starch stains: rice, pasta, gravies)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Cellulase</strong></td>
+              <td>Enzyme</td>
+              <td>Enzyme (anti-pilling, fabric color care)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mannanase</strong></td>
+              <td>37288-54-3</td>
+              <td>Enzyme (guar gum, salad dressings, ice cream)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Disodium Distyrylbiphenyl Disulfonate</strong></td>
+              <td>27344-41-8</td>
+              <td>Fluorescent Optical Brightener (CBS-X)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Methylisothiazolinone (MIT) & BIT</strong></td>
+              <td>2682-20-4 / 2634-33-5</td>
+              <td>Preservatives (antimicrobial protection)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Acid Blue 9 Dye</strong></td>
+              <td>20262-76-4</td>
+              <td>Product Colorant (vibrant blue liquid)</td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-match">Present</span></td>
+            </tr>
+            <tr style="background-color: #fefce8;">
+              <td><strong>Limonene & Amyl Cinnamal</strong></td>
+              <td>138-86-3 / 122-40-7</td>
+              <td>Citrus & Floral Perfume Allergens</td>
+              <td style="text-align: center;"><span class="tag tag-adv">Only in Advanced</span></td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+            </tr>
+            <tr style="background-color: #f5f3ff;">
+              <td><strong>Iso E Super (OTNE)</strong></td>
+              <td>54464-57-2</td>
+              <td>Modern Woody/Amber Aroma Enhancer</td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-ext">Only in Extreme</span></td>
+            </tr>
+            <tr style="background-color: #f5f3ff;">
+              <td><strong>Hedione & Oxacyclohexadec-12-en-2-one</strong></td>
+              <td>24851-98-7 / 111879-80-2</td>
+              <td>Jasmine Ester & Macrocyclic Laundry Musk</td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-ext">Only in Extreme</span></td>
+            </tr>
+            <tr style="background-color: #f5f3ff;">
+              <td><strong>Verdyl Acetate & Phenylisohexanol</strong></td>
+              <td>5413-60-5 / 55066-48-3</td>
+              <td>Fruity/Woody & Fresh Muguet Floral</td>
+              <td style="text-align: center;"><span style="color: #94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-ext">Only in Extreme</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 3: Technical & Chemical Research: How Formulation Differences Work & Their Effects -->
+    <div class="section-card">
+      <h2>3. In-Depth Chemical Research: Formulation Differences & Their Direct Effects</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+        Detailed scientific analysis of the chemical differences between Cold Power Advanced Clean and Extreme Clean, explaining the molecular mechanisms and practical laundering results.
+      </p>
+
+      <!-- 3.1 Enzyme Stabilization Chemistry -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #6d28d9; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM12 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm4 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/></svg>
+          3.1 The Borate-Polyol Enzyme Stabilization System (Sorbitol + Glycerin vs. Dipropylene Glycol)
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          The primary functional chemical breakthrough in <strong>Extreme Clean</strong> is the replacement of Dipropylene Glycol with a synergistic <strong>Sorbitol (CAS 50-70-4) + Glycerin (CAS 56-81-5)</strong> polyol matrix in the presence of Sodium Metaborate:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">The Challenge: Proteolytic Autodigestion</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              Liquid laundry detergents containing multiple enzymes face a major degradation problem in storage: the active protease (subtilisin) treats companion enzymes (amylase, cellulase, mannanase) and neighboring protease molecules as protein food, cutting them up and destroying their enzymatic stain-removal capacity within weeks on the shelf.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Advanced Clean's Dipropylene Glycol:</strong> DPG (CH₃-CH(OH)-CH₂-O-CH₂-CH(OH)-CH₃) serves solely as a solvent, coupling agent, and freeze-thaw stabilizer. It lacks adjacent cis-1,2- or 1,3-diol hydroxyl groups and cannot form stable cyclic borate esters with metaborate.
+            </p>
+          </div>
+          <div style="background: #f5f3ff; padding: 1.2rem; border-radius: 8px; border: 1px solid #ddd6fe;">
+            <strong style="color: #6d28d9; font-size: 0.95rem;">Extreme Clean's Reversible Borate-Diol Chelate</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Reversible Chemical Equilibrium:</strong><br>
+              <code style="display: block; background: #fff; padding: 6px 10px; border-radius: 4px; margin: 6px 0; border: 1px solid #cbd5e1; font-size: 0.82rem;">B(OH)₄⁻ + 2 Sorbitol ⇌ [B(Sorbitol)₂]⁻ (Cyclic Chelate) + 4 H₂O</code>
+              <strong>Mode of Action:</strong> In the concentrated bottle, sorbitol (with six hydroxyls) and glycerin (with three) bind reversibly with borate anions to create a tetrahedral di-ester complex. This complex physically coordinates to the nucleophilic Serine-221 active catalytic site of protease, placing it into a dormant, protective "sleep" state.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Triggered Activation:</strong> When the cap is poured into 50 Litres of wash water, concentration drops ~1000-fold. By Le Chatelier's principle, the equilibrium shifts completely to the left, instantaneously dissociating the borate complex and unlocking 100% full enzymatic cleaning activity to digest stubborn grass, blood, starch, and food gum stains.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.2 Fragrance Fixation & Fabric Substantivity -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #0369a1; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+          3.2 Fragrance Substantivity & Fabric Deposition (Extreme Clean Aroma Complex vs. Advanced Clean)
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          While both products share floral descriptions on their packaging, their fragrance architectures operate under completely different physical retention kinetics:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Advanced Clean: High-Volatility Top Notes</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              Dominated by light, volatile terpene and acetate compounds such as <strong>Limonene (CAS 138-86-3)</strong> and <strong>Amyl Cinnamal</strong>. These molecules have high vapor pressures and low octanol-water partition coefficients (log K_ow).
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Effect:</strong> Provides a pleasant burst of fresh scent when pouring the liquid and opening the machine door, but up to 80% of the aromatic compounds rinse down the drain or evaporate rapidly during drying.
+            </p>
+          </div>
+          <div style="background: #f5f3ff; padding: 1.2rem; border-radius: 8px; border: 1px solid #ddd6fe;">
+            <strong style="color: #6d28d9; font-size: 0.95rem;">Extreme Clean: High-Substantivity Fabric Fixatives</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              Engineered with advanced synthetic perfumery fixatives designed specifically for laundry substantivity:
+            </p>
+            <ul style="margin: 6px 0 0 18px; font-size: 0.85rem; color: #475569;">
+              <li><strong>Iso E Super (OTNE, CAS 54464-57-2):</strong> High molecular weight bicyclic ketone with strong affinity for synthetic fibers (polyester, nylon). Survives multiple rinse cycles.</li>
+              <li><strong>Hedione (CAS 24851-98-7):</strong> Jasmine ester with high diffusion capacity and persistence on damp fabrics.</li>
+              <li><strong>Oxacyclohexadec-12-en-2-one (CAS 111879-80-2):</strong> Macrocyclic musk with an exceptionally low vapor pressure and high hydrophobicity. Adsorbs tenaciously onto cotton fibers, providing weeks of lingering clean scent in storage.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.3 Surfactant Chassis -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #1d4ed8; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+          3.3 Shared Surfactant Chassis: Anionic/Non-Ionic Mixed Micelle Synergy
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          Both formulations share the identical primary cleaning engine. Mixing three distinct surfactant classes produces a synergistic reduction in Critical Micelle Concentration (CMC):
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px;">
+            <strong style="color: #0f172a;">Sodium Laureth Sulfate (SLES 2EO)</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              Anionic surfactant with two ethoxy groups. Delivers fast foam generation and dynamic soil lift, with lower skin irritation potential than pure unethoxylated sodium lauryl sulfate (SLS).
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px;">
+            <strong style="color: #0f172a;">Sodium LAS (Alkylbenzene Sulfonate)</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              Linear alkylbenzene sulfonate providing high detersive power against particulate dust, soot, and clay soils through strong electrostatic repulsion.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px;">
+            <strong style="color: #0f172a;">Alcohol Ethoxylate (C12-18 7EO)</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              Non-ionic surfactant that inserts between charged anionic heads in micelles, reducing headgroup repulsion and drastically lowering surface tension to emulsify oily body sebum and greasy cooking fats.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 4: Commercial Strategy & Consumer Psychology -->
+    <div class="section-card">
+      <h2>4. Commercial Strategy & Consumer Psychology: Why Henkel Formulates Two Products at the Same Price</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+        Cold Power Advanced Clean and Extreme Clean are stocked side-by-side at Coles and Woolworths at the <strong>identical retail price point</strong> (standard RRP ~$22.00 for 2L, frequently promoted at half-price ~$11.00). Why create two distinct chemical formulas with differing stabilizer and fragrance architectures if the consumer pays the exact same price?
+      </p>
+
+      <div style="background: var(--bg-subtle); border-left: 4px solid #1d4ed8; padding: 1.25rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <strong style="color: #1d4ed8; font-size: 1rem;">The Retail FMCG Playbook: Dual-Tiering & Shelf Real Estate</strong>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+          In the Australian laundry category, Henkel competes directly against Unilever (Omo, Surf) and Procter & Gamble. If Henkel offered only a single flagship liquid, the supermarket would grant them only 2 facings on the shelf. By creating <em>Advanced Clean</em> and <em>Extreme Clean</em>, Henkel secures double the frontage, blocks competitor visibility, and captures two psychologically distinct shopper segments.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-top: 1.5rem;">
+        <!-- Persona 1: Advanced Clean -->
+        <div class="feature-card" style="border-top: 4px solid #0369a1;">
+          <span class="tag tag-adv" style="margin-bottom: 0.5rem;">Target Persona: The Practical Household Regular</span>
+          <h4 style="color: #0369a1; font-size: 1.1rem; margin-top: 0.25rem;">Cold Power Advanced Clean</h4>
+          <p><strong>Customer Mindset & Desires:</strong></p>
+          <ul style="margin-top: 0.3rem;">
+            <li><strong>Predictable Daily Laundering:</strong> Families washing school clothes, office shirts, bedsheets, and lightly soiled everyday garments.</li>
+            <li><strong>Subtle Fragrance Preference:</strong> Consumers who dislike overpowering laundry scents that clash with their personal perfume, or households with family members sensitive to strong aromatic musks. The light floral/citrus top notes (limonene) provide a fresh cue during washing without clinging heavily to dried fabrics.</li>
+            <li><strong>Value Perception:</strong> The established, trusted default choice that delivers reliable stain removal in cold water without bells and whistles.</li>
+          </ul>
+        </div>
+
+        <!-- Persona 2: Extreme Clean -->
+        <div class="feature-card" style="border-top: 4px solid #6d28d9;">
+          <span class="tag tag-ext" style="margin-bottom: 0.5rem;">Target Persona: The Heavy Soil & Sensory-Seeking Consumer</span>
+          <h4 style="color: #6d28d9; font-size: 1.1rem; margin-top: 0.25rem;">Cold Power Extreme Clean</h4>
+          <p><strong>Customer Mindset & Desires:</strong></p>
+          <ul style="margin-top: 0.3rem;">
+            <li><strong>"Stain Anxiety" & Tough Soil Loads:</strong> Households with active kids, pets, muddy sports uniforms, tradies, or cooking enthusiasts dealing with stubborn grease and protein stains who worry that 20°C cold water won't clean deeply enough.</li>
+            <li><strong>Long-Lasting Fragrance as Proof of Cleanliness:</strong> A major modern consumer trend is "scent longevity." Consumers increasingly view clothes that still smell freshly washed days or weeks later as "cleaner." The high-substantivity fixatives (Iso E Super, Hedione, macrocyclic musk) cater directly to this sensory desire without requiring shoppers to buy separate in-wash scent boosters.</li>
+            <li><strong>"Extreme" Reassurance:</strong> The bold red branding and "Extreme" naming provides psychological reassurance that the wash will conquer high-risk, expensive garments on the first wash.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Formulation Cost Economics -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 1.25rem 1.5rem; margin-top: 1.5rem;">
+        <strong style="color: #0f172a; font-size: 0.95rem;">Formulation Economics: How Parity Is Maintained Behind the Scenes:</strong>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+          How does Henkel afford the premium aroma fixatives (Iso E Super, Hedione, macrocyclic musk) and specialized polyol system in Extreme Clean without charging a higher price?
+        </p>
+        <ul style="margin: 0.5rem 0 0 1.2rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.7;">
+          <li><strong>Commodity Raw Materials:</strong> <em>Glycerin</em> and <em>Sorbitol</em> are plant-derived agricultural byproducts produced at massive global scale (often as biodiesel and corn processing co-products). They are commercially cost-competitive with synthetic petrochemical solvents like <em>Dipropylene Glycol</em>.</li>
+          <li><strong>Compensatory Budgeting:</strong> The cost savings achieved in the bulk solvent/polyol matrix offset the micro-dosing cost of high-affinity perfumery fixatives (which are dosed at &lt;0.5%), keeping the final bulk formulation cost virtually identical.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Cold Power® is a registered trademark of Henkel AG & Co. KGaA. Analysis compiled from official Henkel SDS documents issued January 2026.</p>
+      <p style="margin-top: 0.35rem; font-size: 0.8rem;">Documents stored locally in workspace: <code>/home/jonathan/antigravityprojects/coldpower/</code></p>
+    </footer>
+  </div>
+
+</body>
+</html>

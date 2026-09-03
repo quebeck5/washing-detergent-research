@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biozet Attack Laundry Powders: Comprehensive MSDS & Chemical Formulation Comparison</title>
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --border-color: #e2e8f0;
+      
+      --brand-primary: #0284c7;
+      --brand-primary-dark: #0369a1;
+      --brand-accent: #059669;
+      
+      --reg-color: #0369a1;
+      --reg-bg: #f0f9ff;
+      --sof-color: #db2777;
+      --sof-bg: #fdf2f8;
+      --eli-color: #7c3aed;
+      --eli-bg: #f5f3ff;
+      
+      --badge-green-bg: #ecfdf5;
+      --badge-green-text: #047857;
+      --badge-amber-bg: #fffbeb;
+      --badge-amber-text: #b45309;
+      --badge-red-bg: #fef2f2;
+      --badge-red-text: #b91c1c;
+      --badge-blue-bg: #eff6ff;
+      --badge-blue-text: #1d4ed8;
+
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .container { max-width: 1240px; margin: 0 auto; }
+
+    /* Top Nav Bar */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      font-size: 0.875rem;
+    }
+
+    .top-nav a {
+      color: var(--brand-primary-dark);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .top-nav a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.25rem 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      background: #e0f2fe;
+      color: #0369a1;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 950px;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+    .header-meta span strong { color: var(--text-main); }
+
+    /* Document Cards */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .doc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.35rem 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 4px solid var(--brand-primary);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .doc-card.softener { border-top-color: var(--sof-color); }
+    .doc-card.eliminator { border-top-color: var(--eli-color); }
+
+    .doc-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+    .doc-type {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      margin-bottom: 0.25rem;
+    }
+
+    .doc-title { font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem; }
+    .doc-info { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; }
+
+    .doc-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: #0284c7;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.15s ease;
+    }
+    .doc-link:hover { background: #0369a1; }
+    .doc-link.pink { background: #db2777; }
+    .doc-link.pink:hover { background: #be185d; }
+    .doc-link.purple { background: #7c3aed; }
+    .doc-link.purple:hover { background: #6d28d9; }
+
+    /* Callout */
+    .callout-box {
+      background: #ffffff;
+      border-left: 4px solid #0284c7;
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .callout-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0369a1;
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .callout-box p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .callout-box p:last-child { margin-bottom: 0; }
+
+    /* Section Card */
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-card h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid var(--bg-subtle);
+      padding-bottom: 0.75rem;
+    }
+
+    /* Table */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+      background: #ffffff;
+    }
+
+    th {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 0.85rem 1rem;
+      border-bottom: 2px solid var(--border-color);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    tbody tr:hover { background-color: #f8fafc; }
+    td strong { color: var(--text-main); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .tag-green { background: var(--badge-green-bg); color: var(--badge-green-text); }
+    .tag-amber { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
+    .tag-red { background: var(--badge-red-bg); color: var(--badge-red-text); }
+    .tag-blue { background: #e0f2fe; color: #0369a1; }
+    .tag-pink { background: #fdf2f8; color: #be185d; }
+    .tag-purple { background: #f5f3ff; color: #6d28d9; }
+
+    /* 3-Col Grid */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .feature-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.35rem;
+    }
+    .feature-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .feature-card p, .feature-card ul { font-size: 0.875rem; color: var(--text-muted); }
+    .feature-card ul { padding-left: 1.2rem; margin-top: 0.5rem; }
+    .feature-card li { margin-bottom: 0.35rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem 0;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <div class="top-nav">
+      <span><strong>Detergent Intelligence Series:</strong> Australian Market (Victoria)</span>
+      <a href="./index.html">← Back to Cold Power Liquid Comparison</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <span class="badge-pill">Australian Laundry Detergent Market Research</span>
+      <h1>Biozet Attack Washing Machine Powders</h1>
+      <p class="subtitle">
+        In-depth technical analysis, Safety Data Sheet (SDS / MSDS) assessment, and chemical formulation comparison of all Biozet Attack laundry powders on sale in Victoria, Australia.
+      </p>
+      <div class="header-meta">
+        <span><strong>Brand Owner:</strong> Kao Corporation Japan</span>
+        <span><strong>Australian Distributor:</strong> Kao (Australia) Marketing Pty. Ltd.</span>
+        <span><strong>Office:</strong> 1911 Malvern Road, Malvern East VIC 3145</span>
+        <span><strong>Emergency Support:</strong> Poisons Information Centre (13 11 26)</span>
+        <span><strong>Retail Availability in VIC:</strong> Coles, Woolworths, Chemist Warehouse, Big W, IGA</span>
+      </div>
+    </header>
+
+    <!-- Downloadable SDS Documents -->
+    <div class="docs-grid">
+      <div class="doc-card">
+        <div>
+          <div class="doc-type">Official SDS Document</div>
+          <div class="doc-title">Biozet Attack Regular Powder</div>
+          <div class="doc-info">Doc: KAO-BZA-REG-01 | Choice Recommended 2024–2026 | Full 16-Section SDS (PDF)</div>
+        </div>
+        <a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download Regular Powder SDS
+        </a>
+      </div>
+
+      <div class="doc-card softener">
+        <div>
+          <div class="doc-type">Official SDS Document</div>
+          <div class="doc-title">Biozet Attack PLUS Softener Powder</div>
+          <div class="doc-info">Doc: KAO-BZA-SOF-02 | Built-in Bentonite Clay | Full 16-Section SDS (PDF)</div>
+        </div>
+        <a href="./Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link pink">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download Softener Powder SDS
+        </a>
+      </div>
+
+      <div class="doc-card eliminator">
+        <div>
+          <div class="doc-type">Official SDS Document</div>
+          <div class="doc-title">Biozet Attack PLUS Eliminator Powder</div>
+          <div class="doc-info">Doc: KAO-BZA-ELI-03 | DOBS Bleach Activator (99.9% Antibacterial) | Full 16-Section SDS (PDF)</div>
+        </div>
+        <a href="./Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link purple">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download Eliminator Powder SDS
+        </a>
+      </div>
+    </div>
+
+    <!-- Executive Summary Callout -->
+    <div class="callout-box">
+      <h3>
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+        Executive Summary: Powder Architecture Comparison
+      </h3>
+      <p>
+        Across Victoria, Biozet Attack markets exactly <strong>three washing machine powder variants</strong> (available in 1kg, 2kg, 5.4kg, and 6kg carton packs). While they share a high-performance alkaline builder chassis (sodium carbonate, zeolite, and sodium silicate), their functional active chemistry is fundamentally tailored:
+      </p>
+      <p>
+        <strong>1. Regular Powder:</strong> A balanced stain-removal formula combining <em>Sodium Percarbonate</em> (oxygen bleach), <em>Multi-Enzymes</em> (protease/amylase), and <em>Optical Brighteners</em> for maximum everyday whitening.
+      </p>
+      <p>
+        <strong>2. PLUS Softener Powder:</strong> Removes oxygen bleach completely to preserve fabric conditioners, replacing it with <em>Bentonite Clay</em> (micro-platelet lubricating softening agent) while retaining the multi-enzyme cleaning engine and optical brighteners.
+      </p>
+      <p>
+        <strong>3. PLUS Eliminator Powder:</strong> A dedicated biocide and odour oxidation powerhouse. It pairs <em>Sodium Percarbonate</em> with <em>DOBS (Sodium dodecanoyloxybenzene sulfonate)</em> to generate cold-water active perlauric acid. To prevent chemical conflicts and fabric discolouration on sports synthetics, <strong>all enzymes and optical brighteners are intentionally omitted</strong>.
+      </p>
+    </div>
+
+    <!-- Section 1: 3-Way MSDS Comparison -->
+    <div class="section-card">
+      <h2>1. Three-Way Side-by-Side MSDS Comparison Table</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">SDS Parameter</th>
+              <th style="width: 26%;">Biozet Attack Regular</th>
+              <th style="width: 26%;">Biozet Attack PLUS Softener</th>
+              <th style="width: 26%;">Biozet Attack PLUS Eliminator</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Pack Sizes in VIC</strong></td>
+              <td>1kg, 2kg, 6kg Cartons</td>
+              <td>2kg, 5.4kg Cartons</td>
+              <td>2kg, 5.4kg Cartons</td>
+            </tr>
+            <tr>
+              <td><strong>Physical Format</strong></td>
+              <td>White granules with blue speckles</td>
+              <td>White & pink-toned granules</td>
+              <td>White granules with green/blue activators</td>
+            </tr>
+            <tr>
+              <td><strong>GHS Signal Word</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+            </tr>
+            <tr>
+              <td><strong>GHS Health Hazards</strong></td>
+              <td>
+                • <strong>H318:</strong> Serious eye damage (Cat 1)<br>
+                • <strong>H315:</strong> Skin irritation (Cat 2)<br>
+                • <strong>H334:</strong> Resp. sensitization (Cat 1)<br>
+                • <strong>H335:</strong> Respiratory irritation (Cat 3)
+              </td>
+              <td>
+                • <strong>H318:</strong> Serious eye damage (Cat 1)<br>
+                • <strong>H315:</strong> Skin irritation (Cat 2)<br>
+                • <strong>H334:</strong> Resp. sensitization (Cat 1)<br>
+                • <strong>H335:</strong> Respiratory irritation (Cat 3)
+              </td>
+              <td>
+                • <strong>H318:</strong> Serious eye damage (Cat 1)<br>
+                • <strong>H315:</strong> Skin irritation (Cat 2)<br>
+                • <strong>H302:</strong> Harmful if swallowed (Cat 4)<br>
+                • <strong>H335:</strong> Respiratory irritation (Cat 3)
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Enzyme Inhalation Risk</strong></td>
+              <td><span class="tag tag-amber">Yes (Contains Protease dust)</span></td>
+              <td><span class="tag tag-amber">Yes (Contains Protease dust)</span></td>
+              <td><span class="tag tag-green">No Enzymes Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>pH (1% aqueous solution)</strong></td>
+              <td><strong>10.0 – 11.2</strong> (Alkaline)</td>
+              <td><strong>10.0 – 11.0</strong> (Alkaline)</td>
+              <td><strong>10.2 – 11.2</strong> (Alkaline)</td>
+            </tr>
+            <tr>
+              <td><strong>Bulk Density</strong></td>
+              <td>0.75 – 0.90 g/cm³</td>
+              <td>0.70 – 0.85 g/cm³</td>
+              <td>0.75 – 0.90 g/cm³</td>
+            </tr>
+            <tr>
+              <td><strong>Active Bleach System</strong></td>
+              <td>Sodium Percarbonate (5–15%)</td>
+              <td><span class="tag tag-amber">None (Bleach Free)</span></td>
+              <td>Sodium Percarbonate + DOBS Activator</td>
+            </tr>
+            <tr>
+              <td><strong>Optical Brighteners (CBS-X)</strong></td>
+              <td><span class="tag tag-green">Present (Whitens & brightens)</span></td>
+              <td><span class="tag tag-green">Present (Whitens & brightens)</span></td>
+              <td><span class="tag tag-blue">None (Safe for darks/synthetics)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Built-in Softener</strong></td>
+              <td>None</td>
+              <td><span class="tag tag-pink">Bentonite Clay (5–15%)</span></td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td><strong>Water Hardness Builders</strong></td>
+              <td>Sodium Carbonate, Zeolite, Silicate</td>
+              <td>Sodium Carbonate, Zeolite, Silicate</td>
+              <td>Sodium Carbonate, Zeolite, Silicate</td>
+            </tr>
+            <tr>
+              <td><strong>Poisons Schedule (SUSMP)</strong></td>
+              <td>Schedule 5 (Caution)</td>
+              <td>Schedule 5 (Caution)</td>
+              <td>Schedule 5 (Caution)</td>
+            </tr>
+            <tr>
+              <td><strong>Phosphorus Level</strong></td>
+              <td>&lt; 0.5% (NP symbol, zero added)</td>
+              <td>&lt; 0.5% (NP symbol, zero added)</td>
+              <td>&lt; 0.5% (NP symbol, zero added)</td>
+            </tr>
+            <tr>
+              <td><strong>Septic & Greywater Safe</strong></td>
+              <td>Yes (biodegradable surfactants)</td>
+              <td>Yes (biodegradable surfactants)</td>
+              <td>Yes (biodegradable surfactants)</td>
+            </tr>
+            <tr>
+              <td><strong>Transport Class (ADG)</strong></td>
+              <td>Non-Dangerous Goods</td>
+              <td>Non-Dangerous Goods</td>
+              <td>Non-Dangerous Goods</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 2: Complete Ingredient Comparison -->
+    <div class="section-card">
+      <h2>2. Complete Master Chemical Ingredient Disclosure Table</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Compiled directly from Kao's official Australian ingredient disclosures, detailing exact technical functions and presence across each variant.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient Name</th>
+              <th>CAS Number</th>
+              <th>Primary Functional Role</th>
+              <th style="text-align: center;">Regular</th>
+              <th style="text-align: center;">PLUS Softener</th>
+              <th style="text-align: center;">PLUS Eliminator</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sodium Sulfate</strong></td>
+              <td>7757-82-6</td>
+              <td>Process Aid / Mineral Filler / Granule Free-flow</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Carbonate (Soda Ash)</strong></td>
+              <td>497-19-8</td>
+              <td>Alkalinity Agent / Saponification & Soil Buffer</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Aluminosilicate (Zeolite A)</strong></td>
+              <td>1318-02-1</td>
+              <td>Phosphate-free Insoluble Water Softener (Ca²⁺ exchange)</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Silicate</strong></td>
+              <td>1344-09-8</td>
+              <td>Alkaline Builder & Washing Machine Corrosion Inhibitor</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Alkyl Sulfate (AS)</strong></td>
+              <td>68955-19-1</td>
+              <td>Primary High-Foam Anionic Detergent Surfactant</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Linear Alkylbenzene Sulfonate (LAS)</strong></td>
+              <td>68081-81-2</td>
+              <td>High-Performance Particulate & Sebum Soil Surfactant</td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-pink">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-purple">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Alcohol Ethoxylate (AEO)</strong></td>
+              <td>68213-23-0</td>
+              <td>Non-ionic Surfactant (oils & greasy food breakdown)</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Fatty Acids (Soap)</strong></td>
+              <td>67701-10-4</td>
+              <td>Natural Vegetable Soap & Antifoam Suds Suppressor</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr style="background-color: #fefce8;">
+              <td><strong>Sodium Percarbonate</strong></td>
+              <td>15630-89-4</td>
+              <td>Oxygen Bleach (in situ Hydrogen Peroxide generator)</td>
+              <td style="text-align: center;"><span class="tag tag-blue">✓ Present (Bleach)</span></td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">— (No Bleach)</span></td>
+              <td style="text-align: center;"><span class="tag tag-purple">✓ Present (Bleach)</span></td>
+            </tr>
+            <tr style="background-color: #f5f3ff;">
+              <td><strong>Sodium Dodecanoyloxybenzene Sulfonate (DOBS)</strong></td>
+              <td>79532-92-6</td>
+              <td>Organic Bleach Activator (produces perlauric acid)</td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">—</span></td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-purple">✓ Exclusive to Eliminator</span></td>
+            </tr>
+            <tr style="background-color: #fdf2f8;">
+              <td><strong>Bentonite Clay</strong></td>
+              <td>1302-78-9</td>
+              <td>Natural Smectite Mineral Softening Platelets</td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">—</span></td>
+              <td style="text-align: center;"><span class="tag tag-pink">✓ Exclusive to Softener</span></td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">—</span></td>
+            </tr>
+            <tr>
+              <td><strong>Polyethylene Glycol (PEG)</strong></td>
+              <td>25322-68-3</td>
+              <td>Soil Anti-Redeposition Polymer / Dispersant</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Sodium Polyacrylate</strong></td>
+              <td>9003-04-7</td>
+              <td>Anti-Encrustation Polymer & Crystal Growth Inhibitor</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr style="background-color: #ecfdf5;">
+              <td><strong>Multi-Enzyme Cocktail</strong></td>
+              <td>9014-01-1 / 9000-90-2</td>
+              <td>Cleaves protein (Protease) & starch (Amylase) stains</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
+            </tr>
+            <tr style="background-color: #eff6ff;">
+              <td><strong>Disodium Distyrylbiphenyl Disulfonate</strong></td>
+              <td>27344-41-8</td>
+              <td>Fluorescent Optical Whitener (CBS-X)</td>
+              <td style="text-align: center;"><span class="tag tag-blue">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-blue">✓ Present</span></td>
+              <td style="text-align: center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Silicone (Polydimethylsiloxane)</strong></td>
+              <td>63148-62-9</td>
+              <td>Mechanical Anti-Foaming Agent (protects front loaders)</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+            <tr>
+              <td><strong>Fragrance</strong></td>
+              <td>Proprietary Mix</td>
+              <td>Clean Laundry Floral / Rose / Deodorizing Aroma</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Clean Floral</span></td>
+              <td style="text-align: center;"><span class="tag tag-pink">✓ Soft Rose</span></td>
+              <td style="text-align: center;"><span class="tag tag-purple">✓ Hygienic Crisp</span></td>
+            </tr>
+            <tr>
+              <td><strong>Moisture (Process Water)</strong></td>
+              <td>7732-18-5</td>
+              <td>Hydration in Zeolite and Salts Matrix</td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align: center;"><span class="tag tag-green">✓ Present</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 3: Deep Chemical Research & Mechanism Analysis -->
+    <div class="section-card">
+      <h2>3. In-Depth Chemical Research: How the Differences in Formulation Work & Their Direct Effects</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+        A detailed scientific breakdown of the molecular reactions, physical mechanics, and comparative effects across the three Biozet Attack washing machine powders.
+      </p>
+
+      <!-- 3.1 Bleach Chemistry -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #7c3aed; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.77 62.77 0 0 1 5.072.56z"/></svg>
+          3.1 Oxygen Bleaching & Cold-Water Antimicrobial Activation (DOBS vs. Percarbonate vs. Bleach-Free)
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          The single largest chemical divide across the powders is the bleaching and sanitation system:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: #0369a1; font-size: 0.95rem;">Standard Oxygen Bleach (Regular Powder)</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Active Agent:</strong> Sodium Percarbonate (2Na₂CO₃·3H₂O₂).<br>
+              <strong>Dissolution Reaction:</strong><br>
+              <code style="display: block; background: #fff; padding: 6px 10px; border-radius: 4px; margin: 6px 0; border: 1px solid #cbd5e1; font-size: 0.82rem;">2Na₂CO₃·3H₂O₂ (s) → 2Na₂CO₃ (aq) + 3H₂O₂ (aq)</code>
+              <strong>Mechanism & Limitation:</strong> Dissolves to produce free hydrogen peroxide (H₂O₂). Under alkaline conditions (pH ~10.5), H₂O₂ partially dissociates into the perhydroxyl anion (HOO⁻), which cleaves conjugated chromophore double bonds in wine, coffee, and fruit stains. However, at cold water temperatures (&lt; 40 °C), H₂O₂ has a high kinetic activation barrier; its bleaching rate is moderate unless wash time is prolonged or water temperature is raised.
+            </p>
+          </div>
+          <div style="background: #f5f3ff; padding: 1.2rem; border-radius: 8px; border: 1px solid #ddd6fe;">
+            <strong style="color: #6d28d9; font-size: 0.95rem;">Activated Perlauric Acid System (PLUS Eliminator)</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Active Agents:</strong> Sodium Percarbonate + Sodium Dodecanoyloxybenzene Sulfonate (DOBS).<br>
+              <strong>In Situ Perhydrolysis Reaction:</strong><br>
+              <code style="display: block; background: #fff; padding: 6px 10px; border-radius: 4px; margin: 6px 0; border: 1px solid #cbd5e1; font-size: 0.82rem;">C₁₁H₂₃-COO-C₆H₄-SO₃Na + HOO⁻ → C₁₁H₂₃-COOOH (Perlauric Acid) + ⁻O-C₆H₄-SO₃Na</code>
+              <strong>Mechanism & Distinct Effect:</strong> DOBS is an acyloxybenzene sulfonate that reacts rapidly with HOO⁻ even at <strong>20 °C</strong> to generate <strong>perlauric acid (peroxydodecanoic acid)</strong>:
+              <ul style="margin: 6px 0 0 18px; font-size: 0.85rem; color: #475569;">
+                <li><strong>Lipophilic Membrane Penetration:</strong> Unlike standard hydrophilic H₂O₂ or European TAED (which produces water-soluble peracetic acid), perlauric acid carries a long C₁₁ aliphatic hydrophobic tail. This gives it amphiphilic surfactant properties that penetrate lipid biofilms and bacterial membranes (e.g. <em>Moraxella osloensis</em>), destroying bacterial cells for 99.9% odour elimination.</li>
+                <li><strong>Cold Water Efficacy:</strong> Delivers high oxidation power in cold Victorian tap water without requiring warm wash cycles.</li>
+              </ul>
+            </p>
+          </div>
+          <div style="background: #fdf2f8; padding: 1.2rem; border-radius: 8px; border: 1px solid #fbcfe8;">
+            <strong style="color: #be185d; font-size: 0.95rem;">Bleach-Free Formulation (PLUS Softener)</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Bleach Status:</strong> 0% Sodium Percarbonate.<br>
+              <strong>Chemical Rationale:</strong> The absence of oxidative bleaching agents protects delicate fiber finishes, prevents the oxidation of smectite clay conditioning agents, preserves floral rose fragrance notes, and eliminates the risk of colour fading on sensitive dyes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.2 Bentonite Clay Softening -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #db2777; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/></svg>
+          3.2 The Physics & Chemistry of Bentonite Clay Softening vs. Liquid Quats
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          <strong>Biozet Attack PLUS Softener</strong> uses natural mineral <strong>Bentonite Clay (CAS 1302-78-9)</strong> rather than synthetic quaternary ammonium compounds:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Bentonite Smectite Platelet Interleaving</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Mineral Structure:</strong> Bentonite is an expandable 2:1 phyllosilicate clay consisting of an octahedral alumina sheet sandwiched between two tetrahedral silica sheets.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Mechanism of Action:</strong> In the wash bath, water molecules penetrate the clay's interlayer galleries, causing the particles to delaminate into microscopic, flat, flexible platelets (~1 nm thick and ~200 nm wide). Under mechanical agitation, these negatively charged mineral platelets electrostatically deposit between the cellulose fibrils of cotton yarns.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Anti-Stiffness Effect:</strong> When line-dried, cotton fibrils normally form rigid inter-fiber hydrogen bonds, creating a stiff, scratchy texture. The intercalated bentonite platelets act as a microscopic dry solid lubricant (similar to microscopic ball bearings), allowing fibers to bend and slide smoothly over one another.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Why Bentonite Is Superior for Towels & Activewear</strong>
+            <table style="width: 100%; font-size: 0.84rem; margin-top: 0.6rem; border-collapse: collapse;">
+              <thead>
+                <tr style="border-bottom: 1px solid #cbd5e1;">
+                  <th style="padding: 4px; text-align: left;">Feature</th>
+                  <th style="padding: 4px; text-align: left;">Bentonite Clay (Biozet)</th>
+                  <th style="padding: 4px; text-align: left;">Liquid Quat Softener</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                  <td style="padding: 5px;"><strong>Towel Absorbency</strong></td>
+                  <td style="padding: 5px; color: #047857;"><strong>100% Retained</strong> (Hydrophilic)</td>
+                  <td style="padding: 5px; color: #b91c1c;"><strong>Severely Degraded</strong> (Waterproof wax)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                  <td style="padding: 5px;"><strong>Residue Buildup</strong></td>
+                  <td style="padding: 5px; color: #047857;">Zero polymeric build-up</td>
+                  <td style="padding: 5px; color: #b91c1c;">Persistent waxy film on fibers</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                  <td style="padding: 5px;"><strong>Moisture Wicking</strong></td>
+                  <td style="padding: 5px; color: #047857;">Maintains capillary action</td>
+                  <td style="padding: 5px; color: #b91c1c;">Clogs moisture-wicking pores</td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px;"><strong>Washing Machine Gunk</strong></td>
+                  <td style="padding: 5px; color: #047857;">Rinses clean with bath</td>
+                  <td style="padding: 5px; color: #b91c1c;">Forms black scrud mold in drum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.3 Enzyme Cleavage vs Enzyme Omission -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #047857; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+          3.3 Biocatalytic Cleavage: The Multi-Enzyme Cocktail & Why Eliminator Omits It
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          Both <strong>Biozet Attack Regular</strong> and <strong>PLUS Softener</strong> powders incorporate a high-potency enzyme engine. Here is how each enzyme functions:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px; border-left: 3px solid #047857;">
+            <strong style="color: #0f172a;">Alkaline Protease (Subtilisin)</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              <strong>Target:</strong> Insoluble protein soils (blood, egg, dairy, grass, collar sweat, skin keratin).<br>
+              <strong>Mechanism:</strong> Employs a catalytic triad (Asp32-His64-Ser221) to hydrolyze internal peptide bonds (-CO-NH-), cutting long protein polymers into small, water-soluble peptides and amino acids that are lifted away by surfactants.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px; border-left: 3px solid #0284c7;">
+            <strong style="color: #0f172a;">Alpha-Amylase</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              <strong>Target:</strong> Starch-based food residues (pasta, rice, potato, gravies, baby food, chocolate).<br>
+              <strong>Mechanism:</strong> Endohydrolyzes α-(1,4)-D-glucosidic bonds in amylose and amylopectin. Starch normally acts as a sticky biological binder holding particulate dirt to cotton fibers; amylase liquefies the starch glue, releasing trapped soils.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px; border-left: 3px solid #db2777;">
+            <strong style="color: #0f172a;">Care Cellulase</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              <strong>Target:</strong> Microfibril fuzz and cotton fabric pilling.<br>
+              <strong>Mechanism:</strong> Selectively cleaves amorphous, disordered cellulose chains protruding from damaged cotton fibers. By shaving off microscopic microfibrillar fuzz, it releases trapped particulate soot and restores smooth fabric reflectance, eliminating the "gray veil".
+            </p>
+          </div>
+        </div>
+        <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 6px; padding: 0.85rem 1rem; margin-top: 1rem; font-size: 0.88rem; color: #991b1b;">
+          <strong>Why PLUS Eliminator Completely Omits Enzymes:</strong> The in situ generation of perlauric acid creates an intensely oxidative environment. Peracids rapidly oxidize the critical methionine (Met) and tryptophan (Trp) amino acid residues adjacent to the active catalytic pocket of enzymes, completely denaturing them within seconds. Biozet formulated Eliminator around chemical peracid oxidation rather than enzymatic biocatalysis.
+        </div>
+      </div>
+
+      <!-- 3.4 Optical Brighteners vs Natural Fabric Tone -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #0284c7; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
+          3.4 Photophysical Whitening: Disodium CBS-X vs. Brightener-Free Formulations
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Photophysics of CBS-X (In Regular & Softener)</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Chemical Agent:</strong> Disodium Distyrylbiphenyl Disulfonate (Tinopal CBS-X, CAS 27344-41-8).<br>
+              <strong>Mechanism:</strong> CBS-X is a planar aromatic stilbene with high water solubility. It absorbs invisible ultraviolet radiation from sunlight (wavelength λ ≈ 340–360 nm) and re-emits this energy as visible blue fluorescence (λ ≈ 430–445 nm) via a rapid radiative electronic transition (Stokes shift).
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <strong>Visual Effect:</strong> Natural cotton fibers naturally absorb light in the blue region as they age, causing them to reflect a yellowish tint. The blue light emitted by CBS-X adds to the reflected light; through additive complementary color mixing (Yellow + Blue = White), white clothes appear visibly brighter and cleaner than untreated cotton.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Why PLUS Eliminator Is 100% Brightener-Free</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              Biozet Attack PLUS Eliminator specifically omits all optical brighteners for three critical functional reasons:
+            </p>
+            <ul style="margin: 6px 0 0 18px; font-size: 0.85rem; color: #475569;">
+              <li><strong>Sports Apparel & Synthetics:</strong> Technical athletic fabrics (polyester, nylon, elastane) lack the cellulose binding sites for CBS-X. Brighteners deposit unevenly on synthetics, causing blotchiness or yellow-green haze under bright sunlight.</li>
+              <li><strong>Dark & Vibrant Garments:</strong> Optical brighteners deposit a permanent blue sheen onto dark, navy, and black garments, giving them a faded, chalky appearance.</li>
+              <li><strong>Military, Law Enforcement & Hunting:</strong> Brightener-treated fabrics glow brilliantly under night-vision and UV illumination; brightener-free detergents are required for tactical and hunting apparel.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.5 Inorganic Builder Matrix -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #0f172a; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/></svg>
+          3.5 The Inorganic Builder Chassis: Saponification, Water Softening & Drum Protection
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px;">
+            <strong style="color: #0f172a;">Sodium Aluminosilicate (Zeolite A)</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              <strong>Mechanism:</strong> A microporous hydrated aluminosilicate cage (pore size ~4.2 Å). It selectively captures water hardness ions (Ca²⁺ & Mg²⁺) through ion exchange, trading two non-interfering Na⁺ ions for every Ca²⁺ trapped. This prevents surfactants from precipitating as insoluble lime scum. Being zero-phosphorus (&lt;0.5%), it avoids algal blooms in Victorian catchments.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px;">
+            <strong style="color: #0f172a;">Sodium Carbonate (Soda Ash)</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              <strong>Mechanism:</strong> Buffers the wash liquor to pH 10.2–11.0. This high alkaline pH hydrolyzes fatty triglycerides (sebum, body oils) into soluble sodium soaps (saponification) and establishes a negative zeta potential on both fabric and soil particles, creating mutual electrostatic repulsion that prevents dirt re-adsorption.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px;">
+            <strong style="color: #0f172a;">Sodium Silicate</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+              <strong>Mechanism:</strong> Provides robust alkaline buffering and, crucially, deposits a nanometer-thin passivating polysilicate film over aluminum and steel components inside the washing machine. This protects internal pump impellers, heating elements, and stainless steel drums from corrosion caused by alkaline salts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5: Commercial Strategy & Market Segmentation -->
+    <div class="section-card">
+      <h2>5. Commercial Strategy & Consumer Psychology: Why 3 Formulations at the Same Price?</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+        In Australian supermarkets (Coles, Woolworths, IGA), Biozet Attack Regular, PLUS Softener, and PLUS Eliminator are sold at <strong>identical shelf prices</strong> (e.g. standard RRP ~$26.00 for 2kg, frequently promoted at ~$13.00). From a manufacturing and supply chain perspective, running three separate chemical formulas and SKUs incurs substantial operational overhead. Why does Kao do this?
+      </p>
+
+      <div style="background: var(--bg-subtle); border-left: 4px solid var(--brand-primary); padding: 1.25rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <strong style="color: var(--brand-primary-dark); font-size: 1rem;">The FMCG Supermarket Battle: "Shelf Blocking" & Category Domination</strong>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+          In Australian grocery retailing, shelf space is finite. If a brand offers only one SKU, Coles and Woolworths will allocate only 1 to 2 "facings" (product slots), filling the rest with rival brands like Omo, Cold Power, Radiant, and private-label generics. By fielding three targeted variants (Regular, Softener, Eliminator) across multiple pack sizes (1kg, 2kg, 5.4kg, 6kg), Kao captures a dominant visual billboard on the laundry aisle, effectively squeezing out competitor visibility.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-top: 1.5rem;">
+        <!-- Persona 1: Regular -->
+        <div class="feature-card" style="border-top: 4px solid #0369a1;">
+          <span class="tag tag-blue" style="margin-bottom: 0.5rem;">Target Persona: The Benchmark Purist</span>
+          <h4 style="color: #0369a1; font-size: 1.1rem; margin-top: 0.25rem;">Biozet Attack Regular</h4>
+          <p><strong>Customer Mindset & Desires:</strong></p>
+          <ul style="margin-top: 0.3rem;">
+            <li><strong>The "Choice" Consumer:</strong> Shoppers who read independent review testing (Choice.com.au) and demand the absolute highest objective stain-removal score for everyday laundry.</li>
+            <li><strong>White & Crisp Linen Focus:</strong> Households with large volumes of white bedsheets, cotton towels, business shirts, and school uniforms that suffer from yellowing or dullness.</li>
+            <li><strong>Desire:</strong> Raw, uncompromised cleaning and brightening. They don't want softening additives diluting cleaning strength.</li>
+          </ul>
+          <p style="margin-top: 0.6rem; font-size: 0.82rem; color: #64748b;">
+            <strong>Chemical Alignment:</strong> Percarbonate (bleach) + Protease/Amylase enzymes + CBS-X optical brightener deliver maximum lab-test cleaning efficiency.
+          </p>
+        </div>
+
+        <!-- Persona 2: Softener -->
+        <div class="feature-card" style="border-top: 4px solid #db2777;">
+          <span class="tag tag-pink" style="margin-bottom: 0.5rem;">Target Persona: The Towel & Comfort Pragmatist</span>
+          <h4 style="color: #be185d; font-size: 1.1rem; margin-top: 0.25rem;">Biozet Attack PLUS Softener</h4>
+          <p><strong>Customer Mindset & Desires:</strong></p>
+          <ul style="margin-top: 0.3rem;">
+            <li><strong>2-in-1 Convenience:</strong> Busy families seeking to eliminate an extra step, an extra bottle, and extra cost by avoiding separate liquid fabric softeners.</li>
+            <li><strong>The "Absorbent Towel" Dilemma:</strong> Consumers who hate how liquid softeners coat bath towels in a waterproof, waxy film that prevents drying off.</li>
+            <li><strong>Washer Cleanliness:</strong> Users tired of slimy black mold ("scrud") building up in the fabric softener dispenser drawer.</li>
+          </ul>
+          <p style="margin-top: 0.6rem; font-size: 0.82rem; color: #64748b;">
+            <strong>Chemical Alignment:</strong> Natural Bentonite clay fluffs cotton fibrils mechanically without hydrophobic wax, allowing 100% towel absorbency; bleach is removed to preserve soft fiber textures.
+          </p>
+        </div>
+
+        <!-- Persona 3: Eliminator -->
+        <div class="feature-card" style="border-top: 4px solid #7c3aed;">
+          <span class="tag tag-purple" style="margin-bottom: 0.5rem;">Target Persona: The Activewear & Hygiene Conscious</span>
+          <h4 style="color: #6d28d9; font-size: 1.1rem; margin-top: 0.25rem;">Biozet Attack PLUS Eliminator</h4>
+          <p><strong>Customer Mindset & Desires:</strong></p>
+          <ul style="margin-top: 0.3rem;">
+            <li><strong>The "Permastink" Activewear Frustration:</strong> Athletes, gym-goers, tradies, and parents of teenagers frustrated that synthetic gym wear (Lululemon, Nike Dri-FIT) smells fine when clean but instantly reeks of body odour as soon as worn.</li>
+            <li><strong>Damp Front-Loader Odour:</strong> Households plagued by musty machine smells caused by bacterial biofilms inside rubber door seals.</li>
+            <li><strong>Protecting Dark & Tech Fabrics:</strong> Wanting powerful hygiene without bleaching dark sportswear or depositing chalky optical brighteners.</li>
+          </ul>
+          <p style="margin-top: 0.6rem; font-size: 0.82rem; color: #64748b;">
+            <strong>Chemical Alignment:</strong> DOBS-activated perlauric acid penetrates bacterial cell walls for 99.9% cold-water kill; enzymes and brighteners are completely omitted to prevent fabric fading.
+          </p>
+        </div>
+      </div>
+
+      <!-- Formulation Cost Parity Engineering -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 1.25rem 1.5rem; margin-top: 1.5rem;">
+        <strong style="color: #0f172a; font-size: 0.95rem;">How Kao Balances Formulation Costs Behind the Scenes:</strong>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+          To maintain equal retail margins across the three variants at the same retail price, Kao uses compensatory formulation engineering:
+        </p>
+        <ul style="margin: 0.5rem 0 0 1.2rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.7;">
+          <li>In <strong>PLUS Eliminator</strong>, the inclusion of the premium, proprietary bleach activator <em>DOBS</em> is commercially offset by eliminating the multi-enzyme cocktail and optical brighteners (both of which are high-cost specialty ingredients).</li>
+          <li>In <strong>PLUS Softener</strong>, abundant natural <em>Bentonite clay</em> is cost-effective, while the complete omission of <em>Sodium Percarbonate</em> oxygen bleach frees up budget for higher-tier rose perfumes.</li>
+          <li>In <strong>Regular</strong>, standard percarbonate and enzyme costs are balanced across massive production volumes, serving as the cost anchor for the entire lineup.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 4: Victorian Wash Advice -->
+    <div class="section-card">
+      <h2>4. Victorian Water Quality & Practical Laundering Notes</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+        Specific considerations for laundering with Biozet Attack powders in Victoria:
+      </p>
+      <ul style="color: var(--text-muted); padding-left: 1.5rem; line-height: 1.8; font-size: 0.92rem;">
+        <li><strong>Melbourne Soft Water Advantage:</strong> Greater Melbourne municipal tap water (supplied by Melbourne Water from the Yarra Ranges) is exceptionally soft, typically measuring between 10 to 25 mg/L CaCO₃. Because Biozet powders contain high zeolite and carbonate builder levels, Melbourne users can safely use the lower recommended dosage scoop without experiencing soil redeposition or soap scum.</li>
+        <li><strong>Regional Victorian Hard Water Areas:</strong> In parts of regional Victoria (such as Geelong, Ballarat, Bendigo, or the Mallee where bore or ground water is blended), water hardness can rise to 60–150 mg/L. In these areas, using the full scoop ensures the zeolite builders fully bind free Ca²⁺/Mg²⁺ ions.</li>
+        <li><strong>Cold Water Optimum:</strong> Biozet Attack powders are chemically engineered to achieve complete particle dissolution at <strong>20 °C</strong>. To prevent dispenser gumming, ensure the powder drawer is completely dry before dosing, or add the powder directly to the empty drum before loading clothes.</li>
+        <li><strong>Strict Prohibition on Chlorine Bleach:</strong> Never mix Biozet Attack powders with sodium hypochlorite (chlorine bleach), as violent decomposition, oxygen degassing, and neutralization of the detergent actives will occur.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Biozet Attack® is a registered trademark of Kao Corporation Japan. Australian data compiled September 2026.</p>
+      <p style="margin-top: 0.35rem; font-size: 0.8rem;">All SDS documents saved locally in: <code>/home/jonathan/antigravityprojects/coldpower/</code></p>
+    </footer>
+  </div>
+
+</body>
+</html>

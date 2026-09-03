@@ -1,0 +1,1365 @@
+Safety Data Sheet
+Page 1 of 10
+Cold Power Extreme Clean Laundry Liquid
+
+SDS No. : 729522
+V001.0
+Date of issue: 21.01.2026
+
+Section 1. Identification of the substance/preparation and of the company/undertaking
+Product name:
+
+Cold Power Extreme Clean Laundry Liquid
+
+Intended use:
+
+heavy duty detergent
+
+Company name:
+Henkel Australia Pty. Ltd.
+135-141 Canterbury Road
+AUS-3137
+Kilsyth, Victoria
+Phone:
+03 9724 6444
+
+Emergency telephone number
+
+Poison Center (24/7): 131126
+
+Section 2. Hazards identification
+Classification of the substance or mixture
+Hazardous according to the criteria of Safe Work Australia.
+GHS Classification:
+Hazard Class
+Serious eye irritation
+Skin sensitizer
+Acute hazards to the aquatic
+environment
+
+Hazard Category
+Category 2
+Category 1
+Category 2
+
+Hazard pictogram:
+
+Signal word:
+
+Warning
+
+SDS No.: 729522
+V001.0
+
+Page 2 of 10
+
+Cold Power Extreme Clean Laundry Liquid
+
+Hazard statement(s):
+
+H317 May cause an allergic skin reaction.
+H319 Causes serious eye irritation.
+H401 Toxic to aquatic life.
+
+Precautionary Statement(s):
+Prevention:
+
+Response:
+
+Disposal:
+
+P261 Avoid breathing mist/vapours.
+P272 Contaminated work clothing should not be allowed out of the workplace.
+P273 Avoid release to the environment.
+P280 Wear protective gloves, eye protection, and face protection.
+P302+P352 IF ON SKIN: Wash with plenty of water.
+P305+P351+P338+P315 IF IN EYES: Rinse cautiously with water for several minutes.
+Remove contact lenses, if present and easy to remove. Continue rinsing. Get immediate
+medical advice/attention.
+P333+P313 If skin irritation or rash occurs: Get medical advice/attention.
+P362+P364 Take off contaminated clothing and wash it before reuse.
+P501 Dispose of contents/container to an appropriate treatment and disposal facility in
+accordance with applicable laws and regulations.
+
+Section 3. Composition / information on ingredients
+Type of preparation:
+
+Mixture
+
+Identity of ingredients:
+Chemical ingredients
+Alcohols, C12-18, 7EO
+Alcohols, C12-14, sulfates, sodium salt, 2EO
+Benzenesulfonic acid, mono-C10-16-alkyl derivs.,
+sodium salts
+Sodium metaborate, anhydrous
+2-methylisothiazol-3(2H)-one
+
+CAS-No.
+68213-23-0
+68891-38-3
+68081-81-2
+
+Proportion
+3- < 10 %
+3- < 5 %
+3- < 10 %
+
+7775-19-1
+2682-20-4
+
+< 3%
+0.0015- < 0.1 %
+
+Section 4. First aid measures
+Ingestion:
+
+Do not induce vomiting, seek medical advice immediately.
+Rinse mouth with water, (only if the person is conscious).
+
+Skin:
+
+Rinse with water. Take off all clothing contaminated by the product.
+
+Eyes:
+
+Rinse immediately with plenty of running water (for 10 minutes). Seek medical attention if
+necessary.
+
+Inhalation:
+
+Move to fresh air. In case of breathing difficulties seek immediate medical advise.
+
+First Aid facilities:
+
+Normal washroom facilities
+Eye wash and safety shower
+Treat symptomatically.
+
+Medical attention and special
+treatment:
+
+Section 5. Fire fighting measures
+Suitable extinguishing media:
+
+Water spray jet (if possible, avoid full jet). Adapt the fire-fighting measures to the
+environmental conditions. Commercially available extinguishers are suitable for fighting
+incipient fires. The product itself does not burn.
+
+SDS No.: 729522
+V001.0
+
+Cold Power Extreme Clean Laundry Liquid
+
+Improper extinguishing media:
+
+Page 3 of 10
+
+None
+
+Decomposition products in case of Hazardous combustion products can be formed by pyrolysis and/or carbon monoxide.
+fire:
+Special protective equipment for
+fire-fighters:
+
+Use personal protective equipment and self-contained breathing apparatus.
+
+Section 6. Accidental release measures
+Personal precautions:
+
+Avoid contact with skin and eyes.
+Ensure adequate ventilation.
+If large amounts are released contact the fire service.
+Danger of slipping on spilled product.
+
+Environmental precautions:
+
+Do not empty into drains / surface water / ground water.
+
+Clean-up methods:
+
+Remove mechanically. Rinse away residue with plenty of water.
+
+Section 7. Handling and storage
+Precautions for safe handling:
+
+No special measures required if used properly.
+
+Conditions for safe storage:
+
+Store dry at between +5 and +40°C.
+Consider national regulations.
+
+Section 8. Exposure controls / personal protection
+National exposure standards:
+contains no components
+Eye protection:
+
+Wear tight fitting goggles.
+
+Skin protection:
+
+Protective clothing against chemicals. Observe manufacturer's instructions.
+Suitable protective gloves.
+
+Respiratory protection:
+
+Not needed.
+
+General protection measures:
+
+The following Australian Standards will provide general advice regarding safety clothing
+and equipment:
+Respiratory equipment: AS/NZS 1715, Protective Gloves: AS 2161, Occupational
+Protective Clothing: AS/NZS 4501 set 2008, Industrial Eye Protection: AS1336 and
+AS/NZS 1337, Occupational Protective Footwear: AS/NZS2210.
+
+Section9. Physical and chemical properties
+9.1. Information on basic physical and chemical properties
+
+SDS No.: 729522
+V001.0
+
+Cold Power Extreme Clean Laundry Liquid
+
+Page 4 of 10
+
+Appearance
+
+liquid
+clear
+blue
+
+Odor
+Physical state
+Melting point
+Initial boiling point
+Flammability
+Explosive limits
+Flash point
+
+floral
+liquid
+Currently under determination
+Currently under determination
+Currently under determination
+Currently under determination
+> 100 °C (> 212 °F); ASTM D 6450/DIN EN ISO 3679
+D::00668700
+Currently under determination
+Currently under determination
+8.2 - 8.6 pH/aqueous solutions, dispersions/pH meter::97001401
+
+Auto-ignition temperature
+Decomposition temperature
+pH
+(20 °C (68 °F))
+Viscosity (kinematic)
+Viscosity, dynamic
+(Brookfield; Instrument: RV; 20 °C (68 °F))
+Solubility (qualitative)
+(Solvent: Water)
+Partition coefficient: n-octanol/water
+Vapour pressure
+Density
+()
+Relative vapour density:
+Particle characteristics
+
+Currently under determination
+300 - 700 mPa.s Viscosity/Brookfield::97001501
+soluble in water
+Currently under determination
+Currently under determination
+1.020 - 1.040 g/cm3 Density/fluids/oscillation method::97003901
+Currently under determination
+Currently under determination
+
+9.2. Other information
+Other information not applicable for this product
+
+Section 10. Stability and reactivity
+Stability:
+
+Stable under normal conditions of temperature and pressure.
+
+Conditions to avoid:
+
+No decomposition if used according to specifications.
+
+Incompatible materials:
+
+None if used for intended purpose.
+
+Hazardous decomposition
+products:
+
+No decomposition if used according to specifications.
+
+Section 11. Toxicological information
+
+SDS No.: 729522
+V001.0
+
+Page 5 of 10
+
+Cold Power Extreme Clean Laundry Liquid
+
+Health Effects:
+Ingestion:
+Skin:
+Eyes:
+Inhalation:
+
+Not an anticipated route of exposure.
+May cause an allergic skin reaction.
+Causes serious eye irritation.
+Not an anticipated route of exposure.
+
+Acute toxicity:
+Hazardous components
+CAS-No.
+Alcohols, C12-18, 7EO
+68213-23-0
+Alcohols, C12-14,
+sulfates, sodium salt, 2EO
+68891-38-3
+
+Value
+type
+LD50
+
+Value
+1,700 mg/kg
+
+LD50
+LD50
+
+2,870 mg/kg
+> 2,000 mg/kg
+
+Benzenesulfonic acid,
+mono-C10-16-alkyl
+derivs., sodium salts
+68081-81-2
+Sodium metaborate,
+anhydrous
+7775-19-1
+
+LD50
+LD50
+
+Route of
+application
+oral
+
+Exposure
+time
+
+oral
+
+Species
+
+Method
+
+rat
+
+not specified
+
+rat
+rat
+
+OECD Guideline 401 (Acute
+Oral Toxicity)
+OECD Guideline 402 (Acute
+Dermal Toxicity)
+not specified
+not specified
+
+dermal
+1,080 mg/kg
+> 2,000 mg/kg
+
+oral
+
+rat
+rat
+
+dermal
+LD50
+LC50
+LD50
+
+2-methylisothiazol-3(2H)- LD50
+one
+LC50
+2682-20-4
+LD50
+
+2,330 mg/kg
+> 2.04 mg/l
+> 2,000 mg/kg
+
+oral
+inhalation
+dermal
+
+4h
+
+rat
+rat
+rabbit
+
+120 mg/kg
+0.11 mg/l
+242 mg/kg
+
+oral
+inhalation
+dermal
+
+4h
+
+rat
+rat
+rat
+
+not specified
+OECD Guideline 403 (Acute
+Inhalation Toxicity)
+not specified
+EPA OPPTS 870.1100 (Acute
+Oral Toxicity)
+OECD Guideline 403 (Acute
+Inhalation Toxicity)
+OECD Guideline 402 (Acute
+Dermal Toxicity)
+
+Skin corrosion/irritation:
+Hazardous components
+CAS-No.
+Alcohols, C12-18, 7EO
+68213-23-0
+Alcohols, C12-14,
+sulfates, sodium salt, 2EO
+68891-38-3
+Benzenesulfonic acid,
+mono-C10-16-alkyl
+derivs., sodium salts
+68081-81-2
+2-methylisothiazol-3(2H)one
+2682-20-4
+
+Result
+
+Species
+
+Method
+
+moderately irritating
+
+Exposure
+time
+4h
+
+rabbit
+
+irritating
+
+4h
+
+rabbit
+
+OECD Guideline 404 (Acute
+Dermal Irritation / Corrosion)
+OECD Guideline 404 (Acute
+Dermal Irritation / Corrosion)
+
+irritating
+
+4h
+
+rabbit
+
+OECD Guideline 404 (Acute
+Dermal Irritation / Corrosion)
+
+corrosive
+
+4h
+
+rabbit
+
+OECD Guideline 404 (Acute
+Dermal Irritation / Corrosion)
+
+Species
+
+Method
+
+highly irritating
+
+Exposure
+time
+24 h
+
+rabbit
+
+highly irritating
+
+24 h
+
+rabbit
+
+OECD Guideline 405 (Acute
+Eye Irritation / Corrosion)
+OECD Guideline 405 (Acute
+Eye Irritation / Corrosion)
+
+Serious eye damage/irritation:
+Hazardous components
+CAS-No.
+Alcohols, C12-18, 7EO
+68213-23-0
+Alcohols, C12-14,
+sulfates, sodium salt, 2EO
+68891-38-3
+Benzenesulfonic acid,
+mono-C10-16-alkyl
+derivs., sodium salts
+68081-81-2
+Sodium metaborate,
+anhydrous
+7775-19-1
+
+Result
+
+Category 1 (irreversible effects on the eye)
+
+rabbit
+
+OECD Guideline 405 (Acute
+Eye Irritation / Corrosion)
+
+irritating
+
+human
+
+Weight of evidence
+
+SDS No.: 729522
+V001.0
+
+Page 6 of 10
+
+Cold Power Extreme Clean Laundry Liquid
+
+Respiratory or skin sensitization:
+Hazardous components
+CAS-No.
+Alcohols, C12-14,
+not sensitising
+sulfates, sodium salt, 2EO
+68891-38-3
+2-methylisothiazol-3(2H)- sensitising
+one
+2682-20-4
+
+Result
+
+Test type
+
+Species
+
+Guinea pig guinea pig
+maximisat
+ion test
+Buehler
+guinea pig
+test
+
+Method
+OECD Guideline 406 (Skin
+Sensitisation)
+OECD Guideline 406 (Skin
+Sensitisation)
+
+Germ cell mutagenicity:
+Hazardous components
+CAS-No.
+
+Result
+
+Alcohols, C12-14,
+sulfates, sodium salt, 2EO
+68891-38-3
+
+negative
+negative
+
+Type of study /
+Route of
+administration
+bacterial
+reverse
+mutation assay (e.g
+Ames test)
+mammalian cell
+gene mutation assay
+
+Alcohols, C12-14,
+sulfates, sodium salt, 2EO
+68891-38-3
+2-methylisothiazol-3(2H)one
+2682-20-4
+
+negative
+
+oral: gavage
+
+negative
+negative
+negative
+
+bacterial
+reverse with and without
+mutation assay (e.g with and without
+Ames test)
+with and without
+in vitro mammalian
+chromosome
+aberration test
+mammalian cell
+gene mutation assay
+
+2-methylisothiazol-3(2H)- negative
+one
+negative
+2682-20-4
+
+Metabolic
+activation /
+Exposure time
+with and without
+with and without
+
+Species
+
+mouse
+
+oral: gavage
+oral: gavage
+
+mouse
+rat
+
+Method
+OECD
+Guideline
+471
+(Bacterial Reverse Mutation
+Assay)
+OECD Guideline 476 (In vitro
+Mammalian Cell Gene
+Mutation Test)
+OECD Guideline 475
+(Mammalian Bone Marrow
+Chromosome Aberration Test)
+OECD
+Guideline
+471
+(Bacterial Reverse Mutation
+Assay)
+OECD Guideline 473 (In vitro
+Mammalian
+Chromosome
+Aberration Test)
+OECD Guideline 476 (In vitro
+Mammalian Cell Gene
+Mutation Test)
+OECD Guideline 474
+(Mammalian Erythrocyte
+Micronucleus Test)
+OECD Guideline 486
+(Unscheduled DNA Synthesis
+(UDS) Test with Mammalian
+Liver Cells in vivo)
+
+Repeated dose toxicity:
+Hazardous components
+CAS-No.
+
+Result
+
+Route of
+application
+
+Alcohols, C12-14,
+NOAEL=225
+sulfates, sodium salt, 2EO mg/kg
+68891-38-3
+2-methylisothiazol-3(2H)- NOAEL=60 mg/kg
+one
+2682-20-4
+
+oral: gavage
+oral: gavage
+
+Exposure time /
+Frequency of
+treatment
+90 daysonce daily, 5
+times a week
+
+Species
+
+Method
+
+rat
+
+90 ddaily
+
+rat
+
+OECD Guideline 408
+(Repeated Dose 90-Day Oral
+Toxicity in Rodents)
+OECD Guideline 408
+(Repeated Dose 90-Day Oral
+Toxicity in Rodents)
+
+Section 12. Ecological information
+General ecological information:
+
+Do not empty into drains / surface water / ground water.
+
+SDS No.: 729522
+V001.0
+
+Page 7 of 10
+
+Cold Power Extreme Clean Laundry Liquid
+
+Ecotoxicity:
+
+H401 Toxic to aquatic life.
+
+Toxicity:
+Hazardous components
+CAS-No.
+
+Exposure
+time
+
+Species
+
+Method
+
+1.2 mg/l
+
+Acute
+Toxicity
+Study
+Fish
+
+48 h
+
+Leuciscus idus
+
+DIN 38412-15
+
+NOEC
+
+0.32 mg/l
+
+Fish
+
+28 d
+
+Oncorhynchus mykiss
+
+Alcohols, C12-18, 7EO
+68213-23-0
+Alcohols, C12-18, 7EO
+68213-23-0
+
+EC50
+
+3 mg/l
+
+Daphnia
+
+24 h
+
+Daphnia magna
+
+OECD Guideline
+204 (Fish,
+Prolonged Toxicity
+Test: 14-day Study)
+not specified
+
+EC50
+
+3.1 mg/l
+
+Algae
+
+72 h
+
+Scenedesmus subspicatus (new
+name: Desmodesmus
+subspicatus)
+
+Alcohols, C12-18, 7EO
+68213-23-0
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+
+EC0
+
+10,000 mg/l
+
+Bacteria
+
+16 h
+
+LC50
+
+7.1 mg/l
+
+Fish
+
+96 h
+
+EC50
+
+7.2 mg/l
+
+Daphnia
+
+48 h
+
+EC50
+
+27 mg/l
+
+Algae
+
+72 h
+
+EC10
+
+4.4 mg/l
+
+Algae
+
+72 h
+
+EC0
+
+360 mg/l
+
+Bacteria
+
+30 min
+
+LC50
+
+5.9 mg/l
+
+Fish
+
+96 h
+
+NOEC
+
+0.23 mg/l
+
+Fish
+
+72 d
+
+Salmo gairdneri (new name:
+Oncorhynchus mykiss)
+
+OECD Guideline
+210 (fish early life
+stage toxicity test)
+
+EC50
+
+4.4 mg/l
+
+Daphnia
+
+48 h
+
+Daphnia magna
+
+not specified
+
+NOEC
+
+2.4 mg/l
+
+Algae
+
+72 h
+
+Scenedesmus subspicatus (new
+name: Desmodesmus
+subspicatus)
+
+other guideline:
+
+ErC50
+
+127.9 mg/l
+
+Algae
+
+72 h
+
+Scenedesmus subspicatus (new
+name: Desmodesmus
+subspicatus)
+
+other guideline:
+
+LC50
+
+455 mg/l
+
+Fish
+
+96 h
+
+Pimephales promelas
+
+other guideline:
+
+NOEC
+
+36.6 mg/l
+
+Fish
+
+34 d
+
+Danio rerio (reported as
+Brachydanio rerio)
+
+EC50
+
+520 mg/l
+
+Daphnia
+
+48 h
+
+Ceriodaphnia dubia
+
+OECD Guideline
+210 (fish early life
+stage toxicity test)
+other guideline:
+
+EC50
+
+299.6 mg/l
+
+Algae
+
+72 h
+
+EC10
+
+200.12 mg/l
+
+Algae
+
+72 h
+
+LC50
+
+4.77 mg/l
+
+Fish
+
+96 h
+
+Alcohols, C12-18, 7EO
+68213-23-0
+Alcohols, C12-18, 7EO
+68213-23-0
+
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+Benzenesulfonic acid, monoC10-16-alkyl derivs., sodium
+salts
+68081-81-2
+Benzenesulfonic acid, monoC10-16-alkyl derivs., sodium
+salts
+68081-81-2
+Benzenesulfonic acid, monoC10-16-alkyl derivs., sodium
+salts
+68081-81-2
+Benzenesulfonic acid, monoC10-16-alkyl derivs., sodium
+salts
+68081-81-2
+Benzenesulfonic acid, monoC10-16-alkyl derivs., sodium
+salts
+68081-81-2
+Sodium metaborate,
+anhydrous
+7775-19-1
+Sodium metaborate,
+anhydrous
+7775-19-1
+Sodium metaborate,
+anhydrous
+7775-19-1
+Sodium metaborate,
+anhydrous
+7775-19-1
+Sodium metaborate,
+anhydrous
+7775-19-1
+2-methylisothiazol-3(2H)-one
+
+Value
+type
+
+Value
+
+LC50
+
+DIN 38412-09
+not specified
+
+Danio rerio
+
+OECD Guideline
+203 (Fish, Acute
+Toxicity Test)
+Daphnia magna
+OECD Guideline
+202 (Daphnia sp.
+Acute
+Immobilisation
+Test)
+Desmodesmus subspicatus
+OECD Guideline
+201 (Alga, Growth
+Inhibition Test)
+Desmodesmus subspicatus
+OECD Guideline
+201 (Alga, Growth
+Inhibition Test)
+Pseudomonas putida
+DIN 38412, part 27
+(Bacterial oxygen
+consumption test)
+Brachydanio rerio (new name:
+not specified
+Danio rerio)
+
+Pseudokirchneriella subcapitata OECD Guideline
+(reported as Raphidocelis
+201 (Alga, Growth
+subcapitata)
+Inhibition Test)
+Pseudokirchneriella subcapitata OECD Guideline
+(reported as Raphidocelis
+201 (Alga, Growth
+subcapitata)
+Inhibition Test)
+Oncorhynchus mykiss
+OECD Guideline
+
+SDS No.: 729522
+V001.0
+
+Page 8 of 10
+
+Cold Power Extreme Clean Laundry Liquid
+
+2682-20-4
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+EC50
+
+0.93 mg/l
+
+Daphnia
+
+48 h
+
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+NOEC
+
+0.03 mg/l
+
+Algae
+
+72 h
+
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+EC50
+
+0.22 mg/l
+
+Algae
+
+72 h
+
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+EC50
+
+41 mg/l
+
+Bacteria
+
+3h
+
+203 (Fish, Acute
+Toxicity Test)
+Daphnia magna
+OECD Guideline
+202 (Daphnia sp.
+Acute
+Immobilisation
+Test)
+Selenastrum capricornutum
+OECD Guideline
+(new name: Pseudokirchneriella 201 (Alga, Growth
+subcapitata)
+Inhibition Test)
+Selenastrum capricornutum
+OECD Guideline
+(new name: Pseudokirchneriella 201 (Alga, Growth
+subcapitata)
+Inhibition Test)
+activated sludge
+OECD Guideline
+209 (Activated
+Sludge, Respiration
+Inhibition Test)
+
+Persistence and degradability:
+Hazardous components
+CAS-No.
+Alcohols, C12-18, 7EO
+68213-23-0
+
+Result
+
+Degradability
+
+Method
+
+readily biodegradable
+
+Route of
+application
+aerobic
+
+79 %
+
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+
+readily biodegradable
+
+aerobic
+
+77 - 79 %
+
+Benzenesulfonic acid, monoC10-16-alkyl derivs., sodium
+salts
+68081-81-2
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+readily biodegradable
+
+aerobic
+
+85 %
+
+OECD Guideline 301 D (Ready
+Biodegradability: Closed Bottle
+Test)
+EU Method C.4-E (Determination
+of the "Ready"
+BiodegradabilityClosed Bottle
+Test)
+OECD Guideline 301 B (Ready
+Biodegradability: CO2 Evolution
+Test)
+
+inherently biodegradable
+
+aerobic
+
+97 %
+
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+readily biodegradable
+
+aerobic
+
+> 70 %
+
+OECD Guideline 302 B (Inherent
+biodegradability: ZahnWellens/EMPA Test)
+OECD Guideline 309 (Aerobic
+Mineralisation in Surface
+WaterSimulation Biodegradation
+Test)
+
+Bioaccumulative potential / Mobility in soil:
+Hazardous components
+CAS-No.
+Alcohols, C12-14, sulfates,
+sodium salt, 2EO
+68891-38-3
+
+LogPow
+
+Sodium metaborate,
+anhydrous
+7775-19-1
+2-methylisothiazol-3(2H)-one
+2682-20-4
+
+Bioconcentration
+factor (BCF)
+
+Exposure
+time
+
+Species
+
+Temperature
+
+Method
+
+0.3
+
+23 °C
+
+-1.09
+
+22 °C
+
+OECD Guideline 123
+(Partition Coefficient (1Octanol / Water), SlowStirring Method)
+EU Method A.8 (Partition
+Coefficient)
+
+-0.5
+
+OECD Guideline 107
+(Partition Coefficient (noctanol / water), Shake
+Flask Method)
+
+Section 13. Disposal considerations
+Waste disposal of product:
+
+Dispose of in accordance with local and national regulations.
+
+SDS No.: 729522
+V001.0
+
+Cold Power Extreme Clean Laundry Liquid
+
+Disposal for uncleaned package:
+
+Page 9 of 10
+
+Only completely empty containers are to be disposed of as recoverable materials.
+
+Section 14. Transport information
+
+Road and Rail Transport:
+Not dangerous goods
+Marine transport IMDG:
+Not dangerous goods
+Air transport IATA:
+Not dangerous goods
+
+Section 15. Regulatory information
+SUSMP Poisons Schedule
+
+None
+
+Section 16. Other information
+Abbreviations/acronyms:
+
+ADGC - Australian Dangerous Goods Code
+SUSMP - Standard for the Uniform Medicines of Medicines and Poisons
+RID: International Rule for Transport of Dangerous Substances by Railway
+IMDG: International Maritime Dangerous Goods code
+IATA-DGR: International Air Transport Association – Dangerous Goods Regulations
+AIIC - Australian Inventory of Industrial Chemicals (AIIC)
+AICIS - Australian Industrial Chemicals Introduction Scheme
+
+Reason for issue:
+
+This Safety Data Sheet contains changes from the previous version in Section(s): involved
+chapters: 1 - 16
+
+SDS No.: 729522
+V001.0
+
+Cold Power Extreme Clean Laundry Liquid
+
+Page 10 of 10
+
+Disclaimer:
+The percentage weight (% w/w) of ingredients is not to be taken as a specification
+guaranteed by Henkel Australia Pty. Limited, but only as an approximate guide to the
+content of hazardous ingredients in the material. The information contained herein does
+not constitute a guarantee by Henkel Australia Pty. Limited concerning the properties of
+the material.
+The information contained in the Safety Data Sheet is offered in good faith and has been
+developed from what is believed to be accurate and reliable sources. The information is
+offered without warranty, representation, inducement or licence and Henkel Australia Pty.
+Limited assumes no legal responsibility for reliance upon same. Henkel Australia Pty.
+Limited disclaims any liability for loss, injury or damage incurred in connection with the
+use of the material or its associated Safety Data Sheet.
+This information is not to be construed as a representation that the material is suitable for
+any particular purpose or use except those conditions and warranties implied by either
+Commonwealth or State statutes. Customers are encouraged to make their own enquiries
+as to the material’s characteristics and, where appropriate, to conduct their own tests in the
+specific context of the material’s intended use.
+No warranty or representation of any kind is given with respect to the substantive or
+export laws of any other jurisdiction or country. Please confirm that the information
+provided herein conforms to the substantive export or other law of any other jurisdiction
+prior to export. Please contact Henkel Product Safety and Regulatory Affairs for
+additional assistance.
+
+
