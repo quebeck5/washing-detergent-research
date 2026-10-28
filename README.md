@@ -6,6 +6,7 @@ Comprehensive technical analysis, Safety Data Sheet (SDS / MSDS) cross-examinati
 
 * 📄 **[Cold Power Liquid Comparison: Advanced Clean vs. Extreme Clean](https://quebeck5.github.io/washing-detergent-research/)**
 * 🧺 **[Biozet Attack Laundry Powders Comparison: Regular vs. PLUS Softener vs. PLUS Eliminator](https://quebeck5.github.io/washing-detergent-research/biozet_powders_comparison.html)**
+* 💰 **[5 Cheapest Detergents at Coles: Formulation & SDS Comparison](https://quebeck5.github.io/washing-detergent-research/cheapest_coles_detergents_comparison.html)**
 
 ---
 
@@ -29,6 +30,20 @@ Comprehensive technical analysis, Safety Data Sheet (SDS / MSDS) cross-examinati
   * **Fabric Softening:** PLUS Softener uses natural mineral **Bentonite Clay** platelets (~1 nm thick) that mechanically lubricate cotton fibers, providing fluffiness while keeping bath towels **100% hydrophilic and water-absorbent** (unlike traditional liquid quaternary softeners that coat fibers in water-repellent wax).
   * **Enzymes & Optical Brighteners:** Omitted in *Eliminator* to prevent oxidative denaturation by perlauric acid and to avoid metameric color shifting on dark and technical synthetic athletic wear.
 
+### 3. The 5 Cheapest Washing Detergents at Coles (Australia / Victoria)
+* **Products:**
+  1. *Coles Simply Laundry Liquid (2L)* — **$1.00 / L** ($2.00)
+  2. *Coles Simply Laundry Powder (4kg)* — **$1.25 / kg** ($5.00)
+  3. *Coles Ultra Infusions Laundry Powder (2kg)* — **$3.00 / kg** ($6.00)
+  4. *Coles Ultra Infusions Laundry Liquid (2L)* — **$3.00 / L** ($6.00)
+  5. *Earth Choice Laundry Liquid (1L)* — **$3.30 / L** ($3.30)
+* **Core Differences Researched:**
+  * **Mineral Fillers vs. Active Chemistry:** In *Coles Simply Powder*, ~70% of the box is inert *Sodium Sulfate* filler. A standard scoop delivers only ~5g of active surfactant compared to ~12g in concentrated powders.
+  * **The Enzyme Absence Penalty:** Coles Simply (liquid and powder) and Earth Choice contain **0% enzymes**. They wash away surface grime, but cannot digest biological protein (blood, egg, sweat) or starch (gravy, pasta) soils in cold water.
+  * **Plant-Based vs. Petrochemical Surfactants:** Earth Choice uses renewable *Coco-Glucoside* and *Sodium Coco-Sulfate* from coconut/corn. It is zero-petroleum and skin-mild, but less aggressive on particulate red clay soils.
+  * **Salt Thickening:** Coles Simply Liquid is ~90% water, thickened with ordinary table salt (NaCl) via micelle rod entanglement to mimic premium liquid viscosity.
+  * **Commercial Laddering:** Coles uses the ultra-cheap *Simply* range to defend against Aldi, while steering families toward higher-margin *Ultra Infusions* ($3.00/L) which provides true enzyme stain removal.
+
 ---
 
 ## 📊 Market & Commercial Strategy
@@ -48,6 +63,12 @@ Why do manufacturers produce distinct formulations sold at the exact same retail
 
 * `index.html` / `msds_comparison.html`: Single-page light-mode interactive report for Cold Power.
 * `biozet_powders_comparison.html`: Single-page light-mode interactive report for Biozet Attack.
+* `cheapest_coles_detergents_comparison.html`: Single-page light-mode interactive report for 5 Cheapest Coles Detergents.
+* `Coles_Simply_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Simply Liquid.
+* `Coles_Simply_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Simply Powder.
+* `Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Infusions Powder.
+* `Coles_Ultra_Infusions_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Infusions Liquid.
+* `Earth_Choice_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Earth Choice Laundry Liquid.
 * `Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf`: Official Henkel Safety Data Sheet (Jan 2026).
 * `Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf`: Official Henkel Safety Data Sheet (Jan 2026).
 * `Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf`: Official Henkel consumer disclosure.
