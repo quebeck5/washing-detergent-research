@@ -37,10 +37,12 @@ Comprehensive technical analysis, Safety Data Sheet (SDS / MSDS) cross-examinati
   3. *Fab Sunshine Fresh Laundry Powder Bulk (4kg)* — **$4.13 / kg** ($16.50)
   4. *FAB Ultra Laundry Powder Sunshine Fresh (2kg)* — **$4.50 / kg** ($9.00)
   5. *Coles Ultra Concentrate Laundry Powder (2kg)* — **$5.25 / kg** ($10.50)
+  ★ *Coles Ultra Laundry Powder Concentrate Sensitive (2kg)* — **$5.25 / kg** ($10.50) *(Dermatologically Tested / Hypoallergenic)*
   ★ *Biozet Attack Regular Laundry Powder (2kg/6kg)* — **$6.50 – $13.00 / kg** *(Gold-Standard Benchmark)*
 * **Core Differences Researched:**
   * **Inert Bulking Fillers:** *Coles Simply* uses ~70% inert *Sodium Sulfate* filler, delivering only ~5g of surfactant per 100g scoop, compared to ~12g in *Biozet Attack Regular* (which uses active Zeolite A and cuts filler to ~25%).
   * **The Enzyme Ladder:** 0% in *Coles Simply* → Single *Protease* in *Fab* → Dual *Protease + Amylase* in *Coles Ultra* → Complete *Protease + Amylase + Care Cellulase* in *Biozet Attack Regular*.
+  * **The Sensitive Skin Paradox:** *Coles Ultra Sensitive* costs the same as standard Ultra ($5.25/kg) but **completely omits enzymes, perfumes, and dyes** to prevent contact dermatitis on eczema-prone skin and eliminate the H334 respiratory sensitization risk from enzyme dust, while retaining full oxygen bleach and Zeolite A builder power.
   * **Oxygen Bleaching:** 0% in *Coles Simply* and *Fab* → 4–10% in *Coles Ultra* → 10–15% *Sodium Percarbonate* in *Biozet Attack Regular* for active white brightening.
   * **Water Softening:** Soluble carbonate only (forming chalky scale) in cheap powders vs. insoluble *Zeolite A* ion exchange in *Coles Ultra* and *Biozet Regular*.
 
@@ -67,6 +69,9 @@ Why do manufacturers produce distinct formulations sold at the exact same retail
 * `Coles_Simply_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Simply Liquid.
 * `Coles_Simply_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Simply Powder.
 * `Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Infusions Powder.
+* `Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Concentrate Powder.
+* `Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Sensitive Powder.
+* `Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Fab Sunshine Fresh Powder.
 * `Coles_Ultra_Infusions_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Infusions Liquid.
 * `Earth_Choice_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Earth Choice Laundry Liquid.
 * `Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf`: Official Henkel Safety Data Sheet (Jan 2026).
