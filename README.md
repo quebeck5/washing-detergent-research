@@ -30,19 +30,19 @@ Comprehensive technical analysis, Safety Data Sheet (SDS / MSDS) cross-examinati
   * **Fabric Softening:** PLUS Softener uses natural mineral **Bentonite Clay** platelets (~1 nm thick) that mechanically lubricate cotton fibers, providing fluffiness while keeping bath towels **100% hydrophilic and water-absorbent** (unlike traditional liquid quaternary softeners that coat fibers in water-repellent wax).
   * **Enzymes & Optical Brighteners:** Omitted in *Eliminator* to prevent oxidative denaturation by perlauric acid and to avoid metameric color shifting on dark and technical synthetic athletic wear.
 
-### 3. The 5 Cheapest Washing Detergents at Coles (Australia / Victoria)
+### 3. The 5 Cheapest Washing Powders at Coles vs. Biozet Attack Regular
 * **Products:**
-  1. *Coles Simply Laundry Liquid (2L)* — **$1.00 / L** ($2.00)
-  2. *Coles Simply Laundry Powder (4kg)* — **$1.25 / kg** ($5.00)
-  3. *Coles Ultra Infusions Laundry Powder (2kg)* — **$3.00 / kg** ($6.00)
-  4. *Coles Ultra Infusions Laundry Liquid (2L)* — **$3.00 / L** ($6.00)
-  5. *Earth Choice Laundry Liquid (1L)* — **$3.30 / L** ($3.30)
+  1. *Coles Simply Laundry Powder (4kg)* — **$1.25 / kg** ($5.00)
+  2. *Coles Ultra Infusions Laundry Powder (2kg)* — **$3.00 / kg** ($6.00)
+  3. *Fab Sunshine Fresh Laundry Powder Bulk (4kg)* — **$4.13 / kg** ($16.50)
+  4. *FAB Ultra Laundry Powder Sunshine Fresh (2kg)* — **$4.50 / kg** ($9.00)
+  5. *Coles Ultra Concentrate Laundry Powder (2kg)* — **$5.25 / kg** ($10.50)
+  ★ *Biozet Attack Regular Laundry Powder (2kg/6kg)* — **$6.50 – $13.00 / kg** *(Gold-Standard Benchmark)*
 * **Core Differences Researched:**
-  * **Mineral Fillers vs. Active Chemistry:** In *Coles Simply Powder*, ~70% of the box is inert *Sodium Sulfate* filler. A standard scoop delivers only ~5g of active surfactant compared to ~12g in concentrated powders.
-  * **The Enzyme Absence Penalty:** Coles Simply (liquid and powder) and Earth Choice contain **0% enzymes**. They wash away surface grime, but cannot digest biological protein (blood, egg, sweat) or starch (gravy, pasta) soils in cold water.
-  * **Plant-Based vs. Petrochemical Surfactants:** Earth Choice uses renewable *Coco-Glucoside* and *Sodium Coco-Sulfate* from coconut/corn. It is zero-petroleum and skin-mild, but less aggressive on particulate red clay soils.
-  * **Salt Thickening:** Coles Simply Liquid is ~90% water, thickened with ordinary table salt (NaCl) via micelle rod entanglement to mimic premium liquid viscosity.
-  * **Commercial Laddering:** Coles uses the ultra-cheap *Simply* range to defend against Aldi, while steering families toward higher-margin *Ultra Infusions* ($3.00/L) which provides true enzyme stain removal.
+  * **Inert Bulking Fillers:** *Coles Simply* uses ~70% inert *Sodium Sulfate* filler, delivering only ~5g of surfactant per 100g scoop, compared to ~12g in *Biozet Attack Regular* (which uses active Zeolite A and cuts filler to ~25%).
+  * **The Enzyme Ladder:** 0% in *Coles Simply* → Single *Protease* in *Fab* → Dual *Protease + Amylase* in *Coles Ultra* → Complete *Protease + Amylase + Care Cellulase* in *Biozet Attack Regular*.
+  * **Oxygen Bleaching:** 0% in *Coles Simply* and *Fab* → 4–10% in *Coles Ultra* → 10–15% *Sodium Percarbonate* in *Biozet Attack Regular* for active white brightening.
+  * **Water Softening:** Soluble carbonate only (forming chalky scale) in cheap powders vs. insoluble *Zeolite A* ion exchange in *Coles Ultra* and *Biozet Regular*.
 
 ---
 
