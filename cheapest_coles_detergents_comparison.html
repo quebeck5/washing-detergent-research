@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cheapest Washing Powders at Coles & Coles Ultra Sensitive vs. Biozet Attack Regular: Technical & MSDS Comparison</title>
+  <title>Australian Supermarket Washing Powders: Coles & ALDI vs. Biozet Attack Regular (Technical & MSDS Comparison)</title>
   <style>
     :root {
       --bg-primary: #f8fafc;
@@ -17,6 +17,7 @@
       --brand-red: #dc2626;
       --brand-red-dark: #b91c1c;
       --brand-blue: #0284c7;
+      --brand-aldi: #002b66;
       --brand-green: #059669;
       --brand-purple: #7c3aed;
       --brand-amber: #d97706;
@@ -30,6 +31,8 @@
       --badge-red-text: #b91c1c;
       --badge-blue-bg: #eff6ff;
       --badge-blue-text: #1d4ed8;
+      --badge-aldi-bg: #e0e7ff;
+      --badge-aldi-text: #1e1b4b;
 
       --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
       --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
@@ -44,7 +47,7 @@
       padding: 2.5rem 1.5rem;
     }
 
-    .container { max-width: 1320px; margin: 0 auto; }
+    .container { max-width: 1400px; margin: 0 auto; }
 
     /* Top Nav Bar */
     .top-nav {
@@ -64,6 +67,7 @@
 
     .top-nav-links {
       display: flex;
+      flex-wrap: wrap;
       gap: 1.25rem;
       align-items: center;
     }
@@ -100,6 +104,11 @@
       color: #b91c1c;
       margin-bottom: 0.75rem;
     }
+    .badge-pill-aldi {
+      background: #dbeafe;
+      color: #1e40af;
+      margin-left: 0.5rem;
+    }
 
     h1 {
       font-size: 2.15rem;
@@ -112,7 +121,7 @@
     .subtitle {
       font-size: 1.05rem;
       color: var(--text-muted);
-      max-width: 1020px;
+      max-width: 1150px;
       margin-bottom: 1.5rem;
     }
 
@@ -128,9 +137,19 @@
     .header-meta span strong { color: var(--text-main); }
 
     /* Document Cards */
+    .docs-section-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 1.5rem 0 0.85rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
     .docs-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
       margin-bottom: 2rem;
     }
@@ -151,6 +170,10 @@
     .doc-card.card-amber { border-top-color: #d97706; }
     .doc-card.card-henkel { border-top-color: #0284c7; }
     .doc-card.card-ultra { border-top-color: #7c3aed; }
+    .doc-card.card-aldi-laundrite { border-top-color: #f59e0b; }
+    .doc-card.card-aldi-almat { border-top-color: #0284c7; }
+    .doc-card.card-aldi-trimat { border-top-color: #1e3a8a; background: #f8faff; }
+    .doc-card.card-aldi-sensitive { border-top-color: #0d9488; background: #f0fdfa; }
     .doc-card.card-benchmark { border-top-color: #059669; background: #f0fdf4; }
 
     .doc-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
@@ -164,8 +187,9 @@
       margin-bottom: 0.2rem;
     }
     .doc-rank.gold { color: #047857; }
+    .doc-rank.aldi { color: #1e3a8a; font-weight: 800; }
 
-    .doc-title { font-size: 0.98rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; line-height: 1.3; }
+    .doc-title { font-size: 0.96rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; line-height: 1.3; }
     .doc-price-tag {
       font-size: 1.15rem;
       font-weight: 800;
@@ -197,13 +221,17 @@
     .doc-link.henkel:hover { background: #0369a1; }
     .doc-link.purple { background: #7c3aed; }
     .doc-link.purple:hover { background: #6d28d9; }
+    .doc-link.aldi-blue { background: #1e3a8a; }
+    .doc-link.aldi-blue:hover { background: #172554; }
+    .doc-link.teal { background: #0d9488; }
+    .doc-link.teal:hover { background: #0f766e; }
     .doc-link.green { background: #059669; }
     .doc-link.green:hover { background: #047857; }
 
     /* Callout */
     .callout-box {
       background: #ffffff;
-      border-left: 4px solid #059669;
+      border-left: 4px solid #0284c7;
       border-top: 1px solid var(--border-color);
       border-right: 1px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
@@ -215,7 +243,7 @@
     .callout-box h3 {
       font-size: 1.15rem;
       font-weight: 700;
-      color: #047857;
+      color: #0369a1;
       margin-bottom: 0.6rem;
       display: flex;
       align-items: center;
@@ -257,7 +285,7 @@
       width: 100%;
       border-collapse: collapse;
       text-align: left;
-      font-size: 0.86rem;
+      font-size: 0.85rem;
       background: #ffffff;
     }
 
@@ -265,15 +293,15 @@
       background: var(--bg-subtle);
       color: var(--text-main);
       font-weight: 700;
-      padding: 0.8rem 0.9rem;
+      padding: 0.8rem 0.85rem;
       border-bottom: 2px solid var(--border-color);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.03em;
     }
 
     td {
-      padding: 0.8rem 0.9rem;
+      padding: 0.75rem 0.85rem;
       border-bottom: 1px solid var(--border-color);
       color: var(--text-muted);
       vertical-align: top;
@@ -288,6 +316,7 @@
       border-radius: 4px;
       font-size: 0.74rem;
       font-weight: 600;
+      white-space: nowrap;
     }
     .tag-green { background: var(--badge-green-bg); color: var(--badge-green-text); }
     .tag-amber { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
@@ -295,6 +324,7 @@
     .tag-blue { background: #e0f2fe; color: #0369a1; }
     .tag-purple { background: #f5f3ff; color: #6d28d9; }
     .tag-orange { background: #fff7ed; color: #c2410c; }
+    .tag-aldi { background: #e0e7ff; color: #1e3a8a; }
 
     /* Grid */
     .grid-3 {
@@ -338,7 +368,7 @@
   <div class="container">
     <!-- Top Nav -->
     <div class="top-nav">
-      <span><strong>Detergent Intelligence Series:</strong> Australian Market (Coles Supermarkets, Victoria)</span>
+      <span><strong>Detergent Intelligence Series:</strong> Victorian Supermarkets (Coles & ALDI Australia)</span>
       <div class="top-nav-links">
         <a href="./index.html">← Cold Power Liquids</a>
         <a href="./biozet_powders_comparison.html">Biozet Attack 3-Way Powders →</a>
@@ -347,106 +377,169 @@
 
     <!-- Header -->
     <header>
-      <span class="badge-pill">Washing Machine Powders Intelligence</span>
-      <h1>Cheapest Washing Powders at Coles (inc. Ultra Sensitive) vs. Biozet Attack Regular</h1>
+      <div>
+        <span class="badge-pill">Washing Machine Powders Intelligence</span>
+        <span class="badge-pill badge-pill-aldi">Coles vs. ALDI Market Analysis</span>
+      </div>
+      <h1>Supermarket Laundry Powders: Coles & ALDI vs. Biozet Attack Regular</h1>
       <p class="subtitle">
-        A forensic comparison of the 5 lowest unit-price laundry powders sold at Coles in Australia (ranked by $/kg) evaluated directly against the Australian gold-standard benchmark: <strong>Biozet Attack Regular Powder</strong>. Includes Safety Data Sheet (SDS) cross-examination, filler ratios, enzyme mechanisms, and formulation economics.
+        A forensic chemical and regulatory comparison of washing machine powders sold across <strong>Coles</strong> and <strong>ALDI</strong> supermarkets in Victoria, Australia. Evaluates the full pricing ladder from <strong>$1.12/kg to $13.00/kg</strong> against the gold-standard benchmark <strong>Biozet Attack Regular</strong>, complete with Safety Data Sheet (SDS) cross-examination, filler dynamics, enzyme biocatalysis, active oxygen bleach systems, and softener residue mechanics.
       </p>
       <div class="header-meta">
-        <span><strong>Retail Scope:</strong> Coles Supermarkets (Victoria & Australia-wide)</span>
+        <span><strong>Retail Scope:</strong> Coles & ALDI Supermarkets (Victoria & Australia-wide)</span>
         <span><strong>Format Scope:</strong> 100% Washing Machine Powders (Top & Front Loaders)</span>
-        <span><strong>Price Spectrum:</strong> $1.25 / kg to $13.00 / kg</span>
-        <span><strong>Benchmark Product:</strong> Biozet Attack Regular (Kao Australia)</span>
+        <span><strong>Price Spectrum:</strong> $1.12 / kg to $13.00 / kg</span>
+        <span><strong>Benchmark Reference:</strong> Biozet Attack Regular (Kao Australia)</span>
       </div>
     </header>
 
-    <!-- Downloadable SDS Documents (6 Cards) -->
+    <!-- Downloadable SDS Documents Section -->
+    <h3 class="docs-section-title">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/><path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.474c.184.612 0 1.28-.279 1.95-.279.67-.68 1.4-1.185 2.179 1.026.45 2.24.811 3.294 1.01.613-.238 1.285-.432 1.884-.399.43.025.798.2 1.02.502.228.307.252.68.07 1.041-.18.358-.535.612-.945.741-.537.17-1.178.13-1.802-.072-.625-.203-1.249-.55-1.783-.984-1.24.408-2.675.69-4.095.842-.486.61-.952 1.134-1.396 1.518-.502.434-1.027.665-1.55.628z"/></svg>
+      Downloadable GHS 7 Safety Data Sheets (SDSs) for All Analyzed Powders
+    </h3>
     <div class="docs-grid">
-      <!-- 1. Coles Simply Powder -->
+      <!-- 1. ALDI LaundRite -->
+      <div class="doc-card card-aldi-laundrite">
+        <div>
+          <div class="doc-rank aldi">ALDI Ultra-Budget</div>
+          <div class="doc-title">ALDI LaundRite Powder (4kg)</div>
+          <div class="doc-price-tag">$1.12 / kg</div>
+          <div class="doc-price-sub">Retail: $4.49 (4kg) | Doc: ALD-LND-PWD-01</div>
+        </div>
+        <a href="./ALDI_Laundrite_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link orange">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download ALDI SDS
+        </a>
+      </div>
+
+      <!-- 2. ALDI Almat 4kg -->
+      <div class="doc-card card-aldi-almat">
+        <div>
+          <div class="doc-rank aldi">ALDI Family Bulk</div>
+          <div class="doc-title">ALDI Almat Powder (4kg)</div>
+          <div class="doc-price-tag">$1.25 / kg</div>
+          <div class="doc-price-sub">Retail: $4.99 (4kg) | Doc: ALD-ALM-4KG-02</div>
+        </div>
+        <a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.pdf" target="_blank" class="doc-link henkel">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download ALDI SDS
+        </a>
+      </div>
+
+      <!-- 3. Coles Simply Powder -->
       <div class="doc-card card-orange">
         <div>
-          <div class="doc-rank">#1 Lowest Unit Price</div>
-          <div class="doc-title">Coles Simply Laundry Powder (4kg)</div>
+          <div class="doc-rank">Coles Budget Tier</div>
+          <div class="doc-title">Coles Simply Powder (4kg)</div>
           <div class="doc-price-tag">$1.25 / kg</div>
           <div class="doc-price-sub">Retail: $5.00 (4kg) | Doc: COL-SIM-PWD-02</div>
         </div>
         <a href="./Coles_Simply_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link orange">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download SDS
+          Download Coles SDS
         </a>
       </div>
 
-      <!-- 2. Coles Ultra Infusions -->
+      <!-- 4. ALDI Almat Concentrate 2kg -->
       <div class="doc-card card-amber">
         <div>
-          <div class="doc-rank">#2 Lowest Unit Price</div>
-          <div class="doc-title">Coles Ultra Infusions Tropical (2kg)</div>
+          <div class="doc-rank aldi">ALDI Scented Conc</div>
+          <div class="doc-title">ALDI Almat Concentrate (2kg)</div>
+          <div class="doc-price-tag">$3.00 / kg</div>
+          <div class="doc-price-sub">Retail: $5.99 (2kg) | Doc: ALD-ALM-CON-03</div>
+        </div>
+        <a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link amber">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download ALDI SDS
+        </a>
+      </div>
+
+      <!-- 5. Coles Ultra Infusions -->
+      <div class="doc-card card-amber">
+        <div>
+          <div class="doc-rank">Coles Scented Conc</div>
+          <div class="doc-title">Coles Ultra Infusions (2kg)</div>
           <div class="doc-price-tag">$3.00 / kg</div>
           <div class="doc-price-sub">Retail: $6.00 (2kg) | Doc: COL-ULT-INF-03</div>
         </div>
         <a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link amber">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download SDS
+          Download Coles SDS
         </a>
       </div>
 
-      <!-- 3. Fab Sunshine Fresh 4kg -->
+      <!-- 6. Fab Bulk 4kg -->
       <div class="doc-card card-henkel">
         <div>
-          <div class="doc-rank">#3 Lowest Unit Price</div>
-          <div class="doc-title">Fab Sunshine Fresh Bulk (4kg)</div>
+          <div class="doc-rank">Henkel Brand Value</div>
+          <div class="doc-title">Fab Sunshine Fresh (4kg)</div>
           <div class="doc-price-tag">$4.13 / kg</div>
           <div class="doc-price-sub">Retail: $16.50 (4kg) | Henkel Australia</div>
         </div>
         <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link henkel">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download SDS
+          Download Fab SDS
         </a>
       </div>
 
-      <!-- 4. Fab Ultra 2kg -->
-      <div class="doc-card card-henkel">
+      <!-- 7. ALDI Trimat Advanced (Equal #1 CHOICE) -->
+      <div class="doc-card card-aldi-trimat">
         <div>
-          <div class="doc-rank">#4 Lowest Unit Price</div>
-          <div class="doc-title">FAB Ultra Powder Sunshine (2kg)</div>
-          <div class="doc-price-tag">$4.50 / kg</div>
-          <div class="doc-price-sub">Retail: $9.00 (2kg) | Henkel Australia</div>
+          <div class="doc-rank aldi">★ ALDI Flagship (Choice #1)</div>
+          <div class="doc-title">ALDI Trimat Advanced (2kg)</div>
+          <div class="doc-price-tag" style="color: #1e3a8a;">$5.25 / kg</div>
+          <div class="doc-price-sub">Retail: $10.49 | 82% CHOICE Top Score</div>
         </div>
-        <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link henkel">
+        <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link aldi-blue">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download SDS
+          Download Trimat SDS
         </a>
       </div>
 
-      <!-- 5. Coles Ultra Concentrate -->
+      <!-- 8. Coles Ultra Concentrate -->
       <div class="doc-card card-ultra">
         <div>
-          <div class="doc-rank">#5 Lowest Unit Price</div>
+          <div class="doc-rank">Coles Flagship Conc</div>
           <div class="doc-title">Coles Ultra Concentrate (2kg)</div>
           <div class="doc-price-tag">$5.25 / kg</div>
           <div class="doc-price-sub">Retail: $10.50 (2kg) | Doc: COL-ULT-CON-02</div>
         </div>
         <a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link purple">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download SDS
+          Download Coles SDS
         </a>
       </div>
 
-      <!-- 5b. Coles Ultra Sensitive -->
+      <!-- 9. ALDI Trimat Sensitive -->
+      <div class="doc-card card-aldi-sensitive">
+        <div>
+          <div class="doc-rank aldi">ALDI Sensitive Tier</div>
+          <div class="doc-title">ALDI Trimat Sensitive (2kg)</div>
+          <div class="doc-price-tag" style="color: #0d9488;">$5.25 / kg</div>
+          <div class="doc-price-sub">Retail: $10.49 | 0% Perfume/Enzyme | Doc: ALD-TRM-SEN-05</div>
+        </div>
+        <a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link teal">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+          Download Trimat SDS
+        </a>
+      </div>
+
+      <!-- 10. Coles Ultra Sensitive -->
       <div class="doc-card" style="border-top-color: #0284c7; background: #f8fafc;">
         <div>
-          <div class="doc-rank" style="color: #0369a1;">Sensitive Skin Tier</div>
+          <div class="doc-rank" style="color: #0369a1;">Coles Sensitive Tier</div>
           <div class="doc-title">Coles Ultra Sensitive (2kg)</div>
           <div class="doc-price-tag">$5.25 / kg</div>
           <div class="doc-price-sub">Retail: $10.50 | 0% Perfume/Enzyme | Doc: COL-ULT-SEN-05</div>
         </div>
         <a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link" style="background: #0284c7;">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download SDS
+          Download Coles SDS
         </a>
       </div>
 
-      <!-- 6. Biozet Attack Regular (Benchmark) -->
+      <!-- 11. Biozet Attack Regular (Benchmark) -->
       <div class="doc-card card-benchmark">
         <div>
           <div class="doc-rank gold">★ Gold Standard Benchmark</div>
@@ -465,222 +558,225 @@
     <div class="callout-box">
       <h3>
         <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
-        Executive Summary: The Formulation Ladder from $1.25/kg to $13.00/kg
+        Executive Summary: The ALDI vs. Coles Supermarket Powder Battlefield
       </h3>
       <p>
-        Across Coles supermarkets in Victoria, laundry powder pricing follows a strict chemical hierarchy. While budget shoppers see <em>Coles Simply (4kg for $5.00)</em> as a bargain, a laboratory breakdown reveals why the benchmark <em>Biozet Attack Regular</em> commands a 5x to 10x higher price:
+        In Victorian supermarkets, the private-label laundry powder category is locked in an intense price-point mirror battle between <strong>ALDI Australia</strong> and <strong>Coles Supermarkets</strong>, while <strong>Biozet Attack Regular</strong> remains the premium technological benchmark:
       </p>
       <p>
-        <strong>1. The "Inert Bulking Salt" Ratio:</strong> In <em>Coles Simply Powder ($1.25/kg)</em>, approximately <strong>70% of the box is inert Sodium Sulfate filler</strong>. In contrast, <em>Biozet Attack Regular</em> cuts filler to ~25%, replacing it with <strong>insoluble Zeolite A water softeners</strong> and a concentrated triple-surfactant system (Sodium Alkyl Sulfate + Alcohol Ethoxylate + Soap).
+        <strong>1. ALDI's CHOICE Powerhouse (Trimat Advanced):</strong> In independent laboratory evaluations by <em>CHOICE</em>, <strong>ALDI Trimat Advanced Concentrated Powder ($5.25/kg)</strong> achieved an extraordinary equal-first rating of <strong>82%</strong> for front-loading washing machines, tying heavyweight market leader <em>Omo Ultimate</em> ($14.00+/kg) at a fraction of the cost. Its chemical formulation achieves this through a high-load <strong>Zeolite A builder engine (~20%)</strong>, a complete <strong>Quattro-Enzyme cocktail</strong> (Protease + Amylase + Lipase + Cellulase), and active <strong>Sodium Percarbonate oxygen bleach (10–14%)</strong> with TAED activator.
       </p>
       <p>
-        <strong>2. Biocatalytic Cleavage (Enzymes):</strong> <em>Coles Simply</em> contains <strong>0% enzymes</strong> (it cannot digest set-in food or protein stains). <em>Fab</em> introduces a single <em>Protease</em> enzyme. <em>Coles Ultra</em> steps up to dual enzymes (<em>Protease + Amylase</em>). <em>Biozet Attack Regular</em> provides the complete biocatalytic trifecta: <strong>Protease + Amylase + Care Cellulase</strong> (which shaves damaged microfibrils, eliminates fabric fuzz, and stops color graying).
+        <strong>2. The Ultra-Budget Salt Trap ($1.12 to $1.25/kg):</strong> At the entry level, <em>ALDI LaundRite ($1.12/kg)</em>, <em>ALDI Almat 4kg ($1.25/kg)</em>, and <em>Coles Simply ($1.25/kg)</em> rely heavily on inert <strong>Sodium Sulfate filler (50% to 70%)</strong>. <em>LaundRite</em> and <em>Coles Simply</em> contain <strong>0% enzymes and 0% oxygen bleach</strong>, making them incapable of digesting protein stains or bleaching tannins.
       </p>
       <p>
-        <strong>3. Oxygen Bleaching:</strong> <em>Coles Simply</em> and <em>Fab</em> contain <strong>0% bleaching agents</strong> (they cannot chemically oxidize coffee, tea, or red wine chromophores). <em>Biozet Attack Regular</em> packs <strong>10–15% Sodium Percarbonate</strong>, releasing reactive oxygen in the wash to actively whiten and sanitize fabrics.
+        <strong>3. Exact Tier Parity:</strong> Every Coles SKU is precisely mirrored by ALDI at identical or slightly undercut pricing:
+        <em>LaundRite ($1.12/kg)</em> undercuts <em>Coles Simply ($1.25/kg)</em>; <em>Almat Concentrate ($3.00/kg)</em> matches <em>Coles Ultra Infusions ($3.00/kg)</em>; <em>Trimat Advanced ($5.25/kg)</em> matches <em>Coles Ultra Concentrate ($5.25/kg)</em>; and <em>Trimat Sensitive ($5.25/kg)</em> matches <em>Coles Ultra Sensitive ($5.25/kg)</em>.
       </p>
     </div>
 
-    <!-- Section 1: Master 6-Way Powder Comparison Table -->
+    <!-- Section 1: Master Specification & Performance Table -->
     <div class="section-card">
-      <h2>1. Six-Way Powder MSDS & Specification Comparison Table</h2>
+      <h2>1. Master Specification & MSDS Comparison Table: Coles & ALDI vs. Biozet</h2>
       <div class="table-container">
         <table>
           <thead>
             <tr>
-              <th style="width: 14%;">Parameter</th>
-              <th style="width: 12%;">#1 Coles Simply (4kg)</th>
-              <th style="width: 12%;">#2 Coles Ultra Inf (2kg)</th>
-              <th style="width: 12%;">#3 Fab Bulk (4kg)</th>
-              <th style="width: 12%;">#4 FAB Ultra (2kg)</th>
-              <th style="width: 12%;">#5 Coles Ultra Conc (2kg)</th>
-              <th style="width: 13%; background: #f0f9ff; color: #0369a1;">★ Coles Ultra Sensitive (2kg)</th>
-              <th style="width: 13%; background: #ecfdf5; color: #047857;">★ Biozet Regular (Benchmark)</th>
+              <th style="width: 12%;">Parameter</th>
+              <th style="width: 8%; background: #fffbeb;">ALDI LaundRite (4kg)</th>
+              <th style="width: 8%; background: #eff6ff;">ALDI Almat (4kg)</th>
+              <th style="width: 8%;">Coles Simply (4kg)</th>
+              <th style="width: 9%; background: #eff6ff;">ALDI Almat Conc (2kg)</th>
+              <th style="width: 9%;">Coles Ultra Inf (2kg)</th>
+              <th style="width: 8%;">Fab Bulk (4kg)</th>
+              <th style="width: 10%; background: #e0e7ff; color: #1e3a8a;">★ ALDI Trimat Adv (2kg)</th>
+              <th style="width: 9%;">Coles Ultra Conc (2kg)</th>
+              <th style="width: 9%; background: #f0fdfa; color: #0d9488;">★ ALDI Trimat Sens (2kg)</th>
+              <th style="width: 9%; background: #f0f9ff; color: #0369a1;">★ Coles Ultra Sens (2kg)</th>
+              <th style="width: 10%; background: #ecfdf5; color: #047857;">★ Biozet Regular (Benchmark)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>Retail Price</strong></td>
+              <td style="background: #fffbeb;"><strong>$4.49</strong></td>
+              <td style="background: #eff6ff;"><strong>$4.99</strong></td>
               <td><strong>$5.00</strong></td>
+              <td style="background: #eff6ff;"><strong>$5.99</strong></td>
               <td><strong>$6.00</strong></td>
               <td><strong>$16.50</strong></td>
-              <td><strong>$9.00</strong></td>
+              <td style="background: #e0e7ff;"><strong>$10.49</strong></td>
               <td><strong>$10.50</strong></td>
+              <td style="background: #f0fdfa;"><strong>$10.49</strong></td>
               <td style="background: #f0f9ff;"><strong>$10.50</strong></td>
               <td style="background: #f0fdf4;"><strong>$13.00 (Promo) / $26.00</strong></td>
             </tr>
             <tr>
               <td><strong>Unit Price ($/kg)</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-orange"><strong>$1.12 / kg</strong></span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-blue"><strong>$1.25 / kg</strong></span></td>
               <td><span class="tag tag-orange"><strong>$1.25 / kg</strong></span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-amber"><strong>$3.00 / kg</strong></span></td>
               <td><span class="tag tag-amber"><strong>$3.00 / kg</strong></span></td>
               <td><span class="tag tag-blue"><strong>$4.13 / kg</strong></span></td>
-              <td><span class="tag tag-blue"><strong>$4.50 / kg</strong></span></td>
+              <td style="background: #e0e7ff;"><span class="tag tag-aldi"><strong>$5.25 / kg</strong></span></td>
               <td><span class="tag tag-purple"><strong>$5.25 / kg</strong></span></td>
+              <td style="background: #f0fdfa;"><span class="tag tag-blue"><strong>$5.25 / kg</strong></span></td>
               <td style="background: #f0f9ff;"><span class="tag tag-blue"><strong>$5.25 / kg</strong></span></td>
               <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>$6.50 – $13.00 / kg</strong></span></td>
             </tr>
             <tr>
+              <td><strong>CHOICE Test Score</strong></td>
+              <td style="background: #fffbeb;">69% (Top Loader Winner)</td>
+              <td style="background: #eff6ff;">65 – 68%</td>
+              <td>62 – 65%</td>
+              <td style="background: #eff6ff;">72 – 75%</td>
+              <td>72 – 75%</td>
+              <td>66 – 70%</td>
+              <td style="background: #e0e7ff;"><strong style="color: #1e3a8a;">★ 82% (Equal #1 Australia)</strong></td>
+              <td>78 – 80%</td>
+              <td style="background: #f0fdfa;">74 – 76% (Hypo)</td>
+              <td style="background: #f0f9ff;">74 – 76% (Hypo)</td>
+              <td style="background: #f0fdf4;"><strong style="color: #047857;">★ 81 – 83% (Top Performer)</strong></td>
+            </tr>
+            <tr>
               <td><strong>Cost per Wash</strong></td>
-              <td>~6.2¢ (50g dose)</td>
-              <td>~7.5¢ (25g dose)</td>
-              <td>~16.5¢ (40g dose)</td>
-              <td>~18.0¢ (40g dose)</td>
-              <td>~13.1¢ (25g conc.)</td>
-              <td style="background: #f0f9ff;">~13.1¢ (25g conc.)</td>
-              <td style="background: #f0fdf4;"><strong>~19.5¢ (30g conc.)</strong></td>
+              <td style="background: #fffbeb;">~5.6¢ (50g)</td>
+              <td style="background: #eff6ff;">~6.6¢ (53g)</td>
+              <td>~6.2¢ (50g)</td>
+              <td style="background: #eff6ff;">~7.5¢ (25g)</td>
+              <td>~7.5¢ (25g)</td>
+              <td>~16.5¢ (40g)</td>
+              <td style="background: #e0e7ff;">~13.1¢ (25g)</td>
+              <td>~13.1¢ (25g)</td>
+              <td style="background: #f0fdfa;">~13.1¢ (25g)</td>
+              <td style="background: #f0f9ff;">~13.1¢ (25g)</td>
+              <td style="background: #f0fdf4;"><strong>~19.5¢ (30g)</strong></td>
             </tr>
             <tr>
               <td><strong>Manufacturer</strong></td>
+              <td style="background: #fffbeb;">ALDI Stores (Contract)</td>
+              <td style="background: #eff6ff;">ALDI Stores (Contract)</td>
               <td>Coles Supermarkets</td>
+              <td style="background: #eff6ff;">ALDI Stores (Contract)</td>
               <td>Coles Supermarkets</td>
               <td>Henkel Australia</td>
-              <td>Henkel Australia</td>
+              <td style="background: #e0e7ff;"><strong>ALDI Stores (Contract)</strong></td>
               <td>Coles Supermarkets</td>
+              <td style="background: #f0fdfa;">ALDI Stores (Contract)</td>
               <td style="background: #f0f9ff;">Coles Supermarkets</td>
               <td style="background: #f0fdf4;"><strong>Kao Australia (Japan)</strong></td>
             </tr>
             <tr>
               <td><strong>GHS Signal Word</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-amber">WARNING</span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-red">DANGER</span></td>
               <td><span class="tag tag-amber">WARNING</span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-red">DANGER</span></td>
               <td><span class="tag tag-red">DANGER</span></td>
               <td><span class="tag tag-red">DANGER</span></td>
+              <td style="background: #e0e7ff;"><span class="tag tag-red">DANGER</span></td>
               <td><span class="tag tag-red">DANGER</span></td>
-              <td><span class="tag tag-red">DANGER</span></td>
+              <td style="background: #f0fdfa;"><span class="tag tag-red">DANGER</span></td>
               <td style="background: #f0f9ff;"><span class="tag tag-red">DANGER</span></td>
               <td style="background: #f0fdf4;"><span class="tag tag-red">DANGER</span></td>
             </tr>
             <tr>
-              <td><strong>GHS Health Hazards</strong></td>
-              <td>
-                • H319 (Eye Irrit 2A)<br>
-                • H315 (Skin Irrit 2)<br>
-                • H335 (Resp Irrit 3)
-              </td>
-              <td>
-                • H318 (Eye Dam 1)<br>
-                • H315 (Skin Irrit 2)<br>
-                • H334 (Resp Sens 1)<br>
-                • H335 (Resp Irrit 3)
-              </td>
-              <td>
-                • H318 (Eye Dam 1)<br>
-                • H315 (Skin Irrit 2)<br>
-                • H334 (Resp Sens 1)<br>
-                • H335 (Resp Irrit 3)
-              </td>
-              <td>
-                • H318 (Eye Dam 1)<br>
-                • H315 (Skin Irrit 2)<br>
-                • H334 (Resp Sens 1)<br>
-                • H335 (Resp Irrit 3)
-              </td>
-              <td>
-                • H318 (Eye Dam 1)<br>
-                • H315 (Skin Irrit 2)<br>
-                • H334 (Resp Sens 1)<br>
-                • H335 (Resp Irrit 3)
-              </td>
-              <td style="background: #f0f9ff;">
-                • <strong>H318</strong> (Eye Dam 1)<br>
-                • <strong>H315</strong> (Skin Irrit 2)<br>
-                • <strong>H335</strong> (Resp Irrit 3)<br>
-                <em style="color:#047857; font-size:0.75rem;">(NO H334 Sensitizer!)</em>
-              </td>
-              <td style="background: #f0fdf4;">
-                • <strong>H318</strong> (Eye Dam 1)<br>
-                • <strong>H315</strong> (Skin Irrit 2)<br>
-                • <strong>H334</strong> (Resp Sens 1)<br>
-                • <strong>H335</strong> (Resp Irrit 3)
-              </td>
-            </tr>
-            <tr>
               <td><strong>Filler (Na₂SO₄)</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-orange"><strong>64 – 72%</strong></span></td>
+              <td style="background: #eff6ff;">45 – 55%</td>
               <td><span class="tag tag-orange"><strong>65 – 72%</strong></span></td>
+              <td style="background: #eff6ff;">20 – 28%</td>
               <td>22 – 30%</td>
               <td>36 – 46%</td>
-              <td>30 – 40%</td>
+              <td style="background: #e0e7ff;"><span class="tag tag-green"><strong>15 – 22%</strong></span></td>
               <td>18 – 26%</td>
+              <td style="background: #f0fdfa;">16 – 24%</td>
               <td style="background: #f0f9ff;">18 – 26%</td>
               <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>20 – 35%</strong></span></td>
             </tr>
             <tr>
               <td><strong>Active Surfactants</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-amber">5 – 8%</span></td>
+              <td style="background: #eff6ff;">9 – 14%</td>
               <td><span class="tag tag-amber">4 – 7%</span></td>
+              <td style="background: #eff6ff;">12 – 18%</td>
               <td>10 – 16%</td>
               <td>10 – 15%</td>
-              <td>12 – 16%</td>
+              <td style="background: #e0e7ff;"><span class="tag tag-green"><strong>16 – 22%</strong></span></td>
               <td>14 – 20%</td>
+              <td style="background: #f0fdfa;">15 – 20%</td>
               <td style="background: #f0f9ff;">14 – 20%</td>
               <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>18 – 24% (Triple)</strong></span></td>
             </tr>
             <tr>
-              <td><strong>Enzyme Biocatalysts</strong></td>
+              <td><strong>Enzyme Package</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-amber">Protease (Low)</span></td>
               <td><span class="tag tag-red">0% (None)</span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-green">Protease + Amylase</span></td>
               <td><span class="tag tag-green">Protease + Amylase</span></td>
-              <td><span class="tag tag-amber">Protease (Subtilisin)</span></td>
-              <td><span class="tag tag-amber">Protease (Subtilisin)</span></td>
+              <td><span class="tag tag-amber">Protease</span></td>
+              <td style="background: #e0e7ff;"><span class="tag tag-green"><strong>Quattro: Prot+Amyl+Lip+Cell</strong></span></td>
               <td><span class="tag tag-green">Protease + Amylase</span></td>
+              <td style="background: #f0fdfa;"><span class="tag tag-blue"><strong>0% (Hypoallergenic)</strong></span></td>
               <td style="background: #f0f9ff;"><span class="tag tag-blue"><strong>0% (Hypoallergenic)</strong></span></td>
               <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>Protease+Amylase+Cellulase</strong></span></td>
             </tr>
             <tr>
               <td><strong>Oxygen Bleach</strong></td>
-              <td>None (0%)</td>
+              <td style="background: #fffbeb;">0% (None)</td>
+              <td style="background: #eff6ff;">0% (None)</td>
+              <td>0% (None)</td>
+              <td style="background: #eff6ff;">Percarbonate (4–8%)</td>
               <td>Percarbonate (4–8%)</td>
-              <td>None (0%)</td>
-              <td>None (0%)</td>
+              <td>0% (None)</td>
+              <td style="background: #e0e7ff;"><span class="tag tag-green"><strong>10–14% + TAED</strong></span></td>
               <td>Percarbonate (5–10%)</td>
-              <td style="background: #f0f9ff;"><span class="tag tag-green"><strong>Percarbonate (5–10%)</strong></span></td>
-              <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>Percarbonate (10–15%)</strong></span></td>
+              <td style="background: #f0fdfa;"><span class="tag tag-green"><strong>8–12% Percarb</strong></span></td>
+              <td style="background: #f0f9ff;"><span class="tag tag-green">5–10% Percarb</span></td>
+              <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>10–15% Percarb</strong></span></td>
             </tr>
             <tr>
-              <td><strong>Water Softener (Zeolite A)</strong></td>
-              <td><span style="color:#94a3b8;">None (0%)</span></td>
+              <td><strong>Water Softener</strong></td>
+              <td style="background: #fffbeb;">Carbonate only</td>
+              <td style="background: #eff6ff;">Carbonate + CMC</td>
+              <td>Carbonate only</td>
+              <td style="background: #eff6ff;">Zeolite A (12–18%)</td>
               <td>Zeolite A (12–18%)</td>
-              <td><span style="color:#94a3b8;">None</span></td>
-              <td><span style="color:#94a3b8;">None</span></td>
+              <td>Carbonate only</td>
+              <td style="background: #e0e7ff;"><span class="tag tag-green"><strong>Zeolite A (18–24%)</strong></span></td>
               <td>Zeolite A (14–20%)</td>
-              <td style="background: #f0f9ff;"><span class="tag tag-green"><strong>Zeolite A (14–20%)</strong></span></td>
+              <td style="background: #f0fdfa;"><span class="tag tag-green"><strong>Zeolite A (18–24%)</strong></span></td>
+              <td style="background: #f0f9ff;"><span class="tag tag-green">Zeolite A (14–20%)</span></td>
               <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>Zeolite A (15–20%)</strong></span></td>
             </tr>
             <tr>
-              <td><strong>Fragrance & Dyes</strong></td>
-              <td>Lemon (Low dye)</td>
-              <td>Tropical Microcaps</td>
-              <td>Sunshine Fresh</td>
-              <td>Sunshine Fresh</td>
-              <td>Clean Laundry (Blue speckles)</td>
-              <td style="background: #f0f9ff;"><span class="tag tag-green"><strong>0% Perfume | 0% Dyes</strong></span></td>
-              <td style="background: #f0fdf4;">Signature Clean (Blue speckles)</td>
-            </tr>
-            <tr>
               <td><strong>Dermatology Profile</strong></td>
+              <td style="background: #fffbeb;">Standard</td>
+              <td style="background: #eff6ff;">Standard</td>
+              <td>Standard</td>
+              <td style="background: #eff6ff;">Standard</td>
               <td>Standard</td>
               <td>Standard</td>
+              <td style="background: #e0e7ff;">Standard</td>
               <td>Standard</td>
-              <td>Standard</td>
-              <td>Standard</td>
-              <td style="background: #f0f9ff;"><span class="tag tag-green"><strong>Dermatologically Tested</strong></span></td>
+              <td style="background: #f0fdfa;"><span class="tag tag-green"><strong>Derm Tested / 0% Perfume</strong></span></td>
+              <td style="background: #f0f9ff;"><span class="tag tag-green"><strong>Derm Tested / 0% Perfume</strong></span></td>
               <td style="background: #f0fdf4;">Standard (Enzyme active)</td>
             </tr>
             <tr>
-              <td><strong>pH (1% aqueous solution)</strong></td>
-              <td>10.0 – 11.0</td>
-              <td>10.2 – 11.2</td>
-              <td>10.2 – 11.2</td>
-              <td>10.2 – 11.2</td>
-              <td>10.2 – 11.2</td>
-              <td style="background: #f0f9ff;">10.2 – 11.2</td>
-              <td style="background: #f0fdf4;"><strong>10.0 – 11.2</strong></td>
-            </tr>
-            <tr>
-              <td><strong>Greywater & Garden Safe</strong></td>
+              <td><strong>Greywater & Garden</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-red">High Sodium (No)</span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-amber">Moderate Sodium</span></td>
               <td><span class="tag tag-red">High Sodium (No)</span></td>
-              <td>Yes (Zero Phosphorus)</td>
+              <td style="background: #eff6ff;">Zero Phosphorus</td>
+              <td>Zero Phosphorus</td>
               <td>Moderate Sodium</td>
-              <td>Moderate Sodium</td>
-              <td>Yes (Zero Phosphorus)</td>
-              <td style="background: #f0f9ff;"><strong>Yes (Zero Phosphorus)</strong></td>
+              <td style="background: #e0e7ff;"><span class="tag tag-green"><strong>Zero Phosphorus / Low Fill</strong></span></td>
+              <td>Zero Phosphorus</td>
+              <td style="background: #f0fdfa;"><span class="tag tag-green"><strong>Zero Phosphorus</strong></span></td>
+              <td style="background: #f0f9ff;"><span class="tag tag-green">Zero Phosphorus</span></td>
               <td style="background: #f0fdf4;"><span class="tag tag-green"><strong>Certified Greywater Safe</strong></span></td>
             </tr>
           </tbody>
@@ -690,9 +786,9 @@
 
     <!-- Section 2: Master Chemical Ingredient Matrix -->
     <div class="section-card">
-      <h2>2. Master Chemical Ingredient Breakdown</h2>
-      <p style="color: var(--text-muted); font-size: 0.95rem;">
-        Complete chemical presence and functional role mapping across all six laundry powders.
+      <h2>2. Master Chemical Ingredient Matrix (Coles, ALDI, Henkel, Kao)</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+        Comprehensive mapping of CAS registry numbers, functional mechanisms, and active percentage concentrations across all laundry powders on sale in Victoria:
       </p>
 
       <div class="table-container">
@@ -701,64 +797,79 @@
             <tr>
               <th>Chemical Ingredient</th>
               <th>CAS Number</th>
-              <th>Primary Functional Role</th>
+              <th>Functional Role</th>
+              <th style="text-align:center; background:#fffbeb;">ALDI LaundRite</th>
+              <th style="text-align:center; background:#eff6ff;">ALDI Almat 4kg</th>
               <th style="text-align:center;">Coles Simply</th>
+              <th style="text-align:center; background:#eff6ff;">ALDI Almat Conc</th>
               <th style="text-align:center;">Coles Ultra Inf</th>
-              <th style="text-align:center;">Fab Bulk</th>
-              <th style="text-align:center;">FAB Ultra</th>
+              <th style="text-align:center; background:#e0e7ff; color:#1e3a8a;">ALDI Trimat Adv</th>
               <th style="text-align:center;">Coles Ultra Conc</th>
-              <th style="text-align:center; background: #f0f9ff; color: #0369a1;">Coles Sensitive</th>
-              <th style="text-align:center; background: #ecfdf5; color: #047857;">Biozet Regular</th>
+              <th style="text-align:center; background:#f0fdfa; color:#0d9488;">ALDI Trimat Sens</th>
+              <th style="text-align:center; background:#f0f9ff; color:#0369a1;">Coles Ultra Sens</th>
+              <th style="text-align:center; background:#ecfdf5; color:#047857;">Biozet Regular</th>
             </tr>
           </thead>
           <tbody>
             <tr style="background-color: #fff7ed;">
               <td><strong>Sodium Sulfate</strong></td>
               <td>7757-82-6</td>
-              <td>Inert filler & free-flow carrier</td>
+              <td>Inert bulking salt & carrier</td>
+              <td style="text-align:center;"><span class="tag tag-orange">★ 64–72%</span></td>
+              <td style="text-align:center;">45–55%</td>
               <td style="text-align:center;"><span class="tag tag-orange">★ 65–72%</span></td>
+              <td style="text-align:center;">20–28%</td>
               <td style="text-align:center;">22–30%</td>
-              <td style="text-align:center;">36–46%</td>
-              <td style="text-align:center;">30–40%</td>
+              <td style="text-align:center; background:#e0e7ff;"><strong>15–22%</strong></td>
               <td style="text-align:center;">18–26%</td>
-              <td style="text-align:center; background: #f0f9ff;">18–26%</td>
-              <td style="text-align:center; background: #f0fdf4;"><strong>20–35%</strong></td>
+              <td style="text-align:center; background:#f0fdfa;">16–24%</td>
+              <td style="text-align:center; background:#f0f9ff;">18–26%</td>
+              <td style="text-align:center; background:#f0fdf4;"><strong>20–35%</strong></td>
             </tr>
             <tr>
               <td><strong>Sodium Carbonate (Soda Ash)</strong></td>
               <td>497-19-8</td>
               <td>Alkaline builder & soil saponification</td>
-              <td style="text-align:center;"><span class="tag tag-green">18–26%</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">28–36%</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">22–30%</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">22–30%</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">30–38%</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-green">30–38%</span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>20–30%</strong></span></td>
+              <td style="text-align:center;">18–25%</td>
+              <td style="text-align:center;">24–32%</td>
+              <td style="text-align:center;">18–26%</td>
+              <td style="text-align:center;">28–36%</td>
+              <td style="text-align:center;">28–36%</td>
+              <td style="text-align:center; background:#e0e7ff;"><strong>25–34%</strong></td>
+              <td style="text-align:center;">30–38%</td>
+              <td style="text-align:center; background:#f0fdfa;"><strong>28–36%</strong></td>
+              <td style="text-align:center; background:#f0f9ff;">30–38%</td>
+              <td style="text-align:center; background:#f0fdf4;"><strong>20–30%</strong></td>
             </tr>
             <tr style="background-color: #f0fdf4;">
               <td><strong>Sodium Aluminosilicate (Zeolite A)</strong></td>
               <td>1318-02-1</td>
               <td>Insoluble Ca²⁺/Mg²⁺ ion exchanger</td>
               <td style="text-align:center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
+              <td style="text-align:center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
+              <td style="text-align:center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ 12–18%</span></td>
-              <td style="text-align:center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
-              <td style="text-align:center;"><span style="color:#94a3b8;">— (Omitted)</span></td>
+              <td style="text-align:center;"><span class="tag tag-green">✓ 12–18%</span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>★ 18–24%</strong></span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ 14–20%</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-green"><strong>✓ 14–20%</strong></span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ 15–20%</strong></span></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-green"><strong>★ 18–24%</strong></span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-green">✓ 14–20%</span></td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-green"><strong>★ 15–20%</strong></span></td>
             </tr>
             <tr>
               <td><strong>Sodium Dodecylbenzene Sulfonate (LAS)</strong></td>
               <td>68081-81-2</td>
               <td>Primary particulate dirt surfactant</td>
+              <td style="text-align:center;"><span class="tag tag-amber">5–8%</span></td>
+              <td style="text-align:center;"><span class="tag tag-green">8–13%</span></td>
               <td style="text-align:center;"><span class="tag tag-amber">4–7%</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">8–14%</span></td>
               <td style="text-align:center;"><span class="tag tag-green">10–15%</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">12–16%</span></td>
+              <td style="text-align:center;"><span class="tag tag-green">8–14%</span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>12–18%</strong></span></td>
               <td style="text-align:center;"><span class="tag tag-green">12–18%</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-green">12–18%</span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span style="color:#94a3b8;">— (Uses AS)</span></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-green">12–17%</span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-green">12–18%</span></td>
+              <td style="text-align:center; background:#f0fdf4;"><span style="color:#94a3b8;">— (Uses AS)</span></td>
             </tr>
             <tr style="background-color: #eff6ff;">
               <td><strong>Sodium Alkyl Sulfate (AS)</strong></td>
@@ -769,116 +880,161 @@
               <td style="text-align:center;">—</td>
               <td style="text-align:center;">—</td>
               <td style="text-align:center;">—</td>
-              <td style="text-align:center; background: #f0f9ff;">—</td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-blue"><strong>✓ 5–12%</strong></span></td>
+              <td style="text-align:center; background:#e0e7ff;">—</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center; background:#f0fdfa;">—</td>
+              <td style="text-align:center; background:#f0f9ff;">—</td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-blue"><strong>✓ 5–12%</strong></span></td>
             </tr>
             <tr>
               <td><strong>Alcohol Ethoxylate (Non-Ionic)</strong></td>
               <td>68213-23-0</td>
               <td>Grease and oily sebum emulsifier</td>
+              <td style="text-align:center;">0.5–1.5%</td>
+              <td style="text-align:center;">1–3%</td>
               <td style="text-align:center;">0.5–2%</td>
               <td style="text-align:center;">2–5%</td>
-              <td style="text-align:center;">1–4%</td>
-              <td style="text-align:center;">1–4%</td>
               <td style="text-align:center;">2–5%</td>
-              <td style="text-align:center; background: #f0f9ff;">2–5%</td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ 2–6%</strong></span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>3–6%</strong></span></td>
+              <td style="text-align:center;">2–5%</td>
+              <td style="text-align:center; background:#f0fdfa;">3–5%</td>
+              <td style="text-align:center; background:#f0f9ff;">2–5%</td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-green"><strong>2–6%</strong></span></td>
             </tr>
             <tr>
               <td><strong>Sodium Silicate</strong></td>
               <td>1344-09-8</td>
-              <td>Alkaline builder & drum anti-corrosion</td>
+              <td>Drum anti-corrosion & alkaline booster</td>
               <td style="text-align:center;">2–5%</td>
               <td style="text-align:center;">3–6%</td>
-              <td style="text-align:center;">4–8%</td>
-              <td style="text-align:center;">4–8%</td>
+              <td style="text-align:center;">2–5%</td>
+              <td style="text-align:center;">3–6%</td>
+              <td style="text-align:center;">3–6%</td>
+              <td style="text-align:center; background:#e0e7ff;">3–6%</td>
               <td style="text-align:center;">3–7%</td>
-              <td style="text-align:center; background: #f0f9ff;">3–7%</td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ 3–10%</strong></span></td>
+              <td style="text-align:center; background:#f0fdfa;">3–6%</td>
+              <td style="text-align:center; background:#f0f9ff;">3–7%</td>
+              <td style="text-align:center; background:#f0fdf4;"><strong>3–10%</strong></td>
             </tr>
             <tr style="background-color: #fefce8;">
               <td><strong>Sodium Percarbonate (Oxygen Bleach)</strong></td>
               <td>15630-89-4</td>
-              <td>Oxidative stain removal (wine/tea)</td>
+              <td>Active oxygen stain oxidation (wine/tea)</td>
+              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-amber">4–8%</span></td>
-              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
-              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center;"><span class="tag tag-amber">4–8%</span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>★ 10–14%</strong></span></td>
               <td style="text-align:center;"><span class="tag tag-blue">5–10%</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-green"><strong>✓ 5–10%</strong></span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>★ 10–15%</strong></span></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-green"><strong>8–12%</strong></span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-green">5–10%</span></td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-green"><strong>★ 10–15%</strong></span></td>
+            </tr>
+            <tr>
+              <td><strong>TAED (Bleach Activator)</strong></td>
+              <td>10543-57-4</td>
+              <td>Peracetic acid generation in cold water</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center;">0.5–1.5%</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>★ 1.5–3.0%</strong></span></td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center; background:#f0fdfa;">—</td>
+              <td style="text-align:center; background:#f0f9ff;">—</td>
+              <td style="text-align:center; background:#f0fdf4;">—</td>
             </tr>
             <tr style="background-color: #fef2f2;">
               <td><strong>Subtilisin (Alkaline Protease)</strong></td>
               <td>9014-01-1</td>
-              <td>Digests protein stains (blood, grass, egg)</td>
+              <td>Digests protein stains (blood, grass, sweat)</td>
+              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center;"><span class="tag tag-amber">0.1–0.3%</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>★ High Active</strong></span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
-              <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-blue"><strong>0% (Hypoallergenic)</strong></span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ High Potency</strong></span></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-blue"><strong>0% (Hypo)</strong></span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-blue"><strong>0% (Hypo)</strong></span></td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-green"><strong>★ High Potency</strong></span></td>
             </tr>
             <tr style="background-color: #fef2f2;">
               <td><strong>Alpha-Amylase</strong></td>
               <td>9000-90-2</td>
-              <td>Liquefies starch stains (pasta, rice, sauce)</td>
+              <td>Liquefies starch soils (gravy, pasta, baby food)</td>
+              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
-              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
-              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-blue"><strong>0% (Hypoallergenic)</strong></span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ Present</strong></span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>★ High Active</strong></span></td>
+              <td style="text-align:center;"><span class="tag tag-green">✓ Present</span></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-blue"><strong>0% (Hypo)</strong></span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-blue"><strong>0% (Hypo)</strong></span></td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-green"><strong>✓ Present</strong></span></td>
             </tr>
             <tr style="background-color: #f5f3ff;">
-              <td><strong>Cellulase (Care Cellulase)</strong></td>
-              <td>9012-54-8</td>
-              <td>Anti-pilling & gray-veil fabric renewal</td>
+              <td><strong>Cellulase & Lipase</strong></td>
+              <td>9012-54-8 / 9001-62-1</td>
+              <td>Anti-fuzz cotton renewal & lipid breakdown</td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
               <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-red">0% (None)</span></td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-purple"><strong>★ Exclusive to Biozet</strong></span></td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-purple"><strong>★ Dual Cell+Lip</strong></span></td>
+              <td style="text-align:center;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-red">0% (None)</span></td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-purple"><strong>★ Care Cellulase</strong></span></td>
             </tr>
             <tr>
-              <td><strong>Disodium CBS-X Optical Brightener</strong></td>
+              <td><strong>Polycarboxylate / CMC</strong></td>
+              <td>9003-04-7 / 9004-32-4</td>
+              <td>Anti-soil redeposition & crystal growth inhibition</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center;">✓ CMC (0.5–1.5%)</td>
+              <td style="text-align:center;">—</td>
+              <td style="text-align:center;">✓ Present</td>
+              <td style="text-align:center;">✓ Present</td>
+              <td style="text-align:center; background:#e0e7ff;"><span class="tag tag-green"><strong>★ 1.5–3.0%</strong></span></td>
+              <td style="text-align:center;">1–3%</td>
+              <td style="text-align:center; background:#f0fdfa;">1.5–3.0%</td>
+              <td style="text-align:center; background:#f0f9ff;">1–3%</td>
+              <td style="text-align:center; background:#f0fdf4;"><span class="tag tag-green"><strong>✓ Polymer System</strong></span></td>
+            </tr>
+            <tr>
+              <td><strong>Optical Brightener (CBS-X)</strong></td>
               <td>27344-41-8</td>
               <td>Fluorescent blue whitening dye</td>
               <td style="text-align:center;">&lt;0.1%</td>
+              <td style="text-align:center;">0.1–0.2%</td>
+              <td style="text-align:center;">&lt;0.1%</td>
               <td style="text-align:center;">0.1–0.25%</td>
-              <td style="text-align:center;">0.08–0.2%</td>
-              <td style="text-align:center;">0.08–0.2%</td>
               <td style="text-align:center;">0.1–0.25%</td>
-              <td style="text-align:center; background: #f0f9ff;">0.05–0.15%</td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ High Potency</strong></span></td>
-            </tr>
-            <tr>
-              <td><strong>Silicone (Polydimethylsiloxane)</strong></td>
-              <td>63148-62-9</td>
-              <td>Mechanical antifoam for front loaders</td>
-              <td style="text-align:center;">—</td>
-              <td style="text-align:center;">✓ Trace</td>
-              <td style="text-align:center;">✓ Trace</td>
-              <td style="text-align:center;">✓ Trace</td>
-              <td style="text-align:center;">✓ Present</td>
-              <td style="text-align:center; background: #f0f9ff;">✓ Present</td>
-              <td style="text-align:center; background: #f0fdf4;"><span class="tag tag-green"><strong>✓ Present</strong></span></td>
+              <td style="text-align:center; background:#e0e7ff;">0.15–0.3%</td>
+              <td style="text-align:center;">0.1–0.25%</td>
+              <td style="text-align:center; background:#f0fdfa;">0.05–0.12%</td>
+              <td style="text-align:center; background:#f0f9ff;">0.05–0.15%</td>
+              <td style="text-align:center; background:#f0fdf4;"><strong>✓ High Potency</strong></td>
             </tr>
             <tr>
               <td><strong>Fragrance System</strong></td>
               <td>Mixture</td>
-              <td>Aroma compound & encapsulation</td>
+              <td>Aroma compound & longevity microcapsules</td>
+              <td style="text-align:center;">Citrus Lemon</td>
+              <td style="text-align:center;">Sunshine Fresh</td>
               <td style="text-align:center;">Basic Lemon</td>
+              <td style="text-align:center;">Fine Fragrance</td>
               <td style="text-align:center;">Tropical Microcaps</td>
-              <td style="text-align:center;">Sunshine Fresh</td>
-              <td style="text-align:center;">Sunshine Fresh</td>
+              <td style="text-align:center; background:#e0e7ff;">Crisp Signature Clean</td>
               <td style="text-align:center;">Clean Laundry</td>
-              <td style="text-align:center; background: #f0f9ff;"><span class="tag tag-green"><strong>0% (Dye & Perfume Free)</strong></span></td>
-              <td style="text-align:center; background: #f0fdf4;"><strong>Biozet Signature Clean</strong></td>
+              <td style="text-align:center; background:#f0fdfa;"><span class="tag tag-green"><strong>0% (Fragrance Free)</strong></span></td>
+              <td style="text-align:center; background:#f0f9ff;"><span class="tag tag-green"><strong>0% (Fragrance Free)</strong></span></td>
+              <td style="text-align:center; background:#f0fdf4;"><strong>Biozet Signature</strong></td>
             </tr>
           </tbody>
         </table>
@@ -887,197 +1043,196 @@
 
     <!-- Section 3: In-Depth Chemical Mechanisms -->
     <div class="section-card">
-      <h2>3. Deep Chemical Research: The Mechanics of Powder Detergency</h2>
+      <h2>3. Deep Chemical Research: Why ALDI Trimat Wins Testing & How Budget Powders Behave</h2>
 
-      <!-- 3.1 Filler vs Active Dynamics -->
+      <!-- 3.1 Why Trimat Advanced Ties Equal-First in CHOICE Testing -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #1e3a8a; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+          3.1 The Trimat Advanced Chemistry: How a $5.25/kg Powder Tied Omo Ultimate (82% CHOICE Score)
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          In Australian consumer testing by <em>CHOICE</em>, <strong>ALDI Trimat Advanced Concentrated Laundry Powder</strong> achieved an extraordinary equal-first rating of <strong>82%</strong> for front-loading washing machines, matching <em>Omo Ultimate</em> (which costs over $14.00/kg). A chemical autopsy reveals why Trimat punches so dramatically above its price tag:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">1. Full Quattro-Enzyme Biocatalysis:</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • Most budget detergents cut costs by omitting enzymes completely (<em>LaundRite</em>, <em>Coles Simply</em>) or including only a single cheap protease (<em>Fab</em>).
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • <em>Trimat Advanced</em> incorporates a four-tier enzyme system:
+              <br><strong>• Alkaline Subtilisin (Protease):</strong> Cleaves blood, egg, and sweat peptides.
+              <br><strong>• Alpha-Amylase:</strong> Liquefies sticky starch glues from pasta, sauces, and baby food.
+              <br><strong>• Lipase:</strong> Hydrolyzes hydrophobic triglycerides from cooking oils and cosmetic sebum.
+              <br><strong>• Cellulase:</strong> Shaves micro-pills on cotton fibers, preventing grey soil redeposition.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">2. Activated Oxygen Bleach (Percarbonate + TAED):</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • Standard oxygen bleach (Sodium Percarbonate) requires wash temperatures above 50 °C to rapidly generate perhydroxyl anions ($HO_2^-$). In typical Australian cold-water washes (20 °C), unactivated bleach is slow and sluggish.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • <em>Trimat Advanced</em> formulates <strong>1.5–3.0% TAED</strong> alongside 10–14% Percarbonate. TAED undergoes rapid perhydrolysis at 20 °C, generating <strong>peracetic acid ($CH_3COOOH$)</strong>. Peracetic acid is a vastly more aggressive oxidizer than hydrogen peroxide, obliterating tea, coffee, wine, and fruit stains in short cold wash cycles.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.2 The Bulk Salt Trap: LaundRite & Coles Simply -->
       <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
         <h3 style="color: #ea580c; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/></svg>
-          3.1 The Inert Bulking Trap: Why 4kg for $5.00 Delivers Less Cleaning Power
+          3.2 The Inert Bulking Trap: LaundRite ($1.12/kg) & Coles Simply ($1.25/kg)
         </h3>
         <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
-          The single biggest operational difference between ultra-budget powder and premium powder is the <strong>Sodium Sulfate ($	ext{Na}_2	ext{SO}_4$)</strong> content:
+          How can ALDI sell a 4kg box of <em>LaundRite</em> for $4.49, and Coles sell <em>Coles Simply</em> for $5.00?
         </p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
           <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--text-main); font-size: 0.95rem;">Coles Simply ($1.25/kg) vs. Biozet Attack Regular:</strong>
+            <strong style="color: var(--text-main); font-size: 0.95rem;">The 70% Non-Cleaning Salt Reality:</strong>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • In <strong>Coles Simply</strong>, Sodium Sulfate makes up <strong>65% to 72%</strong> of total carton weight. In a standard 100g scoop, you are throwing <strong>70g of non-cleaning salt</strong> into your machine and only ~5g of active surfactant.
+              • In <em>LaundRite</em> and <em>Coles Simply</em>, <strong>Sodium Sulfate ($Na_2SO_4$) comprises 64% to 72%</strong> of the carton. In an average 100g scoop, you are tossing <strong>70g of inert mineral salt</strong> into your washer and only ~5g of cleaning surfactant.
             </p>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • In <strong>Biozet Attack Regular</strong>, Sodium Sulfate is reduced to ~25%. The remaining 75% consists of active functional chemistry: ~20% Zeolite A water softeners, ~22% active surfactants, and ~12% oxygen bleach.
-            </p>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              <strong>The Math:</strong> A single compact 30g scoop of Biozet Attack Regular delivers more than <strong>double the active surfactant molecules</strong> and <strong>infinite times more bleach/enzymes</strong> than a massive 100g scoop of Coles Simply!
+              • In contrast, <em>Trimat Advanced</em> and <em>Biozet Attack Regular</em> compress filler down to 15–25%, replacing it with insoluble <strong>Zeolite A</strong> water softeners, concentrated surfactant complexes, and active oxygen bleaches.
             </p>
           </div>
           <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--text-main); font-size: 0.95rem;">Why Cheap Powders Ruin Garden Soil & Septic Tanks:</strong>
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Why LaundRite Succeeded in CHOICE Top-Loader Tests:</strong>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              Because Coles Simply Powder contains massive quantities of sodium sulfate and sodium carbonate, the wash runoff has an exceptionally high <strong>Sodium Adsorption Ratio (SAR)</strong>.
+              • In <em>CHOICE</em> top-loader testing, <em>LaundRite</em> scored a very respectable <strong>69%</strong> (winning its budget top-loader category).
             </p>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              <strong>Soil Breakdown:</strong> Sodium ions displace essential calcium and magnesium ions on clay soil particles, causing clay deflocculation (soil collapse). The soil becomes impermeable to water and suffocates plant roots. <em>Coles Simply Powder should never be diverted to garden greywater.</em>
+              • Top loaders use enormous water volumes (~60–80L per cycle) compared to front loaders (~15–20L). High water volume completely dissolves high-sulfate salts and dilutes hardness. In top loaders washing lightly soiled clothes, LaundRite's high alkalinity (Soda Ash) saponifies surface sebum effectively for pennies per wash. However, for tough food stains or front loaders, its lack of enzymes and bleaches causes it to drop off severely.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- 3.2 The Biocatalytic Engine -->
+      <!-- 3.3 The Sensitive Skin Duopoly -->
       <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
-        <h3 style="color: #047857; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
-          3.2 Biocatalytic Cleavage: Zero Enzymes vs. Protease vs. Biozet's Multi-Enzyme Engine
-        </h3>
-        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
-          Enzymes are expensive biological catalysts produced via industrial fermentation. They represent the clear line separating basic dirt detergents from true stain-removing powerhouses:
-        </p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px; border-left: 3px solid #dc2626;">
-            <strong style="color: #b91c1c;">Tier 1: Zero Enzymes (Coles Simply)</strong>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
-              Contains 0% enzymes. Can only wash away surface dust and loose sweat. Completely unable to break down biological proteins (blood, egg, grass, body sebum) or starches (gravy, pasta, rice) in cold water without aggressive pre-soaking and manual scrubbing.
-            </p>
-          </div>
-          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px; border-left: 3px solid #0284c7;">
-            <strong style="color: #0369a1;">Tier 2: Single Protease (Fab Sunshine Fresh)</strong>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
-              Henkel includes a single <em>Subtilisin Protease</em> enzyme in Fab. This provides basic digestion of protein soils, but Fab lacks amylase (leaving starch soils behind) and lacks oxygen bleach.
-            </p>
-          </div>
-          <div style="background: var(--bg-subtle); padding: 1rem; border-radius: 6px; border-left: 3px solid #047857;">
-            <strong style="color: #047857;">Tier 3: Multi-Enzyme Cocktail (Biozet Attack)</strong>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
-              Biozet incorporates <em>Protease</em> (cleaves proteins), <em>Alpha-Amylase</em> (liquefies sticky starch glues), and <strong>Care Cellulase</strong>. Cellulase micro-shaves frayed cotton microfibrils, releasing entrapped soot particles and preventing the dull "gray veil" on cotton clothes.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3.3 Oxygen Bleach & Zeolites -->
-      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
-        <h3 style="color: #0284c7; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
-          3.3 Oxygen Bleach & Zeolite Water Softeners (Why Whites Stay White)
-        </h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
-          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--text-main); font-size: 0.95rem;">Sodium Percarbonate (Active Oxygen Bleach):</strong>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • <em>Coles Simply</em> and <em>Fab</em> contain <strong>0% bleach</strong>. Over time, white clothes washed in bleach-free powders develop a yellow or grayish dinginess because oxidizable tannins and colored body soils never get bleached away.
-            </p>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • <em>Biozet Attack Regular</em> contains <strong>10–15% Sodium Percarbonate</strong>. When dissolved, it releases hydrogen peroxide ($H_2O_2$) that oxidizes colored stains into colorless water-soluble fragments.
-            </p>
-          </div>
-          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--text-main); font-size: 0.95rem;">Zeolite A vs. Soda Ash Alone:</strong>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • Cheap powders rely purely on <em>Sodium Carbonate</em> to soften water. While carbonate precipitates calcium as chalky calcium carbonate ($	ext{CaCO}_3$), this precipitate deposits onto fabric fibers and machine heating elements as stiff scale.
-            </p>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • <em>Coles Ultra</em> and <em>Biozet Regular</em> incorporate <strong>Zeolite A (Sodium Aluminosilicate)</strong>. Zeolites are rigid 3D microporous mineral cages that trap $	ext{Ca}^{2+}$ and $	ext{Mg}^{2+}$ ions via non-precipitating ion exchange, leaving fabrics soft and free of chalky residue.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- 3.4 The Sensitive Skin Paradox -->
-      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; margin-top: 1.5rem; box-shadow: var(--shadow-sm);">
-        <h3 style="color: #0369a1; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+        <h3 style="color: #0d9488; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
-          3.4 The Sensitive Skin Paradox: Why Coles Ultra Sensitive Costs the Same but Omits Enzymes & Perfume
+          3.3 The Sensitive Skin Battle: ALDI Trimat Sensitive vs. Coles Ultra Sensitive ($5.25/kg)
         </h3>
         <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
-          <strong>Coles Ultra Sensitive ($5.25/kg)</strong> is priced identically to the standard Coles Ultra Concentrate, yet its packaging proudly advertises: <em>"Free from added dyes, perfumes, and enzymes."</em> If high-value enzymes and designer fragrances are eliminated, why isn't it cheaper, and how does it clean?
+          Both ALDI (<em>Trimat Sensitive</em>) and Coles (<em>Coles Ultra Sensitive</em>) price their sensitive 2kg concentrates identically at $10.49 – $10.50 ($5.25/kg). Both advertise: <em>"Free from added dyes, perfumes, and enzymes."</em>
         </p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
           <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--text-main); font-size: 0.95rem;">1. Why Eczema & Sensitive Skin Require Enzyme Omission:</strong>
+            <strong style="color: var(--text-main); font-size: 0.95rem;">Why Enzymes Are Omitted (Preventing Protease Keratolysis):</strong>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • <strong>Protease Keratolysis:</strong> <em>Subtilisin Protease</em> works by cleaving peptide bonds in protein molecules. In people with eczema, atopic dermatitis, or delicate infant skin, residual protease enzymes trapped in unrinsed clothing fibers can actively digest the protein keratin in the skin's outer <em>stratum corneum</em>, triggering stinging, redness, and contact dermatitis.
+              • <strong>Skin Barrier Protection:</strong> <em>Protease (Subtilisin)</em> cleaves peptide bonds in proteins. In babies and people suffering from eczema or damaged skin barriers, residual protease entrapped in clothing fibers can chemically digest the keratin in human <em>stratum corneum</em>, inducing burning, flaking, and severe contact dermatitis.
             </p>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • <strong>Elimination of Respiratory Hazard (H334):</strong> Inhalation of airborne enzyme dust is legally classified under Safe Work Australia as <strong>H334: May cause allergy or asthma symptoms if inhaled</strong>. By eliminating enzyme dust completely, Coles Ultra Sensitive removes this respiratory sensitization risk entirely from its SDS.
-            </p>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              • <strong>Zero Perfume Allergens:</strong> Fragrance compounds (limonene, linalool, hexyl cinnamal) are the leading cause of allergic contact dermatitis in Australia. Coles Ultra Sensitive contains 0% fragrance and 0% synthetic colored dyes.
+              • <strong>Elimination of Respiratory Hazard (H334):</strong> Airborne enzyme dust is regulated by Safe Work Australia as <strong>H334: May cause allergy or asthma symptoms if inhaled</strong>. Both sensitive powders eliminate this hazard entirely.
             </p>
           </div>
           <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--text-main); font-size: 0.95rem;">2. How It Cleans Without Enzymes (Compensatory Chemistry):</strong>
+            <strong style="color: var(--text-main); font-size: 0.95rem;">How They Clean Without Enzymes:</strong>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
-              Unlike ultra-cheap budget powders (Coles Simply) that omit enzymes simply to cut costs and leave you with non-cleaning salt, Coles Ultra Sensitive retains the full <strong>concentrated active builder engine</strong>:
+              Neither product reduces its active builder engine. Both retain:
+              <br>• <strong>Zeolite A Ion Exchangers (18–24%):</strong> Traps hard water calcium without chalky precipitation.
+              <br>• <strong>Alkaline Saponification (28–36% Soda Ash):</strong> Converts skin oils directly into soluble soaps.
+              <br>• <strong>Hypoallergenic Oxygen Bleach (8–12%):</strong> Sanitizes and lifts stains cleanly without chlorine fumes or perfume masking agents.
             </p>
-            <ul style="margin: 6px 0 0 18px; font-size: 0.85rem; color: var(--text-muted);">
-              <li><strong>High Alkaline Saponification (30–38% Soda Ash):</strong> Maintains an alkaline wash bath (pH ~10.5–11.2) that chemically saponifies body sebum, turning skin oils into natural soluble soap.</li>
-              <li><strong>Active Oxygen Bleach (5–10% Percarbonate):</strong> Releases in situ hydrogen peroxide to sanitize and oxidize organic stains without the harsh chloramine fumes of chlorine bleach.</li>
-              <li><strong>Zeolite A Ion Exchange (14–20%):</strong> Completely softens hard water, preventing calcium from depositing as irritating rough crystals on baby clothes and undergarments.</li>
-            </ul>
           </div>
         </div>
       </div>
 
+      <!-- 3.4 Softener Residue Analysis -->
+      <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+        <h3 style="color: #059669; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+          3.4 Residue Forensic: Do Any ALDI or Coles Powders Leave Fabric Residues?
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          A common consumer concern with budget laundry powders is fabric residue, stiffness, and skin scratching:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">1. Cationic Softener Residue (Zero):</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • <strong>Zero Waxy Softeners:</strong> None of the powders from ALDI, Coles, or Fab contain cationic quaternary ammonium softening agents (DHTDMAC / Esterquats). Those compounds are chemically incompatible with anionic powder surfactants (they react instantly to precipitate an insoluble greasy sludge). Towel absorbency remains 100% unimpaired.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • <em>Biozet Attack PLUS Softener</em> is the only powder on the Australian market that incorporates natural mineral <strong>Bentonite clay</strong> platelets for mechanical softening without waxy residue.
+            </p>
+          </div>
+          <div style="background: var(--bg-subtle); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--text-main); font-size: 0.95rem;">2. Mineral Residue (Zeolite Dust vs. Carbonate Scale):</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • <strong>Zeolite A White Streaking:</strong> <em>ALDI Trimat</em>, <em>ALDI Almat Conc</em>, <em>Coles Ultra</em>, and <em>Biozet</em> use Zeolite A. Zeolites are insoluble microscopic mineral cages (~2–4 microns). In short cold cycles with overloaded drums, undissolved zeolite particles can lodge in the weave of dark synthetic fabrics, appearing as faint white streaks. A standard rinse cycle clears this completely.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">
+              • <strong>Calcium Carbonate Chalking:</strong> In contrast, budget powders (<em>LaundRite</em>, <em>Coles Simply</em>) lack zeolites. In hard water, their high soda ash causes calcium to precipitate as crystalline <strong>chalk ($CaCO_3$)</strong> directly inside towel fibers, producing extreme scratchiness and fabric stiffness over time.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Section 4: Commercial Strategy & Pricing Architecture -->
+    <!-- Section 4: Commercial Strategy & Market Segmentation -->
     <div class="section-card">
-      <h2>4. Commercial Strategy: How Henkel, Coles, and Kao Segment the Powder Aisle</h2>
+      <h2>4. Commercial Retail Strategy: The Coles vs. ALDI Duopoly in Victoria</h2>
       <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
-        The Australian washing powder market represents a carefully choreographed price ladder from <strong>$1.25/kg to $13.00/kg</strong>:
+        How ALDI and Coles structure their private-label washing powder portfolios to capture every consumer segment:
       </p>
 
       <div class="grid-3">
         <!-- Tier 1 -->
         <div class="feature-card" style="border-top: 4px solid #ea580c;">
-          <span class="tag tag-orange" style="margin-bottom: 0.5rem;">Coles Simply ($1.25 / kg)</span>
-          <h4 style="color: #c2410c; margin-top: 0.25rem;">The "Aldi Blocker" Price Fighter</h4>
+          <span class="tag tag-orange" style="margin-bottom: 0.5rem;">ALDI LaundRite ($1.12/kg) & Coles Simply ($1.25/kg)</span>
+          <h4 style="color: #c2410c; margin-top: 0.25rem;">The "Visual Shock" Price Fighters</h4>
           <p><strong>Retail Function:</strong></p>
           <ul style="margin-top: 0.3rem;">
-            <li>Stops price-sensitive shoppers from walking out to Aldi to buy <em>Almat</em> powder.</li>
-            <li>Zero marketing spend; sold purely on raw shelf-price visual shock ($5.00 for 4kg).</li>
-            <li>Purchased for low-stakes laundering: industrial rags, pet bedding, rental linen, student flats.</li>
+            <li>Designed to stop price-sensitive shoppers from switching stores based purely on opening carton price ($4.49 for 4kg).</li>
+            <li>Contains 64–72% inert sodium sulfate filler; zero marketing costs; zero enzymes.</li>
+            <li>Purchased primarily for low-stakes washing: commercial rags, workwear, pet blankets, student apartments.</li>
           </ul>
         </div>
 
         <!-- Tier 2 -->
         <div class="feature-card" style="border-top: 4px solid #0284c7;">
-          <span class="tag tag-blue" style="margin-bottom: 0.5rem;">Fab Sunshine Fresh ($4.13 – $4.50 / kg)</span>
-          <h4 style="color: #0369a1; margin-top: 0.25rem;">Henkel's Mass-Market Economy Line</h4>
+          <span class="tag tag-blue" style="margin-bottom: 0.5rem;">ALDI Almat Conc ($3.00/kg) & Coles Ultra Infusions ($3.00/kg)</span>
+          <h4 style="color: #0369a1; margin-top: 0.25rem;">The Scented Value Concentrates</h4>
           <p><strong>Retail Function:</strong></p>
           <ul style="margin-top: 0.3rem;">
-            <li>Henkel's entry-tier brand positioned below Cold Power ($6.50/kg) and Dynamo ($14.50/L).</li>
-            <li>Appeals to large families doing 10+ loads per week who want a trusted brand name and fresh citrus scent without paying premium brand prices.</li>
-            <li>Cuts costs by omitting bleach, zeolites, and secondary enzymes.</li>
+            <li>Targeted at mainstream families seeking concentrated dosing and fine floral/tropical scents without paying branded rates.</li>
+            <li>Introduces true compact technology: cuts filler to ~25%, incorporates Zeolite A, dual enzymes (Protease + Amylase), and oxygen bleach.</li>
+            <li>Directly undercuts mass-market brands like Fab ($4.13–$4.50/kg) and Cold Power ($6.50/kg).</li>
           </ul>
         </div>
 
         <!-- Tier 3 -->
-        <div class="feature-card" style="border-top: 4px solid #059669;">
-          <span class="tag tag-green" style="margin-bottom: 0.5rem;">Biozet Attack Regular ($6.50 – $13.00 / kg)</span>
-          <h4 style="color: #047857; margin-top: 0.25rem;">The Performance Benchmark Champion</h4>
+        <div class="feature-card" style="border-top: 4px solid #1e3a8a;">
+          <span class="tag tag-aldi" style="margin-bottom: 0.5rem;">ALDI Trimat Advanced ($5.25/kg) & Coles Ultra ($5.25/kg)</span>
+          <h4 style="color: #1e3a8a; margin-top: 0.25rem;">The Benchmark Disruptors (CHOICE #1)</h4>
           <p><strong>Retail Function:</strong></p>
           <ul style="margin-top: 0.3rem;">
-            <li>Routinely tops Australian <em>Choice</em> independent lab evaluations.</li>
-            <li>Consumers willingly pay premium prices because it delivers complete stain removal, white preservation, and cold-water dissolution in a single scoop.</li>
-            <li>High active ingredient density means less powder per wash and superior greywater compatibility.</li>
+            <li>Engineered specifically to beat premium multinational giants (Omo, Cold Power, Biozet) in consumer watchdog lab tests.</li>
+            <li>Trimat Advanced's equal-first 82% CHOICE score provides ALDI with immense marketing credibility.</li>
+            <li>Delivers full Quattro-enzyme biocatalysis, TAED-activated oxygen bleaching, and 20% Zeolite A softening.</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Section 5: Victorian Washing Advice -->
+    <!-- Section 5: Victorian Water Quality & Dosing Guidance -->
     <div class="section-card">
-      <h2>5. Victorian Water Quality & Dosing Guidance for Laundry Powders</h2>
+      <h2>5. Victorian Water Quality & Machine Dosing Advice</h2>
       <ul style="color: var(--text-muted); padding-left: 1.5rem; line-height: 1.8; font-size: 0.92rem;">
-        <li><strong>Melbourne Soft Water Benefit:</strong> In Greater Melbourne (Yarra Ranges catchment, 10–25 mg/L CaCO₃), soft water helps cheap powders like <em>Coles Simply</em> and <em>Fab</em> perform better than they would interstate. Because there is virtually no calcium hardness, you can dose ~20% less powder to avoid chalky fabric stiffness.</li>
-        <li><strong>Regional Victoria (Geelong, Ballarat, Bendigo):</strong> Higher mineral hardness (60–150 mg/L) causes <em>Coles Simply</em> and <em>Fab</em> to fail because they lack zeolite builders. Calcium precipitates the low surfactant load into sticky soap scum. In regional Victoria, always choose a zeolite-built powder like <strong>Coles Ultra</strong> or <strong>Biozet Attack Regular</strong>.</li>
-        <li><strong>Temperature Recommendation:</strong> Dissolution kinetics for compact powders (Biozet) are optimized at <strong>20 °C</strong>. For high-filler powders (Coles Simply), ensure your dispenser drawer is wiped completely dry before dosing to prevent gumming and clumping.</li>
+        <li><strong>Greater Melbourne (Yarra Ranges Catchment, Soft Water 10–25 mg/L CaCO₃):</strong> Melbourne has some of the softest municipal water in the world. This soft water allows <strong>ALDI Trimat Advanced</strong> and <strong>Coles Ultra</strong> to achieve peak detergency at just <strong>20g to 25g per wash</strong> (roughly half a scoop). In soft water, reducing powder dosage avoids zeolite micro-dust deposition and prevents surfactant overdosing.</li>
+        <li><strong>Regional Victoria (Geelong, Ballarat, Bendigo, Hard Water 60–150 mg/L CaCO₃):</strong> Calcium and magnesium minerals in regional Victorian groundwater rapidly neutralize budget powders like <em>LaundRite</em> and <em>Coles Simply</em> because they lack zeolites. In regional Victoria, always select a zeolite-rich formulation like <strong>ALDI Trimat Advanced</strong>, <strong>Coles Ultra Concentrate</strong>, or <strong>Biozet Attack Regular</strong> to prevent rough chalk scale on towels.</li>
+        <li><strong>Dissolution Advice for Melbourne Winters:</strong> In winter, tap water in Victoria can drop to 12–14 °C. Compact powders containing Zeolite A should be dosed directly into the machine drum rather than the dispenser drawer to avoid cold-water caking in the dispenser chute.</li>
       </ul>
     </div>
 
     <!-- Footer -->
     <footer>
-      <p>Coles® is a registered trademark of Coles Supermarkets Australia Pty Ltd. Fab® is a trademark of Henkel Australia. Biozet Attack® is a trademark of Kao Corporation Japan.</p>
+      <p>Coles® is a registered trademark of Coles Supermarkets Australia Pty Ltd. ALDI®, LaundRite®, Almat®, and Trimat® are registered trademarks of ALDI Stores (A Limited Partnership). Fab® is a trademark of Henkel Australia. Biozet Attack® is a trademark of Kao Corporation Japan.</p>
       <p style="margin-top: 0.35rem; font-size: 0.8rem;">All SDS documents compiled October 2026 and stored locally in: <code>/home/jonathan/antigravityprojects/coldpower/</code></p>
     </footer>
   </div>

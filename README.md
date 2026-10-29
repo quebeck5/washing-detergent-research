@@ -6,7 +6,7 @@ Comprehensive technical analysis, Safety Data Sheet (SDS / MSDS) cross-examinati
 
 * 📄 **[Cold Power Liquid Comparison: Advanced Clean vs. Extreme Clean](https://quebeck5.github.io/washing-detergent-research/)**
 * 🧺 **[Biozet Attack Laundry Powders Comparison: Regular vs. PLUS Softener vs. PLUS Eliminator](https://quebeck5.github.io/washing-detergent-research/biozet_powders_comparison.html)**
-* 💰 **[5 Cheapest Detergents at Coles: Formulation & SDS Comparison](https://quebeck5.github.io/washing-detergent-research/cheapest_coles_detergents_comparison.html)**
+* 💰 **[Supermarket Laundry Powders: Coles & ALDI vs. Biozet Attack Regular](https://quebeck5.github.io/washing-detergent-research/cheapest_coles_detergents_comparison.html)**
 
 ---
 
@@ -30,34 +30,37 @@ Comprehensive technical analysis, Safety Data Sheet (SDS / MSDS) cross-examinati
   * **Fabric Softening:** PLUS Softener uses natural mineral **Bentonite Clay** platelets (~1 nm thick) that mechanically lubricate cotton fibers, providing fluffiness while keeping bath towels **100% hydrophilic and water-absorbent** (unlike traditional liquid quaternary softeners that coat fibers in water-repellent wax).
   * **Enzymes & Optical Brighteners:** Omitted in *Eliminator* to prevent oxidative denaturation by perlauric acid and to avoid metameric color shifting on dark and technical synthetic athletic wear.
 
-### 3. The 5 Cheapest Washing Powders at Coles vs. Biozet Attack Regular
-* **Products:**
-  1. *Coles Simply Laundry Powder (4kg)* — **$1.25 / kg** ($5.00)
-  2. *Coles Ultra Infusions Laundry Powder (2kg)* — **$3.00 / kg** ($6.00)
-  3. *Fab Sunshine Fresh Laundry Powder Bulk (4kg)* — **$4.13 / kg** ($16.50)
-  4. *FAB Ultra Laundry Powder Sunshine Fresh (2kg)* — **$4.50 / kg** ($9.00)
-  5. *Coles Ultra Concentrate Laundry Powder (2kg)* — **$5.25 / kg** ($10.50)
-  ★ *Coles Ultra Laundry Powder Concentrate Sensitive (2kg)* — **$5.25 / kg** ($10.50) *(Dermatologically Tested / Hypoallergenic)*
-  ★ *Biozet Attack Regular Laundry Powder (2kg/6kg)* — **$6.50 – $13.00 / kg** *(Gold-Standard Benchmark)*
+### 3. Supermarket Laundry Powders: Coles & ALDI vs. Biozet Attack Regular
+* **Products Analyzed:**
+  1. *ALDI LaundRite Laundry Powder (4kg)* — **$1.12 / kg** ($4.49)
+  2. *ALDI Almat Laundry Powder (4kg)* — **$1.25 / kg** ($4.99)
+  3. *Coles Simply Laundry Powder (4kg)* — **$1.25 / kg** ($5.00)
+  4. *ALDI Almat Concentrate Laundry Powder (2kg)* — **$3.00 / kg** ($5.99)
+  5. *Coles Ultra Infusions Laundry Powder (2kg)* — **$3.00 / kg** ($6.00)
+  6. *Fab Sunshine Fresh Laundry Powder Bulk (4kg)* — **$4.13 / kg** ($16.50)
+  7. *FAB Ultra Laundry Powder Sunshine Fresh (2kg)* — **$4.50 / kg** ($9.00)
+  8. *ALDI Trimat Advanced Concentrated Laundry Powder (2kg)* — **$5.25 / kg** ($10.49) *(★ CHOICE #1 Equal in Australia at 82%)*
+  9. *Coles Ultra Concentrate Laundry Powder (2kg)* — **$5.25 / kg** ($10.50)
+  10. *ALDI Trimat Advanced Sensitive Concentrated (2kg)* — **$5.25 / kg** ($10.49) *(Dermatologically Tested / Perfume-Free)*
+  11. *Coles Ultra Laundry Powder Concentrate Sensitive (2kg)* — **$5.25 / kg** ($10.50) *(Dermatologically Tested / Perfume-Free)*
+  12. *Biozet Attack Regular Laundry Powder (2kg/6kg)* — **$6.50 – $13.00 / kg** *(★ Gold-Standard Benchmark)*
 * **Core Differences Researched:**
-  * **Inert Bulking Fillers:** *Coles Simply* uses ~70% inert *Sodium Sulfate* filler, delivering only ~5g of surfactant per 100g scoop, compared to ~12g in *Biozet Attack Regular* (which uses active Zeolite A and cuts filler to ~25%).
-  * **The Enzyme Ladder:** 0% in *Coles Simply* → Single *Protease* in *Fab* → Dual *Protease + Amylase* in *Coles Ultra* → Complete *Protease + Amylase + Care Cellulase* in *Biozet Attack Regular*.
-  * **The Sensitive Skin Paradox:** *Coles Ultra Sensitive* costs the same as standard Ultra ($5.25/kg) but **completely omits enzymes, perfumes, and dyes** to prevent contact dermatitis on eczema-prone skin and eliminate the H334 respiratory sensitization risk from enzyme dust, while retaining full oxygen bleach and Zeolite A builder power.
-  * **Oxygen Bleaching:** 0% in *Coles Simply* and *Fab* → 4–10% in *Coles Ultra* → 10–15% *Sodium Percarbonate* in *Biozet Attack Regular* for active white brightening.
-  * **Water Softening:** Soluble carbonate only (forming chalky scale) in cheap powders vs. insoluble *Zeolite A* ion exchange in *Coles Ultra* and *Biozet Regular*.
+  * **Why ALDI Trimat Wins Testing:** In *CHOICE* independent laboratory evaluations, *ALDI Trimat Advanced* achieved an equal-first score of **82%** (matching *Omo Ultimate*). Its chemical formulation combines ~20% Zeolite A ion exchangers, a Quattro-enzyme system (Subtilisin, Amylase, Lipase, Cellulase), and active Sodium Percarbonate (10–14%) with TAED activator for cold-water peracetic acid generation.
+  * **The Ultra-Budget Salt Trap:** *LaundRite* ($1.12/kg) and *Coles Simply* ($1.25/kg) contain 64–72% inert *Sodium Sulfate* filler, delivering only ~5g of surfactant per 100g scoop, with 0% enzymes and 0% oxygen bleach.
+  * **The Sensitive Skin Duopoly:** Both *ALDI Trimat Sensitive* and *Coles Ultra Sensitive* cost $5.25/kg and omit enzymes, perfumes, and dyes to eliminate protease-induced keratolysis on eczema-prone skin and remove the H334 respiratory sensitizer classification, while retaining full Zeolite A and oxygen bleach stain-lifting capacity.
+  * **Softener Residue Mechanics:** None of these powders contain waxy cationic tallow-quats. Zeolite A in concentrates can leave harmless white mineral dust if under-rinsed, whereas high-carbonate budget powders precipitate insoluble calcium carbonate chalk in hard water, causing fabric stiffness.
 
 ---
 
 ## 📊 Market & Commercial Strategy
 
-Why do manufacturers produce distinct formulations sold at the exact same retail price point?
-1. **FMCG "Shelf Blocking":** Multiplying SKUs captures 6–12 consecutive supermarket facings at Coles and Woolworths, blocking competitor brands from consumer view.
-2. **Target Personas:**
-   * *The Benchmark Purist:* Maximum lab-test cleaning scores (Regular / Advanced).
-   * *The Towel Care Pragmatist:* Built-in natural softness with zero waxy towel buildup (Softener).
-   * *The Activewear Athlete:* Anti-permastink biofilm eradication on synthetics without fabric fading (Eliminator).
-   * *The Sensory Seeker:* Long-lasting fragrance on dry linen as proof of cleanliness (Extreme Clean).
-3. **Compensatory Cost Engineering:** Premium additions (DOBS activator, macrocyclic musks) are balanced by omitting enzymes/brighteners or using high-volume agricultural polyols (glycerin/sorbitol).
+Why do manufacturers produce distinct formulations across mirrored price points?
+1. **Coles vs. ALDI Private-Label Duopoly:** Exact tier parity across the aisle:
+   * *Bulk Price Fighter:* ALDI LaundRite ($1.12/kg) vs. Coles Simply ($1.25/kg)
+   * *Scented Mid-Concentrate:* ALDI Almat Conc ($3.00/kg) vs. Coles Ultra Infusions ($3.00/kg)
+   * *Performance Compact:* ALDI Trimat Advanced ($5.25/kg) vs. Coles Ultra Concentrate ($5.25/kg)
+   * *Hypoallergenic Compact:* ALDI Trimat Sensitive ($5.25/kg) vs. Coles Ultra Sensitive ($5.25/kg)
+2. **Benchmark Positioning:** Kao’s *Biozet Attack Regular* commands a premium ($6.50–$13.00/kg) based on proprietary Care Cellulase, triple surfactant density, and high-purity dissolution kinetics.
 
 ---
 
@@ -65,7 +68,12 @@ Why do manufacturers produce distinct formulations sold at the exact same retail
 
 * `index.html` / `msds_comparison.html`: Single-page light-mode interactive report for Cold Power.
 * `biozet_powders_comparison.html`: Single-page light-mode interactive report for Biozet Attack.
-* `cheapest_coles_detergents_comparison.html`: Single-page light-mode interactive report for 5 Cheapest Coles Detergents.
+* `cheapest_coles_detergents_comparison.html`: Single-page light-mode interactive report for Coles & ALDI Powders vs. Biozet.
+* `ALDI_Laundrite_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for ALDI LaundRite Powder.
+* `ALDI_Almat_Laundry_Powder_4kg_SDS.pdf`: GHS 7 Safety Data Sheet for ALDI Almat 4kg Powder.
+* `ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for ALDI Almat Concentrate Powder.
+* `ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for ALDI Trimat Advanced Powder.
+* `ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for ALDI Trimat Sensitive Powder.
 * `Coles_Simply_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Simply Liquid.
 * `Coles_Simply_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Simply Powder.
 * `Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf`: GHS 7 Safety Data Sheet for Coles Ultra Infusions Powder.
@@ -76,9 +84,6 @@ Why do manufacturers produce distinct formulations sold at the exact same retail
 * `Earth_Choice_Laundry_Liquid_SDS.pdf`: GHS 7 Safety Data Sheet for Earth Choice Laundry Liquid.
 * `Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf`: Official Henkel Safety Data Sheet (Jan 2026).
 * `Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf`: Official Henkel Safety Data Sheet (Jan 2026).
-* `Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf`: Official Henkel consumer disclosure.
-* `Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf`: Official Henkel consumer disclosure.
 * `Biozet_Attack_Regular_Laundry_Powder_SDS.pdf`: Full 16-section GHS 7 Safety Data Sheet.
 * `Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.pdf`: Full 16-section GHS 7 Safety Data Sheet.
 * `Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.pdf`: Full 16-section GHS 7 Safety Data Sheet.
-* `advanced_clean_sds.txt`, `extreme_clean_sds.txt`, `advanced_clean_ing.txt`, `extreme_clean_ing.txt`: Extracted text files.
