@@ -517,13 +517,15 @@
     </header>
 
     <!-- Downloadable & Interactive SDS Documents Section -->
-    <div class="docs-section-title">
+    <div class="docs-section-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1rem 1.25rem;">
       <span>
         <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: text-bottom; margin-right: 4px;"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/><path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.474c.184.612 0 1.28-.279 1.95-.279.67-.68 1.4-1.185 2.179 1.026.45 2.24.811 3.294 1.01.613-.238 1.285-.432 1.884-.399.43.025.798.2 1.02.502.228.307.252.68.07 1.041-.18.358-.535.612-.945.741-.537.17-1.178.13-1.802-.072-.625-.203-1.249-.55-1.783-.984-1.24.408-2.675.69-4.095.842-.486.61-.952 1.134-1.396 1.518-.502.434-1.027.665-1.55.628z"/></svg>
-        Washing Powder SDS Quick Access (Preview Online or Download PDF)
+        Official Safety Data Sheets &amp; Primary Disclosures (Quick Access)
       </span>
-      <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">
-        Click <strong>"Preview on Page"</strong> to read the complete 16-section SDS below
+      <span style="font-size: 0.82rem; font-weight: normal; color: var(--text-muted); display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span class="tag tag-green">✅ Official Manufacturer SDS</span>
+        <span class="tag tag-blue">ℹ️ Official INCI (Non-SDS)</span>
+        <span class="tag tag-orange">⚠️ No Public SDS Available</span>
       </span>
     </div>
 
@@ -534,16 +536,11 @@
           <div class="doc-rank aldi">ALDI Ultra-Budget</div>
           <div class="doc-title">ALDI LaundRite Powder (4kg)</div>
           <div class="doc-price-tag">$1.12 / kg</div>
-          <div class="doc-price-sub">Retail: $4.49 (4kg) | Doc: ALD-LND-PWD-01</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $4.49 (4kg)</div>
+          <span class="tag tag-orange" style="font-size: 0.75rem;">⚠️ No Public SDS Published</span>
         </div>
-        <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('ALDI_Laundrite_Laundry_Powder_SDS.html', 'ALDI_Laundrite_Laundry_Powder_SDS.pdf', 'ALDI LaundRite Laundry Powder (4kg)', 'ALD-LND-PWD-01', 'ALDI Stores', 'WARNING')" class="btn-preview">
-            👁 Preview on Page
-          </button>
-          <div class="doc-btn-row">
-            <a href="./ALDI_Laundrite_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./ALDI_Laundrite_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf orange">PDF ↓</a>
-          </div>
+        <div style="font-size: 0.78rem; color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; padding: 0.5rem 0.6rem; border-radius: 6px; text-align: center; margin-top: 0.6rem; line-height: 1.3;">
+          Unlisted on Chemwatch (<code>aldiaus</code>). Data modeled from carton claims &amp; HCIS limits.
         </div>
       </div>
 
@@ -553,34 +550,34 @@
           <div class="doc-rank aldi">ALDI Family Bulk</div>
           <div class="doc-title">ALDI Almat Powder (4kg)</div>
           <div class="doc-price-tag">$1.25 / kg</div>
-          <div class="doc-price-sub">Retail: $4.99 (4kg) | Doc: ALD-ALM-4KG-02</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $4.99 (4kg) | Chemwatch 5679-94</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('ALDI_Almat_Laundry_Powder_4kg_SDS.html', 'ALDI_Almat_Laundry_Powder_4kg_SDS.pdf', 'ALDI Almat Laundry Powder (4kg Bulk Box)', 'ALD-ALM-4KG-02', 'ALDI Stores', 'DANGER')" class="btn-preview">
+          <button type="button" onclick="loadSDS('ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf', 'ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf', 'ALDI Almat Lemon Spritz Bulk 4kg Powder', 'Chemwatch No. 5679-94', 'ALDI Stores Australia', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.pdf" target="_blank" class="btn-pdf henkel">PDF ↓</a>
+            <a href="./ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf henkel" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 3. Coles Simply Powder -->
+      <!-- 3. Coles Simply 4kg -->
       <div class="doc-card card-orange">
         <div>
-          <div class="doc-rank">Coles Budget Tier</div>
+          <div class="doc-rank coles">Coles Ultra-Budget</div>
           <div class="doc-title">Coles Simply Powder (4kg)</div>
           <div class="doc-price-tag">$1.25 / kg</div>
-          <div class="doc-price-sub">Retail: $5.00 (4kg) | Doc: COL-SIM-PWD-02</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $5.00 (4kg) | Chemwatch TE0001</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('Coles_Simply_Laundry_Powder_SDS.html', 'Coles_Simply_Laundry_Powder_SDS.pdf', 'Coles Simply Laundry Powder (4kg)', 'COL-SIM-PWD-02', 'Coles Supermarkets', 'WARNING')" class="btn-preview">
+          <button type="button" onclick="loadSDS('Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf', 'Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf', 'Coles Simply Lemon 4kg Bulk Laundry Powder', 'Chemwatch No. TE0001 (APN 9300601245703)', 'Coles Supermarkets', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./Coles_Simply_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./Coles_Simply_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf orange">PDF ↓</a>
+            <a href="./Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf orange" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
@@ -588,210 +585,214 @@
       <!-- 4. ALDI Almat Concentrate 2kg -->
       <div class="doc-card card-amber">
         <div>
-          <div class="doc-rank aldi">ALDI Scented Conc</div>
+          <div class="doc-rank aldi">ALDI Scented Compact</div>
           <div class="doc-title">ALDI Almat Concentrate (2kg)</div>
           <div class="doc-price-tag">$3.00 / kg</div>
-          <div class="doc-price-sub">Retail: $5.99 (2kg) | Doc: ALD-ALM-CON-03</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $5.99 (2kg) | Chemwatch 5497-96</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('ALDI_Almat_Concentrate_Laundry_Powder_SDS.html', 'ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf', 'ALDI Almat Concentrate Laundry Powder (2kg)', 'ALD-ALM-CON-03', 'ALDI Stores', 'DANGER')" class="btn-preview">
+          <button type="button" onclick="loadSDS('ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf', 'ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf', 'ALDI Almat Concentrate 2kg Laundry Powder', 'Chemwatch No. 5497-96', 'ALDI Stores Australia', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf amber">PDF ↓</a>
+            <a href="./ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf amber" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 5. Coles Ultra Infusions -->
+      <!-- 5. Coles Ultra Infusions 2kg -->
       <div class="doc-card card-amber">
         <div>
-          <div class="doc-rank">Coles Scented Conc</div>
+          <div class="doc-rank coles">Coles Scented Compact</div>
           <div class="doc-title">Coles Ultra Infusions (2kg)</div>
           <div class="doc-price-tag">$3.00 / kg</div>
-          <div class="doc-price-sub">Retail: $6.00 (2kg) | Doc: COL-ULT-INF-03</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $6.00 (2kg) | Chemwatch 5431-76</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('Coles_Ultra_Infusions_Laundry_Powder_SDS.html', 'Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf', 'Coles Ultra Infusions Laundry Powder (2kg)', 'COL-ULT-INF-03', 'Coles Supermarkets', 'DANGER')" class="btn-preview">
+          <button type="button" onclick="loadSDS('Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf', 'Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf', 'Coles Ultra Infusions Tropical Paradise 2kg', 'Chemwatch No. 5431-76', 'Coles Supermarkets', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf amber">PDF ↓</a>
+            <a href="./Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf amber" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 6. Fab Bulk 4kg -->
+      <!-- 6. Fab Sunshine Fresh 4kg -->
       <div class="doc-card card-henkel">
         <div>
-          <div class="doc-rank">Henkel Brand Value</div>
+          <div class="doc-rank henkel">National Mass-Market</div>
           <div class="doc-title">Fab Sunshine Fresh (4kg)</div>
           <div class="doc-price-tag">$4.13 / kg</div>
-          <div class="doc-price-sub">Retail: $16.50 (4kg) | Henkel Australia</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $16.50 (4kg) | Henkel LHC INCI</div>
+          <span class="tag tag-blue" style="font-size: 0.75rem;">ℹ️ Official INCI (Non-SDS)</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('Fab_Sunshine_Fresh_Laundry_Powder_SDS.html', 'Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf', 'Fab Sunshine Fresh Bulk Laundry Powder (4kg)', 'HEN-FAB-SUN-01', 'Henkel Australia', 'DANGER')" class="btn-preview">
+          <button type="button" onclick="loadSDS('Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf', 'Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf', 'Fab Laundry Powders & Liquids Master Ingredients', 'Henkel LHC Master Registry', 'Henkel Australia', 'Official INCI Disclosure (NOT an SDS)', 'blue')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf henkel">PDF ↓</a>
+            <a href="./Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf" target="_blank" class="btn-pdf teal" style="flex:1; text-align:center;">Official INCI PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 7. ALDI Trimat Advanced (Equal #1 CHOICE) -->
+      <!-- 7. ALDI Trimat Advanced 2kg -->
       <div class="doc-card card-aldi-trimat">
         <div>
-          <div class="doc-rank aldi">★ ALDI Flagship (Choice #1)</div>
+          <div class="doc-rank choice">CHOICE #1 Equal 82%</div>
           <div class="doc-title">ALDI Trimat Advanced (2kg)</div>
-          <div class="doc-price-tag" style="color: #1e3a8a;">$5.25 / kg</div>
-          <div class="doc-price-sub">Retail: $10.49 | 82% CHOICE Top Score</div>
+          <div class="doc-price-tag">$5.25 / kg</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $10.49 (2kg) | Chemwatch 712-7427</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html', 'ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf', 'ALDI Trimat Advanced Concentrated Laundry Powder (2kg)', 'ALD-TRM-ADV-04', 'ALDI Stores', 'DANGER')" class="btn-preview" style="background: #e0e7ff; color: #1e3a8a; border-color: #c7d2fe;">
+          <button type="button" onclick="loadSDS('ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf', 'ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf', 'ALDI Trimat Advanced Concentrate Laundry Powder', 'Chemwatch No. 712-7427', 'ALDI Stores Australia', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf aldi-blue">PDF ↓</a>
+            <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 8. Coles Ultra Concentrate -->
+      <!-- 8. Coles Ultra Concentrate 2kg -->
       <div class="doc-card card-ultra">
         <div>
-          <div class="doc-rank">Coles Flagship Conc</div>
+          <div class="doc-rank coles">Coles Performance</div>
           <div class="doc-title">Coles Ultra Concentrate (2kg)</div>
           <div class="doc-price-tag">$5.25 / kg</div>
-          <div class="doc-price-sub">Retail: $10.50 (2kg) | Doc: COL-ULT-CON-02</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $10.50 (2kg) | Chemwatch 5232-99</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('Coles_Ultra_Concentrate_Laundry_Powder_SDS.html', 'Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf', 'Coles Ultra Concentrate Laundry Powder (2kg)', 'COL-ULT-CON-02', 'Coles Supermarkets', 'DANGER')" class="btn-preview">
+          <button type="button" onclick="loadSDS('Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf', 'Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf', 'Coles Ultra Concentrate Laundry Powder (1kg / 2kg)', 'Chemwatch No. 5232-99', 'Coles Supermarkets', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf purple">PDF ↓</a>
+            <a href="./Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf purple" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 9. ALDI Trimat Sensitive -->
+      <!-- 9. ALDI Trimat Sensitive 2kg -->
       <div class="doc-card card-aldi-sensitive">
         <div>
-          <div class="doc-rank aldi">ALDI Sensitive Tier</div>
+          <div class="doc-rank aldi">Sensitive Skin</div>
           <div class="doc-title">ALDI Trimat Sensitive (2kg)</div>
-          <div class="doc-price-tag" style="color: #0d9488;">$5.25 / kg</div>
-          <div class="doc-price-sub">Retail: $10.49 | 0% Perfume/Enzyme | Doc: ALD-TRM-SEN-05</div>
+          <div class="doc-price-tag">$5.25 / kg</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $10.49 (2kg)</div>
+          <span class="tag tag-orange" style="font-size: 0.75rem;">⚠️ No Powder SDS Published</span>
         </div>
-        <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.html', 'ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf', 'ALDI Trimat Advanced Sensitive Concentrated Laundry Powder (2kg)', 'ALD-TRM-SEN-05', 'ALDI Stores', 'DANGER')" class="btn-preview" style="background: #ccfbf1; color: #0f766e; border-color: #99f6e4;">
-            👁 Preview on Page
-          </button>
-          <div class="doc-btn-row">
-            <a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf teal">PDF ↓</a>
-          </div>
+        <div style="font-size: 0.78rem; color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; padding: 0.5rem 0.6rem; border-radius: 6px; text-align: center; margin-top: 0.6rem; line-height: 1.3;">
+          ALDI Chemwatch indexes Sensitive Liquid (5580-71). Powder claims derived from on-pack specs.
         </div>
       </div>
 
-      <!-- 10. Coles Ultra Sensitive -->
+      <!-- 10. Coles Ultra Sensitive 2kg -->
       <div class="doc-card" style="border-top-color: #0284c7; background: #f8fafc;">
         <div>
-          <div class="doc-rank" style="color: #0369a1;">Coles Sensitive Tier</div>
+          <div class="doc-rank coles">Dermatological Sensitive</div>
           <div class="doc-title">Coles Ultra Sensitive (2kg)</div>
           <div class="doc-price-tag">$5.25 / kg</div>
-          <div class="doc-price-sub">Retail: $10.50 | 0% Perfume/Enzyme | Doc: COL-ULT-SEN-05</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Retail: $10.50 (2kg) | Chemwatch 5232-98</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Manufacturer SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('Coles_Ultra_Sensitive_Laundry_Powder_SDS.html', 'Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf', 'Coles Ultra Laundry Powder Concentrate Sensitive (2kg)', 'COL-ULT-SEN-05', 'Coles Supermarkets', 'DANGER')" class="btn-preview">
+          <button type="button" onclick="loadSDS('Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf', 'Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf', 'Coles Ultra Sensitive Concentrate Powder (2kg)', 'Chemwatch No. 5232-98', 'Coles Supermarkets', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf henkel">PDF ↓</a>
+            <a href="./Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf henkel" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
           </div>
         </div>
       </div>
 
-      <!-- 11. Biozet Attack Regular (Benchmark) -->
-      <div class="doc-card card-benchmark">
+      <!-- 11. Cold Power Laundry Powder -->
+      <div class="doc-card card-henkel">
         <div>
-          <div class="doc-rank gold">★ Gold Standard Benchmark</div>
-          <div class="doc-title">Biozet Attack Regular (2kg/6kg)</div>
-          <div class="doc-price-tag" style="color: #047857;">$6.50 – $13.00/kg</div>
-          <div class="doc-price-sub">Choice Recommended | Kao Australia</div>
+          <div class="doc-rank henkel">Henkel Cold Water Flagship</div>
+          <div class="doc-title">Cold Power Powder (All Sizes)</div>
+          <div class="doc-price-tag">$6.50 / kg</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Henkel SDS HK006 | Issued 04/03/2020</div>
+          <span class="tag tag-green" style="font-size: 0.75rem;">✅ Official Henkel SDS</span>
         </div>
         <div class="doc-btn-group">
-          <button type="button" onclick="loadSDS('Biozet_Attack_Regular_Laundry_Powder_SDS.html', 'Biozet_Attack_Regular_Laundry_Powder_SDS.pdf', 'Biozet Attack Regular Laundry Powder (2kg / 6kg)', 'KAO-BZA-REG-01', 'Kao Australia', 'DANGER')" class="btn-preview" style="background: #dcfce7; color: #166534; border-color: #bbf7d0;">
+          <button type="button" onclick="loadSDS('Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf', 'Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf', 'Cold Power Laundry Powder (All Variants)', 'Henkel SDS No. HK006', 'Henkel Australia', 'Official Manufacturer SDS (GHS 7)', 'green')" class="btn-preview">
             👁 Preview on Page
           </button>
           <div class="doc-btn-row">
-            <a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
-            <a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf green">PDF ↓</a>
+            <a href="./Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf" target="_blank" class="btn-pdf henkel" style="flex:1; text-align:center;">Official SDS PDF ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Biozet Attack Regular -->
+      <div class="doc-card card-benchmark">
+        <div>
+          <div class="doc-rank choice">Benchmark Standard</div>
+          <div class="doc-title">Biozet Attack Regular (2kg/6kg)</div>
+          <div class="doc-price-tag">$6.50 – $13 / kg</div>
+          <div class="doc-price-sub" style="margin-bottom: 0.35rem;">Kao Australia Declaration (Malvern East)</div>
+          <span class="tag tag-blue" style="font-size: 0.75rem;">ℹ️ Official INCI (Non-SDS)</span>
+        </div>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Kao_Biozet_Attack_Official_Product_Information.pdf', 'Kao_Biozet_Attack_Official_Product_Information.pdf', 'Kao Biozet Attack Official Master Product Information', 'Kao Australia (Malvern East VIC)', 'Official Corporate Disclosure (NOT an SDS)', 'blue')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Kao_Biozet_Attack_Official_Product_Information.pdf" target="_blank" class="btn-pdf green" style="flex:1; text-align:center;">Official INCI PDF ↓</a>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- INTERACTIVE IN-PAGE MSDS VIEWER COMPONENT -->
+<!-- INTERACTIVE IN-PAGE MSDS VIEWER COMPONENT -->
     <div class="viewer-card" id="msds-viewer-section">
       <div class="viewer-header">
         <div class="viewer-title-box">
-          <span class="badge-pill" style="margin-bottom: 0.35rem; background: #e0e7ff; color: #1e3a8a;">Interactive Document Reader</span>
-          <h3 id="viewer-title" style="font-size: 1.3rem; font-weight: 800; color: #0f172a;">ALDI Trimat Advanced Concentrated Laundry Powder (2kg)</h3>
+          <span class="badge-pill" style="margin-bottom: 0.35rem; background: #dcfce7; color: #166534; font-weight: 700;">Verified Manufacturer Document Viewer</span>
+          <h3 id="viewer-title" style="font-size: 1.3rem; font-weight: 800; color: #0f172a;">ALDI Trimat Advanced Concentrate Laundry Powder (2kg / 5kg)</h3>
           <div id="viewer-meta" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
-            Doc ID: <strong>ALD-TRM-ADV-04</strong> | Brand: <strong>ALDI Stores</strong> | GHS: <strong>DANGER</strong> | Standards: WHS Australia / GHS 7
+            Document ID: <strong>Chemwatch 712-7427</strong> | Source: <strong>ALDI Stores Australia</strong> | Type: <strong>Safety Data Sheet (GHS 7)</strong> | <span class="tag tag-green">Official SDS</span>
           </div>
         </div>
         <div class="viewer-controls">
-          <select id="sds-selector" onchange="onSelectChange(this.value)" class="sds-dropdown" aria-label="Select MSDS Document">
-            <optgroup label="★ Official Manufacturer Primary Documents (Direct Chemwatch, Henkel &amp; Kao)">
-              <option value="ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI Trimat Advanced Concentrate (Official Chemwatch)|Chemwatch 712-7427|ALDI Stores|DANGER" selected>★ ALDI Trimat Advanced Concentrate (Chemwatch 712-7427)</option>
-              <option value="ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf|ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf|ALDI Almat Lemon Spritz 4kg (Official Chemwatch)|Chemwatch 5679-94|ALDI Stores|DANGER">ALDI Almat Lemon Spritz 4kg Bulk (Chemwatch 5679-94)</option>
-              <option value="ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI Almat Concentrate 2kg (Official Chemwatch)|Chemwatch 5497-96|ALDI Stores|DANGER">ALDI Almat Concentrate 2kg (Chemwatch 5497-96)</option>
-              <option value="Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf|Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf|Henkel Cold Power Laundry Powder (Official Henkel SDS)|Henkel SDS HK006|Henkel Australia|WARNING">★ Cold Power Laundry Powder (Official Henkel SDS HK006)</option>
-              <option value="Henkel_Cold_Power_Australia_Official_Ingredients.pdf|Henkel_Cold_Power_Australia_Official_Ingredients.pdf|Henkel Cold Power Australia Master Ingredients (Official INCI)|Henkel LHC Master Disclosure|Henkel Australia|INCI DISCLOSURE">Cold Power Master Ingredients (Official Henkel INCI)</option>
-              <option value="Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf|Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf|Henkel Fab Powders Master Ingredients (Official INCI)|Henkel LHC Master Disclosure|Henkel Australia|INCI DISCLOSURE">Fab Powders Master Ingredients (Official Henkel INCI)</option>
-              <option value="Kao_Biozet_Attack_Official_Product_Information.pdf|Kao_Biozet_Attack_Official_Product_Information.pdf|Kao Biozet Attack Official Master Product Information|Kao Australia VIC (Malvern East)|Kao Corporation|OFFICIAL DISCLOSURE">★ Biozet Attack Master Chemical Disclosure (Kao Australia)</option>
-              <option value="Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Concentrate Powder (Official Chemwatch)|Chemwatch 5232-99|Coles Supermarkets|DANGER">Coles Ultra Concentrate Powder (Chemwatch 5232-99)</option>
-              <option value="Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Sensitive Powder (Official Chemwatch)|Chemwatch 5232-98|Coles Supermarkets|DANGER">Coles Ultra Sensitive Powder (Chemwatch 5232-98)</option>
-              <option value="Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Infusions Tropical 2kg (Official Chemwatch)|Chemwatch 5431-76|Coles Supermarkets|DANGER">Coles Ultra Infusions Tropical 2kg (Chemwatch 5431-76)</option>
-              <option value="Coles_Ultra_Infusions_5kg_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Infusions_5kg_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Infusions Tropical 5kg (Official Chemwatch)|Chemwatch 9022-03|Coles Supermarkets|DANGER">Coles Ultra Infusions 5kg Bulk (Chemwatch 9022-03)</option>
-              <option value="Coles_Infusions_Laundry_Powder_Official_Chemwatch.pdf|Coles_Infusions_Laundry_Powder_Official_Chemwatch.pdf|Coles Infusions Laundry Powder 2kg (Official Chemwatch)|Chemwatch 5232-96|Coles Supermarkets|DANGER">Coles Infusions Laundry Powder 2kg (Chemwatch 5232-96)</option>
-              <option value="Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf|Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf|Coles Simply Lemon 4kg Powder (Official Chemwatch)|Chemwatch TE0001 (APN 9300601245703)|Coles Supermarkets|WARNING">Coles Simply Lemon 4kg Bulk (Chemwatch TE0001)</option>
-              <option value="Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf|Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf|Cold Power Advanced Clean Liquid (Official Henkel SDS)|Henkel SAP 565969|Henkel Australia|DANGER">Cold Power Adv. Clean Liquid (Official Henkel SDS 565969)</option>
-              <option value="Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf|Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf|Cold Power Extreme Clean Liquid (Official Henkel SDS)|Henkel SAP 729522|Henkel Australia|DANGER">Cold Power Ext. Clean Liquid (Official Henkel SDS 729522)</option>
-              <option value="ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf|ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf|ALDI Trimat Advanced Liquid (Official Chemwatch)|Chemwatch 5580-70|ALDI Stores|DANGER">ALDI Trimat Advanced Liquid (Chemwatch 5580-70)</option>
-              <option value="ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|ALDI Trimat Sensitive Liquid (Official Chemwatch)|Chemwatch 5580-71|ALDI Stores|DANGER">ALDI Trimat Sensitive Liquid (Chemwatch 5580-71)</option>
-              <option value="Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf|Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf|Coles Smart Buy / Simply Liquid (Official Chemwatch)|Chemwatch 5232-92|Coles Supermarkets|DANGER">Coles Simply / Smart Buy Liquid (Chemwatch 5232-92)</option>
-              <option value="Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|Coles Ultra Concentrate Sensitive Liquid (Official Chemwatch)|Chemwatch 5694-29|Coles Supermarkets|DANGER">Coles Ultra Sensitive Liquid (Chemwatch 5694-29)</option>
+          <select id="sds-selector" onchange="onSelectChange(this.value)" class="sds-dropdown" aria-label="Select Official Document">
+            <optgroup label="✅ Official Manufacturer Safety Data Sheets (SDSs - GHS 7)">
+              <option value="ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI Trimat Advanced Concentrate Laundry Powder|Chemwatch No. 712-7427 (Rev 27/09/2023)|ALDI Stores Australia|Official Manufacturer SDS (GHS 7)|green" selected>★ ALDI Trimat Advanced Concentrate (Chemwatch 712-7427)</option>
+              <option value="ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf|ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf|ALDI Almat Lemon Spritz Bulk 4kg Powder|Chemwatch No. 5679-94 (Rev 20/06/2024)|ALDI Stores Australia|Official Manufacturer SDS (GHS 7)|green">ALDI Almat Lemon Spritz 4kg Bulk (Chemwatch 5679-94)</option>
+              <option value="ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI Almat Concentrate 2kg Laundry Powder|Chemwatch No. 5497-96 (Rev 14/01/2025)|ALDI Stores Australia|Official Manufacturer SDS (GHS 7)|green">ALDI Almat Concentrate 2kg (Chemwatch 5497-96)</option>
+              <option value="Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf|Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf|Cold Power Laundry Powder (All Variants)|Henkel SDS No. HK006 (GHS WHS Australia)|Henkel Australia|Official Manufacturer SDS (GHS 7)|green">★ Cold Power Laundry Powder (Official Henkel SDS HK006)</option>
+              <option value="Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Concentrate Laundry Powder (1kg / 2kg)|Chemwatch No. 5232-99 (Rev 10/03/2023)|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Ultra Concentrate Powder (Chemwatch 5232-99)</option>
+              <option value="Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Sensitive Concentrate Powder (2kg)|Chemwatch No. 5232-98 (Rev 21/09/2026)|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Ultra Sensitive Powder (Chemwatch 5232-98)</option>
+              <option value="Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Infusions Tropical Paradise 2kg|Chemwatch No. 5431-76 (Rev 14/04/2026)|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Ultra Infusions Tropical 2kg (Chemwatch 5431-76)</option>
+              <option value="Coles_Ultra_Infusions_5kg_Laundry_Powder_Official_Chemwatch.pdf|Coles_Ultra_Infusions_5kg_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Infusions Tropical 5kg Bulk Box|Chemwatch No. 9022-03|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Ultra Infusions 5kg Bulk (Chemwatch 9022-03)</option>
+              <option value="Coles_Infusions_Laundry_Powder_Official_Chemwatch.pdf|Coles_Infusions_Laundry_Powder_Official_Chemwatch.pdf|Coles Infusions Laundry Powder 2kg|Chemwatch No. 5232-96|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Infusions Laundry Powder 2kg (Chemwatch 5232-96)</option>
+              <option value="Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf|Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf|Coles Simply Lemon 4kg Bulk Laundry Powder|Chemwatch No. TE0001 (APN 9300601245703)|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Simply Lemon 4kg Bulk (Chemwatch TE0001)</option>
+              <option value="Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf|Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf|Cold Power Advanced Clean Laundry Liquid|Henkel SAP Portal No. 565969|Henkel Australia|Official Manufacturer SDS (GHS 7)|green">Cold Power Adv. Clean Liquid (Official Henkel SDS 565969)</option>
+              <option value="Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf|Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf|Cold Power Extreme Clean Laundry Liquid|Henkel SAP Portal No. 729522|Henkel Australia|Official Manufacturer SDS (GHS 7)|green">Cold Power Ext. Clean Liquid (Official Henkel SDS 729522)</option>
+              <option value="ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf|ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf|ALDI Trimat Advanced Laundry Liquid 2L & 4L|Chemwatch No. 5580-70|ALDI Stores Australia|Official Manufacturer SDS (GHS 7)|green">ALDI Trimat Advanced Liquid (Chemwatch 5580-70)</option>
+              <option value="ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|ALDI Trimat Sensitive Laundry Liquid 2L & 4L|Chemwatch No. 5580-71|ALDI Stores Australia|Official Manufacturer SDS (GHS 7)|green">ALDI Trimat Sensitive Liquid (Chemwatch 5580-71)</option>
+              <option value="Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf|Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf|Coles Smart Buy / Simply Laundry Liquid 2L|Chemwatch No. 5232-92|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Simply / Smart Buy Liquid (Chemwatch 5232-92)</option>
+              <option value="Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf|Coles Ultra Concentrate Sensitive Laundry Liquid|Chemwatch No. 5694-29|Coles Supermarkets|Official Manufacturer SDS (GHS 7)|green">Coles Ultra Sensitive Liquid (Chemwatch 5694-29)</option>
             </optgroup>
-            <optgroup label="Interactive Web Visualizers (HTML Technical Sheets)">
-              <option value="ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html|ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI Trimat Advanced Concentrated Laundry Powder (2kg)|ALD-TRM-ADV-04|ALDI Stores|DANGER">ALDI Trimat Advanced Concentrate HTML</option>
-              <option value="ALDI_Almat_Concentrate_Laundry_Powder_SDS.html|ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|ALDI Almat Concentrate Laundry Powder (2kg)|ALD-ALM-CON-03|ALDI Stores|DANGER">ALDI Almat Concentrate HTML</option>
-              <option value="ALDI_Almat_Laundry_Powder_4kg_SDS.html|ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf|ALDI Almat Laundry Powder (4kg Bulk Box)|ALD-ALM-4KG-02|ALDI Stores|DANGER">ALDI Almat Lemon Spritz 4kg HTML</option>
-              <option value="Coles_Ultra_Concentrate_Laundry_Powder_SDS.html|Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Concentrate Laundry Powder (2kg)|COL-ULT-CON-02|Coles Supermarkets|DANGER">Coles Ultra Concentrate Powder HTML</option>
-              <option value="Coles_Ultra_Sensitive_Laundry_Powder_SDS.html|Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Sensitive Concentrate (2kg)|COL-ULT-SEN-05|Coles Supermarkets|DANGER">Coles Ultra Sensitive Concentrate HTML</option>
-              <option value="Coles_Ultra_Infusions_Laundry_Powder_SDS.html|Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf|Coles Ultra Infusions Tropical (2kg)|COL-ULT-INF-03|Coles Supermarkets|DANGER">Coles Ultra Infusions Tropical HTML</option>
-              <option value="Coles_Simply_Laundry_Powder_SDS.html|Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf|Coles Simply Laundry Powder (4kg)|COL-SIM-PWD-02|Coles Supermarkets|WARNING">Coles Simply Laundry Powder HTML</option>
-              <option value="Biozet_Attack_Regular_Laundry_Powder_SDS.html|Kao_Biozet_Attack_Official_Product_Information.pdf|Biozet Attack Regular Laundry Powder (2kg / 6kg)|KAO-BZA-REG-01|Kao Australia|DANGER">Biozet Attack Regular HTML</option>
-              <option value="Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.html|Kao_Biozet_Attack_Official_Product_Information.pdf|Biozet Attack PLUS Softener Powder (2kg)|KAO-BZA-SOF-02|Kao Australia|DANGER">Biozet Attack PLUS Softener HTML</option>
-              <option value="Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.html|Kao_Biozet_Attack_Official_Product_Information.pdf|Biozet Attack PLUS Eliminator Powder (2kg)|KAO-BZA-ELI-03|Kao Australia|DANGER">Biozet Attack PLUS Eliminator HTML</option>
-              <option value="Fab_Sunshine_Fresh_Laundry_Powder_SDS.html|Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf|Fab Sunshine Fresh Bulk Laundry Powder (4kg)|HEN-FAB-SUN-01|Henkel Australia|DANGER">Fab Sunshine Fresh Powder HTML</option>
+            <optgroup label="ℹ️ Official Manufacturer Primary Disclosures (Non-SDS: INCI & Product Info)">
+              <option value="Henkel_Cold_Power_Australia_Official_Ingredients.pdf|Henkel_Cold_Power_Australia_Official_Ingredients.pdf|Cold Power Australia Master Ingredients (All Powders & Liquids)|Henkel LHC Registry (Canterbury Rd VIC)|Official INCI Disclosure (NOT an SDS)|blue">Cold Power Master Ingredients (Official Henkel INCI - Non-SDS)</option>
+              <option value="Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf|Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf|Fab Laundry Powders & Liquids Master Ingredients|Henkel LHC Registry (assets.henkel-lhc.com)|Official INCI Disclosure (NOT an SDS)|blue">Fab Powders Master Ingredients (Official Henkel INCI - Non-SDS)</option>
+              <option value="Kao_Biozet_Attack_Official_Product_Information.pdf|Kao_Biozet_Attack_Official_Product_Information.pdf|Kao Biozet Attack Official Master Product Information|Kao Australia VIC (1911 Malvern Rd, Malvern East)|Official Corporate Disclosure (NOT an SDS)|blue">★ Biozet Attack Master Chemical Disclosure (Kao Australia - Non-SDS)</option>
+              <option value="Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf|Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf|Cold Power Advanced Clean Ingredient Datasheet|Henkel SAP Subid 000000565969|Henkel Australia|Official INCI Datasheet (NOT an SDS)|blue">Cold Power Adv. Clean INCI Datasheet (Henkel SAP - Non-SDS)</option>
+              <option value="Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf|Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf|Cold Power Extreme Clean Ingredient Datasheet|Henkel SAP Subid 000000729522|Henkel Australia|Official INCI Datasheet (NOT an SDS)|blue">Cold Power Ext. Clean INCI Datasheet (Henkel SAP - Non-SDS)</option>
             </optgroup>
           </select>
-          <a id="viewer-open-btn" href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html" style="padding: 0.55rem 0.85rem; font-size: 0.82rem;">Open Full Tab ↗</a>
-          <a id="viewer-pdf-btn" href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf aldi-blue" style="padding: 0.55rem 0.85rem; font-size: 0.82rem;">Download PDF ↓</a>
+          <a id="viewer-open-btn" href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-html" style="padding: 0.55rem 0.85rem; font-size: 0.82rem;">Open Full Tab ↗</a>
+          <a id="viewer-pdf-btn" href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue" style="padding: 0.55rem 0.85rem; font-size: 0.82rem;">Download PDF ↓</a>
         </div>
       </div>
 
       <div class="viewer-iframe-box">
-        <iframe id="sds-iframe" src="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" title="Safety Data Sheet Viewer"></iframe>
+        <iframe id="sds-iframe" src="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" title="Safety Data Sheet Viewer"></iframe>
       </div>
     </div>
 
@@ -907,6 +908,20 @@
               <td style="background: #f0fdfa;">ALDI Stores (Contract)</td>
               <td style="background: #f0f9ff;">Coles Supermarkets</td>
               <td style="background: #f0fdf4;"><strong>Kao Australia (Japan)</strong></td>
+            </tr>
+            <tr style="background: #f8fafc; border-top: 2px solid #cbd5e1; border-bottom: 2px solid #cbd5e1;">
+              <td><strong>Data Provenance &amp; Official SDS Status</strong></td>
+              <td style="background: #fffbeb;"><span class="tag tag-orange" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">⚠️ Non-SDS<br><small>Packaging Claims &amp; Deduction</small></span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch 5679-94</small></span></td>
+              <td><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch TE0001</small></span></td>
+              <td style="background: #eff6ff;"><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch 5497-96</small></span></td>
+              <td><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch 5431-76</small></span></td>
+              <td><span class="tag tag-blue" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">ℹ️ Non-SDS<br><small>Official Henkel INCI List</small></span></td>
+              <td style="background: #e0e7ff; color: #1e3a8a;"><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch 712-7427</small></span></td>
+              <td><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch 5232-99</small></span></td>
+              <td style="background: #f0fdfa; color: #0d9488;"><span class="tag tag-orange" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">⚠️ Non-SDS<br><small>Packaging &amp; Liquid SDS</small></span></td>
+              <td style="background: #f0f9ff; color: #0369a1;"><span class="tag tag-green" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">✅ Official SDS<br><small>Chemwatch 5232-98</small></span></td>
+              <td style="background: #ecfdf5; color: #047857;"><span class="tag tag-blue" style="display:inline-block; font-size:0.75rem; white-space:normal; line-height:1.2;">ℹ️ Non-SDS<br><small>Official Kao Corporate List</small></span></td>
             </tr>
             <tr>
               <td><strong>GHS Signal Word</strong></td>
@@ -1050,7 +1065,20 @@
               <th style="text-align:center; background:#f0f9ff; color:#0369a1;">Coles Ultra Sens</th>
               <th style="text-align:center; background:#ecfdf5; color:#047857;">Biozet Regular</th>
             </tr>
-          </thead>
+          
+            <tr style="font-size: 0.75rem; font-weight: normal; background: #f8fafc; color: var(--text-muted);">
+              <th colspan="3" style="text-align: right; padding-right: 0.75rem;">Official SDS Verification:</th>
+              <th style="text-align:center; background:#fffbeb;"><span class="tag tag-orange" style="font-size:0.7rem;">Non-SDS</span></th>
+              <th style="text-align:center; background:#eff6ff;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center; background:#eff6ff;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center; background:#e0e7ff; color:#1e3a8a;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center; background:#f0fdfa; color:#0d9488;"><span class="tag tag-orange" style="font-size:0.7rem;">Non-SDS</span></th>
+              <th style="text-align:center; background:#f0f9ff; color:#0369a1;"><span class="tag tag-green" style="font-size:0.7rem;">Official SDS</span></th>
+              <th style="text-align:center; background:#ecfdf5; color:#047857;"><span class="tag tag-blue" style="font-size:0.7rem;">Non-SDS INCI</span></th>
+            </tr></thead>
           <tbody>
             <tr style="background-color: #fff7ed;">
               <td><strong>Sodium Sulfate</strong></td>
@@ -1473,256 +1501,285 @@
 
     <!-- Section 6: Master Technical Documentation & MSDS File Library -->
     <div class="section-card" id="master-library-section">
-      <h2>6. Regulatory Compliance, Official Portals &amp; MSDS File Library (21 Official Files)</h2>
+      <h2>6. Regulatory Compliance, Official Portals &amp; Master Document Library</h2>
       
       <!-- Regulatory Transparency Notice -->
       <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #16a34a; border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
         <h4 style="font-size: 1.05rem; font-weight: 800; color: #14532d; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
           <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
-          100% Grounded in Official Manufacturer Safety Data Sheets &amp; Primary INCI Registers
+          Rigorous Data Provenance: Official SDS Documents vs. Non-SDS Disclosures
         </h4>
         <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.6rem;">
-          Every chemical formulation, hazard code, CAS number, and concentration percentage in this comparative investigation is grounded strictly in authentic, official manufacturer-issued primary documents:
+          To maintain strict scientific and regulatory integrity, this platform strictly distinguishes between verified <strong>Official Safety Data Sheets (SDSs)</strong>, official <strong>Manufacturer INCI Disclosures (Non-SDS)</strong>, and <strong>Packaging/Deduction Models</strong> where no official SDS is published:
         </p>
         <ul style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; padding-left: 1.4rem; margin-bottom: 0.6rem;">
-          <li><strong>ALDI Stores Chemwatch Outback Portal (<code>login=aldiaus</code>):</strong> Direct enterprise Chemwatch autologin portal maintained by ALDI Stores Australia (<a href="https://jr.chemwatch.net/outb/account/autologin?login=aldiaus" target="_blank" style="color: #2563eb; font-weight: 600;">jr.chemwatch.net/outb/?login=aldiaus</a>) via the <a href="https://help.aldi.com.au" target="_blank" style="color: #2563eb; font-weight: 600;">ALDI Help Centre</a>. Downloaded official Chemwatch GHS 7 SDSs for <em>ALDI Trimat Advanced Concentrate</em> (Chemwatch 712-7427), <em>Almat Lemon Spritz 4kg</em> (Chemwatch 5679-94), <em>Almat Concentrate 2kg</em> (Chemwatch 5497-96), and Trimat Liquids.</li>
-          <li><strong>Coles Supermarkets Chemwatch Outback Portal (<code>login=colessa</code>):</strong> Direct enterprise Chemwatch autologin portal maintained by Coles (<a href="http://jr.chemwatch.net/outb/account/autologin?login=colessa" target="_blank" style="color: #2563eb; font-weight: 600;">jr.chemwatch.net/outb/?login=colessa</a>) via <a href="https://www.coles.com.au/help/product-safety-data-sheet" target="_blank" style="color: #2563eb; font-weight: 600;">coles.com.au/help/product-safety-data-sheet</a>. Downloaded official Chemwatch GHS 7 SDSs for <em>Coles Ultra Concentrate Powder</em> (Chemwatch 5232-99), <em>Coles Ultra Sensitive Powder</em> (Chemwatch 5232-98), <em>Coles Ultra Infusions Tropical 2kg</em> (Chemwatch 5431-76), <em>Coles Ultra Infusions 5kg Bulk</em> (Chemwatch 9022-03), <em>Coles Infusions 2kg</em> (Chemwatch 5232-96), <em>Coles Simply Lemon 4kg</em> (Chemwatch TE0001 / APN 9300601245703), and Liquids.</li>
-          <li><strong>Henkel Australia Official Documents:</strong> Official Henkel Australia Safety Data Sheet <strong>HK006</strong> for <em>Cold Power Laundry Powder (All Variants)</em>, Henkel SAP GHS SDSs Nos. 565969 &amp; 729522 for <em>Cold Power Liquids</em>, and official Henkel Laundry &amp; Home Care INCI disclosures (<code>assets.henkel-lhc.com</code>) for <em>Cold Power Australia</em> and <em>Fab Powders</em>.</li>
-          <li><strong>Kao Australia Official Chemical Disclosure:</strong> Master 11-page product chemical and functional disclosure issued by Kao Australia Marketing Pty Ltd (1911 Malvern Rd, Malvern East VIC 3145) via <a href="https://biozetattack.com.au/product-information/" target="_blank" style="color: #2563eb; font-weight: 600;">biozetattack.com.au/product-information/</a>, specifying exact ingredient roles across Biozet Attack Regular, PLUS Softener (Bentonite), and PLUS Eliminator (DOBS).</li>
+          <li><strong>Official Chemwatch Safety Data Sheets (ALDI &amp; Coles):</strong> 100% authentic GHS 7 Safety Data Sheets downloaded directly via the public autologin compliance portals maintained by ALDI Stores Australia (<a href="https://jr.chemwatch.net/outb/account/autologin?login=aldiaus" target="_blank" style="color: #2563eb; font-weight: 600;">login=aldiaus</a>) and Coles Supermarkets (<a href="http://jr.chemwatch.net/outb/account/autologin?login=colessa" target="_blank" style="color: #2563eb; font-weight: 600;">login=colessa</a>). These documents establish legally binding chemical concentrations and HCIS hazard classifications.</li>
+          <li><strong>Official Henkel Safety Data Sheet HK006:</strong> Authentic manufacturer SDS issued by Henkel Australia (Canterbury Rd, Kilsyth VIC) covering <em>Cold Power Laundry Powder (All Variants)</em> under GHS Australia WHS regulations.</li>
+          <li><strong>Official Manufacturer INCI Lists (NOT SDSs):</strong> Henkel's official LHC Master Ingredients Disclosure (<code>assets.henkel-lhc.com</code>) for <em>Fab Powders</em> and <em>Cold Power Australia</em>, as well as Kao Corporation's environmental product declarations (<code>biozetattack.com.au</code>) for <em>Biozet Attack</em>, provide full chemical lists and functional roles. However, they are <strong>corporate ingredient disclosures, NOT workplace Safety Data Sheets</strong>.</li>
+          <li><strong>Products Lacking Public Official SDSs:</strong> Neither ALDI Stores nor their contract manufacturers publicly publish an official SDS for <em>LaundRite 4kg</em> or <em>Trimat Sensitive Powder</em> in the active Chemwatch database. Their chemical profiles are modeled based on retail packaging claims, APN barcode records, and Safe Work Australia HCIS concentration limits.</li>
         </ul>
       </div>
 
-      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
-        Complete document registry across Australian supermarket detergents (click any link to view or download):
+      <!-- Table 6.1: Official Safety Data Sheets -->
+      <h3 style="font-size: 1.15rem; color: #166534; margin-top: 1.5rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+        <span class="tag tag-green" style="font-size: 0.85rem;">Part 1</span>
+        Official Manufacturer Safety Data Sheets (SDSs — 16 Verified Documents)
+      </h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+        These files are authentic, officially issued GHS 7 workplace Safety Data Sheets retrieved directly from Chemwatch and Henkel SAP compliance portals:
+      </p>
+
+      <div class="table-container" style="margin-bottom: 2rem;">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 24%;">Product / Document Title</th>
+              <th style="width: 14%;">Manufacturer</th>
+              <th style="width: 12%;">Product Form</th>
+              <th style="width: 24%;">Official Document ID &amp; Revision</th>
+              <th style="width: 10%;">GHS Rating</th>
+              <th style="width: 16%;">Download Official SDS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: #f0fdf4;">
+              <td><strong>ALDI Trimat Advanced Concentrate Powder</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-aldi">Powder (2kg / 5kg)</span></td>
+              <td><strong>Chemwatch No. 712-7427</strong> (Rev 27/09/2023)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue">Official SDS PDF (300 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>ALDI Almat Lemon Spritz Bulk Powder</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-blue">Powder (4kg Box)</span></td>
+              <td><strong>Chemwatch No. 5679-94</strong> (Rev 20/06/2024)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf henkel">Official SDS PDF (293 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>ALDI Almat Concentrate Laundry Powder</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-amber">Powder (2kg / 4kg / 10kg)</span></td>
+              <td><strong>Chemwatch No. 5497-96</strong> (Rev 14/01/2025)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf amber">Official SDS PDF (313 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Henkel Cold Power Laundry Powder (All Variants)</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-blue">Powder (All Sizes)</span></td>
+              <td><strong>Henkel SDS No. HK006</strong> (Issued 04/03/2020)</td>
+              <td><span class="tag tag-amber">WARNING</span></td>
+              <td><a href="./Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf" target="_blank" class="btn-pdf henkel">Official SDS PDF (178 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Ultra Concentrate Laundry Powder</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-purple">Powder (1kg / 2kg)</span></td>
+              <td><strong>Chemwatch No. 5232-99</strong> (Rev 10/03/2023)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf purple">Official SDS PDF (225 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Ultra Sensitive Concentrate Powder</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-blue">Powder (2kg)</span></td>
+              <td><strong>Chemwatch No. 5232-98</strong> (Rev 21/09/2026)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf henkel">Official SDS PDF (225 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Ultra Infusions Tropical Paradise Powder</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-amber">Powder (2kg)</span></td>
+              <td><strong>Chemwatch No. 5431-76</strong> (Rev 14/04/2026)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf amber">Official SDS PDF (247 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Ultra Infusions Tropical 5kg Bulk Box</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-amber">Powder (5kg Bulk)</span></td>
+              <td><strong>Chemwatch No. 9022-03</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Infusions_5kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf purple">Official SDS PDF (250 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Infusions Laundry Powder 2kg</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-purple">Powder (2kg)</span></td>
+              <td><strong>Chemwatch No. 5232-96</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Infusions_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue">Official SDS PDF (244 KB)</a></td>
+            </tr>
+            <tr style="background: #fffbeb;">
+              <td><strong>Coles Simply Lemon 4kg Bulk Laundry Powder</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-orange">Powder (4kg Box)</span></td>
+              <td><strong>Chemwatch No. TE0001</strong> (APN 9300601245703)</td>
+              <td><span class="tag tag-amber">WARNING</span></td>
+              <td><a href="./Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf orange">Official SDS PDF (130 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Cold Power Advanced Clean Laundry Liquid</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-blue">Liquid (All Sizes)</span></td>
+              <td><strong>Henkel SAP Portal No. 565969</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf henkel">Official SDS PDF (383 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Cold Power Extreme Clean Laundry Liquid</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-purple">Liquid (All Sizes)</span></td>
+              <td><strong>Henkel SAP Portal No. 729522</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf purple">Official SDS PDF (383 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>ALDI Trimat Advanced Laundry Liquid</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-aldi">Liquid (2L &amp; 4L)</span></td>
+              <td><strong>Chemwatch No. 5580-70</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue">Official SDS PDF (272 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>ALDI Trimat Sensitive Laundry Liquid</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-blue">Liquid (2L &amp; 4L)</span></td>
+              <td><strong>Chemwatch No. 5580-71</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf teal">Official SDS PDF (272 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Smart Buy / Simply Laundry Liquid</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-orange">Liquid (2L)</span></td>
+              <td><strong>Chemwatch No. 5232-92</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf orange">Official SDS PDF (182 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Coles Ultra Concentrate Sensitive Liquid</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-blue">Liquid (2L)</span></td>
+              <td><strong>Chemwatch No. 5694-29</strong></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf teal">Official SDS PDF (106 KB)</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Table 6.2: Official Non-SDS Disclosures -->
+      <h3 style="font-size: 1.15rem; color: #0369a1; margin-top: 2rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+        <span class="tag tag-blue" style="font-size: 0.85rem;">Part 2</span>
+        Official Manufacturer Primary Disclosures (INCI &amp; Product Info — NOT an SDS)
+      </h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+        These files are official corporate disclosures detailing complete ingredient listings and functional roles, but are <strong>not GHS 7 Safety Data Sheets</strong>:
+      </p>
+
+      <div class="table-container" style="margin-bottom: 2rem;">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 24%;">Document Title</th>
+              <th style="width: 14%;">Publisher / Brand</th>
+              <th style="width: 16%;">Disclosure Format</th>
+              <th style="width: 22%;">Official Source Reference</th>
+              <th style="width: 10%;">Document Type</th>
+              <th style="width: 14%;">Download PDF</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: #eff6ff;">
+              <td><strong>Kao Biozet Attack Master Product Information</strong></td>
+              <td>Kao Australia Marketing Pty Ltd</td>
+              <td>Full 11-page Product &amp; Ingredient Role Registry</td>
+              <td><a href="https://biozetattack.com.au/product-information/" target="_blank" style="color: #2563eb; font-weight: 600;">biozetattack.com.au/product-information</a></td>
+              <td><span class="tag tag-blue">Official INCI (Non-SDS)</span></td>
+              <td><a href="./Kao_Biozet_Attack_Official_Product_Information.pdf" target="_blank" class="btn-pdf green">Download PDF (669 KB)</a></td>
+            </tr>
+            <tr style="background: #eff6ff;">
+              <td><strong>Henkel Fab Laundry Powders Master Ingredients</strong></td>
+              <td>Henkel Australia</td>
+              <td>Official INCI Ingredient List (Powders &amp; Liquids)</td>
+              <td>Henkel LHC Master Registry (<code>assets.henkel-lhc.com</code>)</td>
+              <td><span class="tag tag-blue">Official INCI (Non-SDS)</span></td>
+              <td><a href="./Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf" target="_blank" class="btn-pdf teal">Download PDF (71 KB)</a></td>
+            </tr>
+            <tr style="background: #eff6ff;">
+              <td><strong>Henkel Cold Power Australia Master Ingredients</strong></td>
+              <td>Henkel Australia</td>
+              <td>Official INCI Ingredient List (All Powders &amp; Liquids)</td>
+              <td>Henkel LHC Master Registry (<code>assets.henkel-lhc.com</code>)</td>
+              <td><span class="tag tag-blue">Official INCI (Non-SDS)</span></td>
+              <td><a href="./Henkel_Cold_Power_Australia_Official_Ingredients.pdf" target="_blank" class="btn-pdf henkel">Download PDF (596 KB)</a></td>
+            </tr>
+            <tr style="background: #eff6ff;">
+              <td><strong>Cold Power Adv. Clean Ingredient Datasheet</strong></td>
+              <td>Henkel Australia</td>
+              <td>Official SAP Ingredient Datasheet</td>
+              <td>Henkel SAP Subid 000000565969</td>
+              <td><span class="tag tag-blue">Official INCI (Non-SDS)</span></td>
+              <td><a href="./Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-pdf henkel">Download PDF (108 KB)</a></td>
+            </tr>
+            <tr style="background: #eff6ff;">
+              <td><strong>Cold Power Ext. Clean Ingredient Datasheet</strong></td>
+              <td>Henkel Australia</td>
+              <td>Official SAP Ingredient Datasheet</td>
+              <td>Henkel SAP Subid 000000729522</td>
+              <td><span class="tag tag-blue">Official INCI (Non-SDS)</span></td>
+              <td><a href="./Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-pdf purple">Download PDF (113 KB)</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Table 6.3: Products Lacking Public Official SDSs -->
+      <h3 style="font-size: 1.15rem; color: #c2410c; margin-top: 2rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+        <span class="tag tag-orange" style="font-size: 0.85rem;">Part 3</span>
+        Products Lacking Public Official SDSs (Formulation Modeling &amp; Transparency)
+      </h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+        For the following products, no active official SDS exists on Chemwatch or public manufacturer portals. Data is derived strictly from packaging claims and HCIS regulatory cut-offs:
       </p>
 
       <div class="table-container">
         <table>
           <thead>
             <tr>
-              <th style="width: 22%;">Product / Document Title</th>
-              <th style="width: 14%;">Brand / Supplier</th>
-              <th style="width: 12%;">Format &amp; Scope</th>
-              <th style="width: 20%;">Official Source &amp; Document ID</th>
-              <th style="width: 8%;">GHS Rating</th>
-              <th style="width: 12%;">Interactive Web</th>
-              <th style="width: 12%;">Official PDF</th>
+              <th style="width: 25%;">Product Name</th>
+              <th style="width: 15%;">Brand / Retailer</th>
+              <th style="width: 20%;">Official SDS Availability</th>
+              <th style="width: 40%;">Data Provenance &amp; Chemical Basis</th>
             </tr>
           </thead>
-<tbody>
-            <!-- Official Powders: ALDI Range -->
-            <tr style="background: #eff6ff;">
-              <td><strong>ALDI Trimat Advanced Concentrate Powder</strong></td>
-              <td>ALDI Stores (Contract)</td>
-              <td><span class="tag tag-aldi">Powder (2kg / 5kg)</span></td>
-              <td><strong>Chemwatch No. 712-7427 (Rev 27/09/2023)</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue">Official PDF (300 KB)</a></td>
+          <tbody>
+            <tr style="background: #fffbeb;">
+              <td><strong>ALDI LaundRite Laundry Powder (4kg)</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-orange">No Public SDS Available</span></td>
+              <td>Product is unlisted on ALDI's active Chemwatch portal (<code>aldiaus</code>). Formulation profile (64–72% sodium sulfate filler, 15–20% soda ash, 5–8% LAS, zero enzymes) is modeled from carton ingredient statements, CHOICE physical density measurements, and comparative HCIS classification rules.</td>
             </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>ALDI Almat Concentrate Powder</strong></td>
-              <td>ALDI Stores (Contract)</td>
-              <td><span class="tag tag-amber">Powder (2kg / 4kg / 10kg)</span></td>
-              <td><strong>Chemwatch No. 5497-96 (Rev 14/01/2025)</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./ALDI_Almat_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf amber">Official PDF (313 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>ALDI Almat Lemon Spritz Bulk Powder</strong></td>
-              <td>ALDI Stores (Contract)</td>
-              <td><span class="tag tag-blue">Powder (4kg Box)</span></td>
-              <td><strong>Chemwatch No. 5679-94 (Rev 20/06/2024)</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./ALDI_Almat_Lemon_Spritz_4kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf henkel">Official PDF (293 KB)</a></td>
-            </tr>
-
-            <!-- Official Powders: Coles Range -->
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Ultra Concentrate Laundry Powder</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-purple">Powder (1kg / 2kg)</span></td>
-              <td><strong>Chemwatch No. 5232-99 (Rev 10/03/2023)</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./Coles_Ultra_Concentrate_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf purple">Official PDF (225 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Ultra Sensitive Concentrate Powder</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-blue">Powder (2kg)</span></td>
-              <td><strong>Chemwatch No. 5232-98 (Rev 21/09/2026)</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./Coles_Ultra_Sensitive_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf henkel">Official PDF (225 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Ultra Infusions Tropical Paradise (2kg)</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-amber">Powder (2kg)</span></td>
-              <td><strong>Chemwatch No. 5431-76 (Rev 14/04/2026)</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./Coles_Ultra_Infusions_Tropical_Paradise_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf amber">Official PDF (247 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Ultra Infusions Tropical Paradise (5kg)</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-amber">Powder (5kg Bulk)</span></td>
-              <td><strong>Chemwatch No. 9022-03</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./Coles_Ultra_Infusions_5kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf purple">Official PDF (250 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Infusions Laundry Powder (2kg)</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-purple">Powder (2kg)</span></td>
-              <td><strong>Chemwatch No. 5232-96</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./Coles_Infusions_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue">Official PDF (244 KB)</a></td>
-            </tr>
-            <tr style="background: #fff7ed;">
-              <td><strong>Coles Simply Lemon Laundry Powder (4kg)</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-orange">Powder (4kg Box)</span></td>
-              <td><strong>Chemwatch TE0001 (APN 9300601245703)</strong></td>
-              <td><span class="tag tag-amber">WARNING</span></td>
-              <td><a href="./Coles_Simply_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
-              <td><a href="./Coles_Simply_Lemon_4kg_Laundry_Powder_Official_Chemwatch.pdf" target="_blank" class="btn-pdf orange">Official PDF (130 KB)</a></td>
-            </tr>
-
-            <!-- Official Henkel Australia Documents -->
-            <tr style="background: #eff6ff;">
-              <td><strong>Cold Power Laundry Powder (All Variants)</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-blue">Powder Official SDS</span></td>
-              <td><strong>Henkel SDS No. HK006 (GHS WHS Australia)</strong></td>
-              <td><span class="tag tag-amber">WARNING</span></td>
-              <td><a href="./Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Henkel_Cold_Power_Laundry_Powder_Official_SDS.pdf" target="_blank" class="btn-pdf henkel">Official SDS (178 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Henkel Cold Power Australia Master Ingredients</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-blue">Official INCI List</span></td>
-              <td><strong>Henkel Australia LHC Master Disclosure (All Powders &amp; Liquids)</strong></td>
-              <td><span class="tag tag-green">INCI LIST</span></td>
-              <td><a href="./Henkel_Cold_Power_Australia_Official_Ingredients.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Henkel_Cold_Power_Australia_Official_Ingredients.pdf" target="_blank" class="btn-pdf henkel">Official INCI (596 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Henkel Fab Laundry Powders Master Ingredients</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-blue">Official INCI List</span></td>
-              <td><strong>Henkel Australia LHC Master Disclosure (Fab Powders &amp; Liquids)</strong></td>
-              <td><span class="tag tag-green">INCI LIST</span></td>
-              <td><a href="./Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Henkel_Fab_Laundry_Powder_Official_Ingredients.pdf" target="_blank" class="btn-pdf teal">Official INCI (71 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Cold Power Advanced Clean Liquid SDS</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-blue">Liquid Official SDS</span></td>
-              <td><strong>Henkel SAP Portal No. 565969</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf henkel">Official SDS (383 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Cold Power Extreme Clean Liquid SDS</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-purple">Liquid Official SDS</span></td>
-              <td><strong>Henkel SAP Portal No. 729522</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf purple">Official SDS (383 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Cold Power Adv. Clean INCI Sheet</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-blue">Official Disclosure</span></td>
-              <td><strong>Henkel SAP Subid 000000565969</strong></td>
-              <td><span class="tag tag-green">INCI LIST</span></td>
-              <td><a href="./Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-pdf henkel">Official PDF (108 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Cold Power Ext. Clean INCI Sheet</strong></td>
-              <td>Henkel Australia</td>
-              <td><span class="tag tag-purple">Official Disclosure</span></td>
-              <td><strong>Henkel SAP Subid 000000729522</strong></td>
-              <td><span class="tag tag-green">INCI LIST</span></td>
-              <td><a href="./Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-pdf purple">Official PDF (113 KB)</a></td>
-            </tr>
-
-            <!-- Official Kao Australia Documents -->
-            <tr style="background: #f0fdf4;">
-              <td><strong>Kao Biozet Attack Official Master Product Information</strong></td>
-              <td>Kao Australia (Japan)</td>
-              <td><span class="tag tag-green">All Powders &amp; Liquids</span></td>
-              <td><strong>Official Kao Australia Disclosure (1911 Malvern Rd, VIC)</strong></td>
-              <td><span class="tag tag-green">OFFICIAL INGREDIENTS</span></td>
-              <td><a href="./Kao_Biozet_Attack_Official_Product_Information.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Kao_Biozet_Attack_Official_Product_Information.pdf" target="_blank" class="btn-pdf green">Official Master PDF (669 KB)</a></td>
-            </tr>
-
-            <!-- Official Chemwatch Liquids: ALDI & Coles -->
-            <tr style="background: #eff6ff;">
-              <td><strong>ALDI Trimat Advanced Laundry Liquid</strong></td>
-              <td>ALDI Stores (Contract)</td>
-              <td><span class="tag tag-aldi">Liquid (2L &amp; 4L)</span></td>
-              <td><strong>Chemwatch No. 5580-70</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./ALDI_Trimat_Advanced_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf aldi-blue">Official PDF (272 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>ALDI Trimat Sensitive Laundry Liquid</strong></td>
-              <td>ALDI Stores (Contract)</td>
-              <td><span class="tag tag-blue">Liquid (2L &amp; 4L)</span></td>
-              <td><strong>Chemwatch No. 5580-71</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./ALDI_Trimat_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf teal">Official PDF (272 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Simply / Smart Buy Laundry Liquid</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-orange">Liquid (2L)</span></td>
-              <td><strong>Chemwatch No. 5232-92</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Coles_Smart_Buy_Simply_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf orange">Official PDF (182 KB)</a></td>
-            </tr>
-            <tr style="background: #eff6ff;">
-              <td><strong>Coles Ultra Concentrate Sensitive Liquid</strong></td>
-              <td>Coles Supermarkets</td>
-              <td><span class="tag tag-blue">Liquid (2L)</span></td>
-              <td><strong>Chemwatch No. 5694-29</strong></td>
-              <td><span class="tag tag-red">DANGER</span></td>
-              <td><a href="./Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-html">Open PDF ↗</a></td>
-              <td><a href="./Coles_Ultra_Concentrate_Sensitive_Laundry_Liquid_Official_Chemwatch.pdf" target="_blank" class="btn-pdf teal">Official PDF (106 KB)</a></td>
+            <tr style="background: #fffbeb;">
+              <td><strong>ALDI Trimat Sensitive Powder (2kg)</strong></td>
+              <td>ALDI Stores Australia</td>
+              <td><span class="tag tag-orange">No Dedicated Powder SDS</span></td>
+              <td>ALDI Chemwatch currently indexes <em>Trimat Sensitive Liquid</em> (SDS 5580-71) and <em>Almat Sensitive Capsules</em>. Dedicated powder sensitive records are not published; perfume-free, enzyme-free, and optical brightener-free profile is established via ALDI on-pack retail specifications and consumer claims.</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>Coles® is a registered trademark of Coles Supermarkets Australia Pty Ltd. ALDI®, LaundRite®, Almat®, and Trimat® are registered trademarks of ALDI Stores (A Limited Partnership). Fab® and Cold Power® are trademarks of Henkel Australia. Biozet Attack® is a trademark of Kao Corporation Japan.</p>
-      <p style="margin-top: 0.35rem; font-size: 0.8rem;">All SDS documents compiled October 2026 and stored locally in: <code>/home/jonathan/antigravityprojects/coldpower/</code></p>
-    </footer>
-  </div>
-
   <!-- Interactive Document Viewer Script -->
   <script>
-    function loadSDS(htmlUrl, pdfUrl, title, docId, brand, signalWord) {
+    function loadSDS(fileUrl, pdfUrl, title, docId, brand, docType, badgeType) {
       const iframe = document.getElementById('sds-iframe');
       const titleEl = document.getElementById('viewer-title');
       const metaEl = document.getElementById('viewer-meta');
@@ -1730,17 +1787,27 @@
       const pdfBtn = document.getElementById('viewer-pdf-btn');
       const selector = document.getElementById('sds-selector');
       
-      if (iframe) iframe.src = './' + htmlUrl;
+      if (iframe) iframe.src = './' + fileUrl;
       if (titleEl) titleEl.innerText = title;
       if (metaEl) {
-        metaEl.innerHTML = 'Doc ID: <strong>' + docId + '</strong> | Brand: <strong>' + brand + '</strong> | GHS: <strong>' + signalWord + '</strong> | Standards: WHS Australia / GHS 7';
+        let badgeHtml = '<span class="tag tag-green">Official SDS</span>';
+        if (badgeType === 'blue') {
+          badgeHtml = '<span class="tag tag-blue">Official INCI List (Non-SDS)</span>';
+        }
+        metaEl.innerHTML = 'Document ID: <strong>' + docId + '</strong> | Source: <strong>' + brand + '</strong> | Type: <strong>' + docType + '</strong> | ' + badgeHtml;
       }
-      if (htmlBtn) htmlBtn.href = './' + htmlUrl;
-      if (pdfBtn) pdfBtn.href = './' + pdfUrl;
+      if (htmlBtn) {
+        htmlBtn.href = './' + fileUrl;
+        htmlBtn.innerText = 'Open File ↗';
+      }
+      if (pdfBtn) {
+        pdfBtn.href = './' + pdfUrl;
+        pdfBtn.innerText = 'Download PDF ↓';
+      }
       
       if (selector) {
         for (let i = 0; i < selector.options.length; i++) {
-          if (selector.options[i].value.startsWith(htmlUrl)) {
+          if (selector.options[i].value.startsWith(fileUrl)) {
             selector.selectedIndex = i;
             break;
           }
@@ -1756,7 +1823,7 @@
     function onSelectChange(val) {
       if (!val) return;
       const parts = val.split('|');
-      loadSDS(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5]);
+      loadSDS(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6]);
     }
   </script>
 
