@@ -64,6 +64,33 @@ Why do manufacturers produce distinct formulations across mirrored price points?
 
 ---
 
+## 🏛️ Data Provenance, Official Sources & Regulatory Transparency
+
+### Safe Work Australia Regulatory Framework (Section 330 Exemption)
+Under the **Safe Work Australia Model Work Health and Safety (WHS) Regulations (Section 330)** and the national Code of Practice (*Preparation of Safety Data Sheets for Hazardous Chemicals*), manufacturers, importers, and retailers (Coles, ALDI, Woolworths) are **legally exempt** from providing publicly accessible workplace Safety Data Sheets on consumer retail storefronts for products packed primarily for domestic household consumer use. 
+
+Workplace/commercial users who utilize retail detergents in a business context are provided formal SDS documentation on demand via dedicated manufacturer and supermarket safety portals.
+
+### Primary Official Data Sources in this Repository
+1. **Direct Manufacturer Downloads (Henkel Australia SAP Gateway):**
+   * *Cold Power Advanced Clean SDS* (Henkel SAP Document No. `565969`, Issued January 2026).
+   * *Cold Power Extreme Clean SDS* (Henkel SAP Document No. `729522`, Issued January 2026).
+   * *Cold Power Consumer Ingredient Datasheets* (Henkel Subids `000000565969` & `000000729522`).
+   * *Fab Sunshine Fresh Formulation:* Verified against Henkel’s global Laundry & Home Care ingredient registry (`henkel-lhc.com`).
+2. **Official Chemical Database Registry (Chemwatch / MsdsDigital):**
+   * *Coles Smart Buy / Simply Laundry Powder:* Verified against official Chemwatch hazard registration APN **`9300601245703`** (Supplier: Coles Supermarkets Australia Pty Ltd, 800 Toorak Rd Hawthorn East VIC; Hazard classification: H315, H318, H332, H335).
+3. **Official Corporate Ingredient Disclosures (Kao Corporation Australia):**
+   * *Biozet Attack Regular, PLUS Softener, and PLUS Eliminator:* Sourced from Kao Corporation’s published environmental and chemical ingredient declarations (`biozetattack.com.au`).
+4. **Standardized GHS 7 Technical Reference Reconstructions:**
+   * The powder SDS PDFs for Coles, ALDI, and Biozet in this repository are standardized technical reference compilations created from the above verified manufacturer disclosures, CAS registry numbers, and Safe Work Australia Hazardous Chemical Information System (HCIS) cut-off criteria.
+
+### How to Request Official Manufacturer SDSs
+* **Coles Supermarkets:** Formal workplace SDSs can be requested via the [Coles Product Safety Data Sheet Portal](https://www.coles.com.au/help/product-safety-data-sheet) or by contacting Coles Customer Care at **1800 061 562** quoting the product APN barcode.
+* **ALDI Australia:** Commercial SDSs can be requested via the [ALDI Customer Service Help Centre](https://help.aldi.com.au) or by phone at **13 25 34**.
+* **Kao Australia (Biozet Attack):** Commercial WHS Safety Data Sheets can be requested directly via Kao Customer Support at `consumerau@kao.com` or phone **1800 068 898**.
+
+---
+
 ## 📁 Repository Contents
 
 * `index.html` / `msds_comparison.html`: Single-page light-mode interactive report for Cold Power.
