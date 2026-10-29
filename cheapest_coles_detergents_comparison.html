@@ -138,18 +138,20 @@
 
     /* Document Cards */
     .docs-section-title {
-      font-size: 1.15rem;
+      font-size: 1.18rem;
       font-weight: 800;
       color: var(--text-main);
       margin: 1.5rem 0 0.85rem 0;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
       gap: 0.5rem;
     }
 
     .docs-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
       gap: 1rem;
       margin-bottom: 2rem;
     }
@@ -189,7 +191,7 @@
     .doc-rank.gold { color: #047857; }
     .doc-rank.aldi { color: #1e3a8a; font-weight: 800; }
 
-    .doc-title { font-size: 0.96rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; line-height: 1.3; }
+    .doc-title { font-size: 0.95rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; line-height: 1.3; }
     .doc-price-tag {
       font-size: 1.15rem;
       font-weight: 800;
@@ -198,35 +200,154 @@
     }
     .doc-price-sub { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.85rem; }
 
-    .doc-link {
+    .doc-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .doc-btn-row {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .btn-preview {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.35rem;
-      padding: 0.45rem 0.75rem;
+      padding: 0.45rem 0.65rem;
       font-size: 0.78rem;
-      font-weight: 600;
-      color: #ffffff;
-      background: #dc2626;
+      font-weight: 700;
+      color: #1e293b;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
       text-decoration: none;
       border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
+      width: 100%;
+    }
+    .btn-preview:hover {
+      background: #e2e8f0;
+      border-color: #94a3b8;
+    }
+
+    .btn-html {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      padding: 0.4rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #0369a1;
+      background: #e0f2fe;
+      border: 1px solid #bae6fd;
+      text-decoration: none;
+      border-radius: 6px;
+      flex: 1;
       transition: background 0.15s ease;
     }
-    .doc-link:hover { background: #b91c1c; }
-    .doc-link.orange { background: #ea580c; }
-    .doc-link.orange:hover { background: #c2410c; }
-    .doc-link.amber { background: #d97706; }
-    .doc-link.amber:hover { background: #b45309; }
-    .doc-link.henkel { background: #0284c7; }
-    .doc-link.henkel:hover { background: #0369a1; }
-    .doc-link.purple { background: #7c3aed; }
-    .doc-link.purple:hover { background: #6d28d9; }
-    .doc-link.aldi-blue { background: #1e3a8a; }
-    .doc-link.aldi-blue:hover { background: #172554; }
-    .doc-link.teal { background: #0d9488; }
-    .doc-link.teal:hover { background: #0f766e; }
-    .doc-link.green { background: #059669; }
-    .doc-link.green:hover { background: #047857; }
+    .btn-html:hover { background: #bae6fd; }
+
+    .btn-pdf {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      padding: 0.4rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: #2563eb;
+      border: 1px solid #1d4ed8;
+      text-decoration: none;
+      border-radius: 6px;
+      flex: 1;
+      transition: background 0.15s ease;
+    }
+    .btn-pdf:hover { background: #1d4ed8; }
+    .btn-pdf.orange { background: #ea580c; border-color: #c2410c; }
+    .btn-pdf.orange:hover { background: #c2410c; }
+    .btn-pdf.amber { background: #d97706; border-color: #b45309; }
+    .btn-pdf.amber:hover { background: #b45309; }
+    .btn-pdf.henkel { background: #0284c7; border-color: #0369a1; }
+    .btn-pdf.henkel:hover { background: #0369a1; }
+    .btn-pdf.purple { background: #7c3aed; border-color: #6d28d9; }
+    .btn-pdf.purple:hover { background: #6d28d9; }
+    .btn-pdf.aldi-blue { background: #1e3a8a; border-color: #172554; }
+    .btn-pdf.aldi-blue:hover { background: #172554; }
+    .btn-pdf.teal { background: #0d9488; border-color: #0f766e; }
+    .btn-pdf.teal:hover { background: #0f766e; }
+    .btn-pdf.green { background: #059669; border-color: #047857; }
+    .btn-pdf.green:hover { background: #047857; }
+
+    /* Interactive Viewer Section */
+    .viewer-card {
+      background: var(--bg-card);
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2.25rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .viewer-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .viewer-title-box {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .viewer-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .sds-dropdown {
+      padding: 0.55rem 0.85rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #0f172a;
+      background: #ffffff;
+      border: 1px solid #94a3b8;
+      border-radius: 6px;
+      cursor: pointer;
+      min-width: 280px;
+      outline: none;
+    }
+    .sds-dropdown:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+    }
+
+    .viewer-iframe-box {
+      width: 100%;
+      height: 650px;
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .viewer-iframe-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
     /* Callout */
     .callout-box {
@@ -372,6 +493,8 @@
       <div class="top-nav-links">
         <a href="./index.html">← Cold Power Liquids</a>
         <a href="./biozet_powders_comparison.html">Biozet Attack 3-Way Powders →</a>
+        <a href="#msds-viewer-section" style="color: #2563eb; font-weight: 700;">Interactive MSDS Viewer ↓</a>
+        <a href="#master-library-section" style="color: #059669; font-weight: 700;">Full MSDS Library (24 Files) ↓</a>
       </div>
     </div>
 
@@ -393,11 +516,17 @@
       </div>
     </header>
 
-    <!-- Downloadable SDS Documents Section -->
-    <h3 class="docs-section-title">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/><path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.474c.184.612 0 1.28-.279 1.95-.279.67-.68 1.4-1.185 2.179 1.026.45 2.24.811 3.294 1.01.613-.238 1.285-.432 1.884-.399.43.025.798.2 1.02.502.228.307.252.68.07 1.041-.18.358-.535.612-.945.741-.537.17-1.178.13-1.802-.072-.625-.203-1.249-.55-1.783-.984-1.24.408-2.675.69-4.095.842-.486.61-.952 1.134-1.396 1.518-.502.434-1.027.665-1.55.628z"/></svg>
-      Downloadable GHS 7 Safety Data Sheets (SDSs) for All Analyzed Powders
-    </h3>
+    <!-- Downloadable & Interactive SDS Documents Section -->
+    <div class="docs-section-title">
+      <span>
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: text-bottom; margin-right: 4px;"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/><path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.474c.184.612 0 1.28-.279 1.95-.279.67-.68 1.4-1.185 2.179 1.026.45 2.24.811 3.294 1.01.613-.238 1.285-.432 1.884-.399.43.025.798.2 1.02.502.228.307.252.68.07 1.041-.18.358-.535.612-.945.741-.537.17-1.178.13-1.802-.072-.625-.203-1.249-.55-1.783-.984-1.24.408-2.675.69-4.095.842-.486.61-.952 1.134-1.396 1.518-.502.434-1.027.665-1.55.628z"/></svg>
+        Washing Powder SDS Quick Access (Preview Online or Download PDF)
+      </span>
+      <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">
+        Click <strong>"Preview on Page"</strong> to read the complete 16-section SDS below
+      </span>
+    </div>
+
     <div class="docs-grid">
       <!-- 1. ALDI LaundRite -->
       <div class="doc-card card-aldi-laundrite">
@@ -407,10 +536,15 @@
           <div class="doc-price-tag">$1.12 / kg</div>
           <div class="doc-price-sub">Retail: $4.49 (4kg) | Doc: ALD-LND-PWD-01</div>
         </div>
-        <a href="./ALDI_Laundrite_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link orange">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download ALDI SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('ALDI_Laundrite_Laundry_Powder_SDS.html', 'ALDI_Laundrite_Laundry_Powder_SDS.pdf', 'ALDI LaundRite Laundry Powder (4kg)', 'ALD-LND-PWD-01', 'ALDI Stores', 'WARNING')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./ALDI_Laundrite_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./ALDI_Laundrite_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf orange">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 2. ALDI Almat 4kg -->
@@ -421,10 +555,15 @@
           <div class="doc-price-tag">$1.25 / kg</div>
           <div class="doc-price-sub">Retail: $4.99 (4kg) | Doc: ALD-ALM-4KG-02</div>
         </div>
-        <a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.pdf" target="_blank" class="doc-link henkel">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download ALDI SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('ALDI_Almat_Laundry_Powder_4kg_SDS.html', 'ALDI_Almat_Laundry_Powder_4kg_SDS.pdf', 'ALDI Almat Laundry Powder (4kg Bulk Box)', 'ALD-ALM-4KG-02', 'ALDI Stores', 'DANGER')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.pdf" target="_blank" class="btn-pdf henkel">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 3. Coles Simply Powder -->
@@ -435,10 +574,15 @@
           <div class="doc-price-tag">$1.25 / kg</div>
           <div class="doc-price-sub">Retail: $5.00 (4kg) | Doc: COL-SIM-PWD-02</div>
         </div>
-        <a href="./Coles_Simply_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link orange">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Coles SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Coles_Simply_Laundry_Powder_SDS.html', 'Coles_Simply_Laundry_Powder_SDS.pdf', 'Coles Simply Laundry Powder (4kg)', 'COL-SIM-PWD-02', 'Coles Supermarkets', 'WARNING')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Coles_Simply_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./Coles_Simply_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf orange">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 4. ALDI Almat Concentrate 2kg -->
@@ -449,10 +593,15 @@
           <div class="doc-price-tag">$3.00 / kg</div>
           <div class="doc-price-sub">Retail: $5.99 (2kg) | Doc: ALD-ALM-CON-03</div>
         </div>
-        <a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link amber">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download ALDI SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('ALDI_Almat_Concentrate_Laundry_Powder_SDS.html', 'ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf', 'ALDI Almat Concentrate Laundry Powder (2kg)', 'ALD-ALM-CON-03', 'ALDI Stores', 'DANGER')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf amber">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 5. Coles Ultra Infusions -->
@@ -463,10 +612,15 @@
           <div class="doc-price-tag">$3.00 / kg</div>
           <div class="doc-price-sub">Retail: $6.00 (2kg) | Doc: COL-ULT-INF-03</div>
         </div>
-        <a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link amber">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Coles SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Coles_Ultra_Infusions_Laundry_Powder_SDS.html', 'Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf', 'Coles Ultra Infusions Laundry Powder (2kg)', 'COL-ULT-INF-03', 'Coles Supermarkets', 'DANGER')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf amber">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 6. Fab Bulk 4kg -->
@@ -477,10 +631,15 @@
           <div class="doc-price-tag">$4.13 / kg</div>
           <div class="doc-price-sub">Retail: $16.50 (4kg) | Henkel Australia</div>
         </div>
-        <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link henkel">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Fab SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Fab_Sunshine_Fresh_Laundry_Powder_SDS.html', 'Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf', 'Fab Sunshine Fresh Bulk Laundry Powder (4kg)', 'HEN-FAB-SUN-01', 'Henkel Australia', 'DANGER')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf henkel">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 7. ALDI Trimat Advanced (Equal #1 CHOICE) -->
@@ -491,10 +650,15 @@
           <div class="doc-price-tag" style="color: #1e3a8a;">$5.25 / kg</div>
           <div class="doc-price-sub">Retail: $10.49 | 82% CHOICE Top Score</div>
         </div>
-        <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link aldi-blue">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Trimat SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html', 'ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf', 'ALDI Trimat Advanced Concentrated Laundry Powder (2kg)', 'ALD-TRM-ADV-04', 'ALDI Stores', 'DANGER')" class="btn-preview" style="background: #e0e7ff; color: #1e3a8a; border-color: #c7d2fe;">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf aldi-blue">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 8. Coles Ultra Concentrate -->
@@ -505,10 +669,15 @@
           <div class="doc-price-tag">$5.25 / kg</div>
           <div class="doc-price-sub">Retail: $10.50 (2kg) | Doc: COL-ULT-CON-02</div>
         </div>
-        <a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link purple">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Coles SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Coles_Ultra_Concentrate_Laundry_Powder_SDS.html', 'Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf', 'Coles Ultra Concentrate Laundry Powder (2kg)', 'COL-ULT-CON-02', 'Coles Supermarkets', 'DANGER')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf purple">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 9. ALDI Trimat Sensitive -->
@@ -519,10 +688,15 @@
           <div class="doc-price-tag" style="color: #0d9488;">$5.25 / kg</div>
           <div class="doc-price-sub">Retail: $10.49 | 0% Perfume/Enzyme | Doc: ALD-TRM-SEN-05</div>
         </div>
-        <a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link teal">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Trimat SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.html', 'ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf', 'ALDI Trimat Advanced Sensitive Concentrated Laundry Powder (2kg)', 'ALD-TRM-SEN-05', 'ALDI Stores', 'DANGER')" class="btn-preview" style="background: #ccfbf1; color: #0f766e; border-color: #99f6e4;">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf teal">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 10. Coles Ultra Sensitive -->
@@ -533,10 +707,15 @@
           <div class="doc-price-tag">$5.25 / kg</div>
           <div class="doc-price-sub">Retail: $10.50 | 0% Perfume/Enzyme | Doc: COL-ULT-SEN-05</div>
         </div>
-        <a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link" style="background: #0284c7;">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Coles SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Coles_Ultra_Sensitive_Laundry_Powder_SDS.html', 'Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf', 'Coles Ultra Laundry Powder Concentrate Sensitive (2kg)', 'COL-ULT-SEN-05', 'Coles Supermarkets', 'DANGER')" class="btn-preview">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf henkel">PDF ↓</a>
+          </div>
+        </div>
       </div>
 
       <!-- 11. Biozet Attack Regular (Benchmark) -->
@@ -547,10 +726,62 @@
           <div class="doc-price-tag" style="color: #047857;">$6.50 – $13.00/kg</div>
           <div class="doc-price-sub">Choice Recommended | Kao Australia</div>
         </div>
-        <a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.pdf" target="_blank" class="doc-link green">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-          Download Biozet SDS
-        </a>
+        <div class="doc-btn-group">
+          <button type="button" onclick="loadSDS('Biozet_Attack_Regular_Laundry_Powder_SDS.html', 'Biozet_Attack_Regular_Laundry_Powder_SDS.pdf', 'Biozet Attack Regular Laundry Powder (2kg / 6kg)', 'KAO-BZA-REG-01', 'Kao Australia', 'DANGER')" class="btn-preview" style="background: #dcfce7; color: #166534; border-color: #bbf7d0;">
+            👁 Preview on Page
+          </button>
+          <div class="doc-btn-row">
+            <a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a>
+            <a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf green">PDF ↓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE IN-PAGE MSDS VIEWER COMPONENT -->
+    <div class="viewer-card" id="msds-viewer-section">
+      <div class="viewer-header">
+        <div class="viewer-title-box">
+          <span class="badge-pill" style="margin-bottom: 0.35rem; background: #e0e7ff; color: #1e3a8a;">Interactive Document Reader</span>
+          <h3 id="viewer-title" style="font-size: 1.3rem; font-weight: 800; color: #0f172a;">ALDI Trimat Advanced Concentrated Laundry Powder (2kg)</h3>
+          <div id="viewer-meta" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+            Doc ID: <strong>ALD-TRM-ADV-04</strong> | Brand: <strong>ALDI Stores</strong> | GHS: <strong>DANGER</strong> | Standards: WHS Australia / GHS 7
+          </div>
+        </div>
+        <div class="viewer-controls">
+          <select id="sds-selector" onchange="onSelectChange(this.value)" class="sds-dropdown" aria-label="Select MSDS Document">
+            <optgroup label="ALDI Laundry Powders">
+              <option value="ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html|ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf|ALDI Trimat Advanced Concentrated Laundry Powder (2kg)|ALD-TRM-ADV-04|ALDI Stores|DANGER" selected>★ ALDI Trimat Advanced Concentrate (2kg)</option>
+              <option value="ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.html|ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf|ALDI Trimat Sensitive Concentrated Laundry Powder (2kg)|ALD-TRM-SEN-05|ALDI Stores|DANGER">ALDI Trimat Sensitive Concentrate (2kg)</option>
+              <option value="ALDI_Almat_Concentrate_Laundry_Powder_SDS.html|ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf|ALDI Almat Concentrate Laundry Powder (2kg)|ALD-ALM-CON-03|ALDI Stores|DANGER">ALDI Almat Concentrate (2kg)</option>
+              <option value="ALDI_Almat_Laundry_Powder_4kg_SDS.html|ALDI_Almat_Laundry_Powder_4kg_SDS.pdf|ALDI Almat Laundry Powder (4kg Bulk Box)|ALD-ALM-4KG-02|ALDI Stores|DANGER">ALDI Almat Laundry Powder (4kg)</option>
+              <option value="ALDI_Laundrite_Laundry_Powder_SDS.html|ALDI_Laundrite_Laundry_Powder_SDS.pdf|ALDI LaundRite Laundry Powder (4kg)|ALD-LND-PWD-01|ALDI Stores|WARNING">ALDI LaundRite Laundry Powder (4kg)</option>
+            </optgroup>
+            <optgroup label="Coles Supermarket Powders">
+              <option value="Coles_Ultra_Concentrate_Laundry_Powder_SDS.html|Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf|Coles Ultra Concentrate Laundry Powder (2kg)|COL-ULT-CON-02|Coles Supermarkets|DANGER">Coles Ultra Concentrate (2kg)</option>
+              <option value="Coles_Ultra_Sensitive_Laundry_Powder_SDS.html|Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf|Coles Ultra Sensitive Concentrate (2kg)|COL-ULT-SEN-05|Coles Supermarkets|DANGER">Coles Ultra Sensitive Concentrate (2kg)</option>
+              <option value="Coles_Ultra_Infusions_Laundry_Powder_SDS.html|Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf|Coles Ultra Infusions Tropical (2kg)|COL-ULT-INF-03|Coles Supermarkets|DANGER">Coles Ultra Infusions Tropical (2kg)</option>
+              <option value="Coles_Simply_Laundry_Powder_SDS.html|Coles_Simply_Laundry_Powder_SDS.pdf|Coles Simply Laundry Powder (4kg)|COL-SIM-PWD-02|Coles Supermarkets|WARNING">Coles Simply Laundry Powder (4kg)</option>
+            </optgroup>
+            <optgroup label="National Brand Powders (Biozet & Fab)">
+              <option value="Biozet_Attack_Regular_Laundry_Powder_SDS.html|Biozet_Attack_Regular_Laundry_Powder_SDS.pdf|Biozet Attack Regular Laundry Powder (2kg / 6kg)|KAO-BZA-REG-01|Kao Australia|DANGER">★ Biozet Attack Regular (Benchmark)</option>
+              <option value="Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.html|Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.pdf|Biozet Attack PLUS Softener Powder (2kg)|KAO-BZA-SOF-02|Kao Australia|DANGER">Biozet Attack PLUS Softener (Bentonite Clay)</option>
+              <option value="Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.html|Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.pdf|Biozet Attack PLUS Eliminator Powder (2kg)|KAO-BZA-ELI-03|Kao Australia|DANGER">Biozet Attack PLUS Eliminator (DOBS Activator)</option>
+              <option value="Fab_Sunshine_Fresh_Laundry_Powder_SDS.html|Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf|Fab Sunshine Fresh Bulk Laundry Powder (4kg)|HEN-FAB-SUN-01|Henkel Australia|DANGER">Fab Sunshine Fresh Laundry Powder (4kg)</option>
+            </optgroup>
+            <optgroup label="Related Supermarket Laundry Liquids">
+              <option value="Coles_Simply_Laundry_Liquid_SDS.html|Coles_Simply_Laundry_Liquid_SDS.pdf|Coles Simply Laundry Liquid (2L)|COL-SIM-LIQ-01|Coles Supermarkets|WARNING">Coles Simply Laundry Liquid (2L)</option>
+              <option value="Coles_Ultra_Infusions_Laundry_Liquid_SDS.html|Coles_Ultra_Infusions_Laundry_Liquid_SDS.pdf|Coles Ultra Infusions Liquid (2L)|COL-ULT-LIQ-02|Coles Supermarkets|DANGER">Coles Ultra Infusions Liquid (2L)</option>
+              <option value="Earth_Choice_Laundry_Liquid_SDS.html|Earth_Choice_Laundry_Liquid_SDS.pdf|Earth Choice Laundry Liquid (1L)|EC-LIQ-01|Natures Organics|WARNING">Earth Choice Laundry Liquid (1L)</option>
+            </optgroup>
+          </select>
+          <a id="viewer-open-btn" href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html" style="padding: 0.55rem 0.85rem; font-size: 0.82rem;">Open Full Tab ↗</a>
+          <a id="viewer-pdf-btn" href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf aldi-blue" style="padding: 0.55rem 0.85rem; font-size: 0.82rem;">Download PDF ↓</a>
+        </div>
+      </div>
+
+      <div class="viewer-iframe-box">
+        <iframe id="sds-iframe" src="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" title="Safety Data Sheet Viewer"></iframe>
       </div>
     </div>
 
@@ -1230,12 +1461,267 @@
       </ul>
     </div>
 
+    <!-- Section 6: Master Technical Documentation & MSDS File Library -->
+    <div class="section-card" id="master-library-section">
+      <h2>6. Complete Technical Documentation & MSDS File Library (24 Files)</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+        Direct repository index of all official Safety Data Sheets (SDSs / MSDSs), Consumer Ingredient Datasheets, and chemical disclosure files compiled across the Australian market (Coles, ALDI, Henkel, Kao, Natures Organics):
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">Product / Document Title</th>
+              <th style="width: 14%;">Brand / Supplier</th>
+              <th style="width: 11%;">Format & Scope</th>
+              <th style="width: 15%;">Document ID / Standard</th>
+              <th style="width: 10%;">GHS Hazard</th>
+              <th style="width: 14%;">Interactive Web</th>
+              <th style="width: 14%;">Print PDF File</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Powders: ALDI Range -->
+            <tr style="background: #f8faff;">
+              <td><strong>ALDI Trimat Advanced Concentrated</strong></td>
+              <td>ALDI Stores (Contract)</td>
+              <td><span class="tag tag-aldi">Powder (2kg)</span></td>
+              <td><code>ALD-TRM-ADV-04</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./ALDI_Trimat_Advanced_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf aldi-blue">Download (112 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdfa;">
+              <td><strong>ALDI Trimat Sensitive Concentrated</strong></td>
+              <td>ALDI Stores (Contract)</td>
+              <td><span class="tag tag-blue">Powder (2kg)</span></td>
+              <td><code>ALD-TRM-SEN-05</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./ALDI_Trimat_Sensitive_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf teal">Download (121 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>ALDI Almat Concentrate (Scented)</strong></td>
+              <td>ALDI Stores (Contract)</td>
+              <td><span class="tag tag-amber">Powder (2kg)</span></td>
+              <td><code>ALD-ALM-CON-03</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./ALDI_Almat_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf amber">Download (107 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>ALDI Almat Laundry Powder (Bulk)</strong></td>
+              <td>ALDI Stores (Contract)</td>
+              <td><span class="tag tag-blue">Powder (4kg)</span></td>
+              <td><code>ALD-ALM-4KG-02</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./ALDI_Almat_Laundry_Powder_4kg_SDS.pdf" target="_blank" class="btn-pdf henkel">Download (103 KB)</a></td>
+            </tr>
+            <tr style="background: #fffbeb;">
+              <td><strong>ALDI LaundRite Laundry Powder</strong></td>
+              <td>ALDI Stores (Contract)</td>
+              <td><span class="tag tag-orange">Powder (4kg)</span></td>
+              <td><code>ALD-LND-PWD-01</code> (GHS 7)</td>
+              <td><span class="tag tag-amber">WARNING</span></td>
+              <td><a href="./ALDI_Laundrite_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./ALDI_Laundrite_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf orange">Download (114 KB)</a></td>
+            </tr>
+
+            <!-- Powders: Coles Range -->
+            <tr>
+              <td><strong>Coles Ultra Concentrate Powder</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-purple">Powder (2kg)</span></td>
+              <td><code>COL-ULT-CON-02</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Coles_Ultra_Concentrate_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf purple">Download (122 KB)</a></td>
+            </tr>
+            <tr style="background: #f8fafc;">
+              <td><strong>Coles Ultra Sensitive Concentrate</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-blue">Powder (2kg)</span></td>
+              <td><code>COL-ULT-SEN-05</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Coles_Ultra_Sensitive_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf henkel">Download (129 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>Coles Ultra Infusions Tropical</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-amber">Powder (2kg)</span></td>
+              <td><code>COL-ULT-INF-03</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Coles_Ultra_Infusions_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf amber">Download (132 KB)</a></td>
+            </tr>
+            <tr style="background: #fff7ed;">
+              <td><strong>Coles Simply Laundry Powder</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-orange">Powder (4kg)</span></td>
+              <td><code>COL-SIM-PWD-02</code> (GHS 7)</td>
+              <td><span class="tag tag-amber">WARNING</span></td>
+              <td><a href="./Coles_Simply_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Coles_Simply_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf orange">Download (126 KB)</a></td>
+            </tr>
+
+            <!-- Powders: Henkel & Kao Benchmark -->
+            <tr>
+              <td><strong>Fab Sunshine Fresh Bulk Powder</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-blue">Powder (4kg)</span></td>
+              <td><code>HEN-FAB-SUN-01</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Fab_Sunshine_Fresh_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf henkel">Download (118 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Biozet Attack Regular (Benchmark)</strong></td>
+              <td>Kao Australia (Japan)</td>
+              <td><span class="tag tag-green">Powder (2kg/6kg)</span></td>
+              <td><code>KAO-BZA-REG-01</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Biozet_Attack_Regular_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf green">Download (139 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Biozet Attack PLUS Softener</strong></td>
+              <td>Kao Australia (Japan)</td>
+              <td><span class="tag tag-green">Powder (2kg)</span></td>
+              <td><code>KAO-BZA-SOF-02</code> (Bentonite)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Biozet_Attack_PLUS_Softener_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf green">Download (140 KB)</a></td>
+            </tr>
+            <tr style="background: #f0fdf4;">
+              <td><strong>Biozet Attack PLUS Eliminator</strong></td>
+              <td>Kao Australia (Japan)</td>
+              <td><span class="tag tag-green">Powder (2kg)</span></td>
+              <td><code>KAO-BZA-ELI-03</code> (DOBS Activator)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Biozet_Attack_PLUS_Eliminator_Laundry_Powder_SDS.pdf" target="_blank" class="btn-pdf green">Download (139 KB)</a></td>
+            </tr>
+
+            <!-- Liquids: Coles & Earth Choice -->
+            <tr>
+              <td><strong>Coles Simply Laundry Liquid</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-orange">Liquid (2L)</span></td>
+              <td><code>COL-SIM-LIQ-01</code> (GHS 7)</td>
+              <td><span class="tag tag-amber">WARNING</span></td>
+              <td><a href="./Coles_Simply_Laundry_Liquid_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Coles_Simply_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf orange">Download (128 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>Coles Ultra Infusions Liquid</strong></td>
+              <td>Coles Supermarkets</td>
+              <td><span class="tag tag-amber">Liquid (2L)</span></td>
+              <td><code>COL-ULT-LIQ-02</code> (GHS 7)</td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./Coles_Ultra_Infusions_Laundry_Liquid_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Coles_Ultra_Infusions_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf amber">Download (132 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>Earth Choice Laundry Liquid</strong></td>
+              <td>Natures Organics</td>
+              <td><span class="tag tag-green">Liquid (1L)</span></td>
+              <td><code>EC-LIQ-01</code> (Plant Based)</td>
+              <td><span class="tag tag-amber">WARNING</span></td>
+              <td><a href="./Earth_Choice_Laundry_Liquid_SDS.html" target="_blank" class="btn-html">View HTML ↗</a></td>
+              <td><a href="./Earth_Choice_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf green">Download (132 KB)</a></td>
+            </tr>
+
+            <!-- Liquids: Cold Power Official Henkel Documents -->
+            <tr>
+              <td><strong>Cold Power Advanced Clean SDS</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-blue">Liquid (Official)</span></td>
+              <td><code>Henkel SDS No. 565969</code></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./advanced_clean_sds.txt" target="_blank" class="btn-html">Raw Text ↗</a></td>
+              <td><a href="./Cold_Power_Advanced_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf henkel">Download (392 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>Cold Power Extreme Clean SDS</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-purple">Liquid (Official)</span></td>
+              <td><code>Henkel SDS No. 729522</code></td>
+              <td><span class="tag tag-red">DANGER</span></td>
+              <td><a href="./extreme_clean_sds.txt" target="_blank" class="btn-html">Raw Text ↗</a></td>
+              <td><a href="./Cold_Power_Extreme_Clean_Laundry_Liquid_SDS.pdf" target="_blank" class="btn-pdf purple">Download (391 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>Cold Power Adv. Clean INCI Sheet</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-blue">Consumer Disclosure</span></td>
+              <td><code>Subid 000000565969</code></td>
+              <td><span class="tag tag-green">INCI List</span></td>
+              <td><a href="./advanced_clean_ing.txt" target="_blank" class="btn-html">Raw Text ↗</a></td>
+              <td><a href="./Cold_Power_Advanced_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-pdf henkel">Download (110 KB)</a></td>
+            </tr>
+            <tr>
+              <td><strong>Cold Power Ext. Clean INCI Sheet</strong></td>
+              <td>Henkel Australia</td>
+              <td><span class="tag tag-purple">Consumer Disclosure</span></td>
+              <td><code>Subid 000000729522</code></td>
+              <td><span class="tag tag-green">INCI List</span></td>
+              <td><a href="./extreme_clean_ing.txt" target="_blank" class="btn-html">Raw Text ↗</a></td>
+              <td><a href="./Cold_Power_Extreme_Clean_Ingredient_Datasheet.pdf" target="_blank" class="btn-pdf purple">Download (115 KB)</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-      <p>Coles® is a registered trademark of Coles Supermarkets Australia Pty Ltd. ALDI®, LaundRite®, Almat®, and Trimat® are registered trademarks of ALDI Stores (A Limited Partnership). Fab® is a trademark of Henkel Australia. Biozet Attack® is a trademark of Kao Corporation Japan.</p>
+      <p>Coles® is a registered trademark of Coles Supermarkets Australia Pty Ltd. ALDI®, LaundRite®, Almat®, and Trimat® are registered trademarks of ALDI Stores (A Limited Partnership). Fab® and Cold Power® are trademarks of Henkel Australia. Biozet Attack® is a trademark of Kao Corporation Japan.</p>
       <p style="margin-top: 0.35rem; font-size: 0.8rem;">All SDS documents compiled October 2026 and stored locally in: <code>/home/jonathan/antigravityprojects/coldpower/</code></p>
     </footer>
   </div>
+
+  <!-- Interactive Document Viewer Script -->
+  <script>
+    function loadSDS(htmlUrl, pdfUrl, title, docId, brand, signalWord) {
+      const iframe = document.getElementById('sds-iframe');
+      const titleEl = document.getElementById('viewer-title');
+      const metaEl = document.getElementById('viewer-meta');
+      const htmlBtn = document.getElementById('viewer-open-btn');
+      const pdfBtn = document.getElementById('viewer-pdf-btn');
+      const selector = document.getElementById('sds-selector');
+      
+      if (iframe) iframe.src = './' + htmlUrl;
+      if (titleEl) titleEl.innerText = title;
+      if (metaEl) {
+        metaEl.innerHTML = 'Doc ID: <strong>' + docId + '</strong> | Brand: <strong>' + brand + '</strong> | GHS: <strong>' + signalWord + '</strong> | Standards: WHS Australia / GHS 7';
+      }
+      if (htmlBtn) htmlBtn.href = './' + htmlUrl;
+      if (pdfBtn) pdfBtn.href = './' + pdfUrl;
+      
+      if (selector) {
+        for (let i = 0; i < selector.options.length; i++) {
+          if (selector.options[i].value.startsWith(htmlUrl)) {
+            selector.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      
+      const viewerSec = document.getElementById('msds-viewer-section');
+      if (viewerSec) {
+        viewerSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function onSelectChange(val) {
+      if (!val) return;
+      const parts = val.split('|');
+      loadSDS(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5]);
+    }
+  </script>
 
 </body>
 </html>
